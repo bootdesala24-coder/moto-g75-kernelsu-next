@@ -59,6 +59,16 @@ precisam ser obtidas para comparação e recuperação. A cópia do `init_boot_a
 instalado pode conter o Magisk e não será rotulada como original sem análise.
 Os detalhes estão no [relatório do init_boot](docs/init-boot-image-inspection.json).
 
+O arquivo `magisk_patched-30700_flRoZ[1].img` também foi analisado. O campo `SHA1`
+em `.backup/.magisk` coincide com o hash do init_boot original fornecido. O conteúdo
+descompactado de `.backup/init.xz` é idêntico ao `init` original; restaurar esse
+arquivo e excluir as entradas adicionadas pelo Magisk reproduz os nomes, modos e
+conteúdos de todas as 17 entradas do ramdisk original. Isso confirma a relação entre
+os dois arquivos fornecidos, mas ainda não sua igualdade com a partição instalada
+hoje. O hash AVB retido no patcheado é o do original e não confere com o conteúdo
+modificado; ele não é usado como prova de integridade da imagem patcheada. Veja o
+[relatório do patch Magisk](docs/magisk-patched-init-boot-inspection.json).
+
 ## Aparelho identificado
 
 | Campo | Valor observado |

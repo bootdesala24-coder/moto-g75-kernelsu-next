@@ -146,5 +146,12 @@
   "match_to_installed_firmware_verified": false,
   "match_to_original_pre_magisk_image_verified": false,
   "installable": false,
-  "scope": "Owner-supplied candidate init_boot. No common Magisk markers were found; this is not proof of firmware authenticity or a match to the currently installed image."
+  "scope": "Owner-supplied candidate init_boot. No common Magisk markers were found; this is not proof of firmware authenticity or a match to the currently installed image.",
+  "relationship_to_subsequently_supplied_magisk_image": {
+    "patched_image_sha256": "75cfea5daec646433d4c9f591873e741dd7fe8ed3b3882f72ba3270d6f48fab8",
+    "magisk_original_sha1_matches": true,
+    "backup_init_matches": true,
+    "restored_ramdisk_entry_names_modes_contents_match": true,
+    "currently_installed_image_match_verified": false
+  }
 }

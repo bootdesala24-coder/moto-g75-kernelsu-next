@@ -1,0 +1,202 @@
+{
+  "file_name": "magisk_patched-30700_flRoZ[1].img",
+  "file_size": 8388608,
+  "file_sha256": "75cfea5daec646433d4c9f591873e741dd7fe8ed3b3882f72ba3270d6f48fab8",
+  "header_version": 4,
+  "kernel_size": 0,
+  "ramdisk_size": 2218315,
+  "ramdisk_compression": "lz4_legacy",
+  "magisk_patch_present": true,
+  "ramdisk_analysis": {
+    "uncompressed_size": 2873428,
+    "sha256": "df9e8d330def6e55646fd94740ed7b5bac95e71ade83d6e3c047464f85adb28d",
+    "entries": [
+      {
+        "name": ".backup",
+        "mode": "0o40000",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": ".backup/.magisk",
+        "mode": "0o100000",
+        "size": 139,
+        "sha256": "0320b939f4fec0ce4bd6248761229901eccba43d7e3abc6b15f9f0608722268a"
+      },
+      {
+        "name": ".backup/.rmlist",
+        "mode": "0o100000",
+        "size": 99,
+        "sha256": "8a752f56beefef45991ca8d719ccf3f1e10a924f9e31424cd1f5cc577a0458f7"
+      },
+      {
+        "name": ".backup/init.xz",
+        "mode": "0o100750",
+        "size": 1104584,
+        "sha256": "0272405a12fdc6c18594bc99368fbc118a0e91fc831dfd31c98e6d90114e59a4"
+      },
+      {
+        "name": "debug_ramdisk",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "dev",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "init",
+        "mode": "0o100750",
+        "size": 199960,
+        "sha256": "383670a7ba3a6a4b79e5f3467e1da4b66a5df66a9b356ab9f70916854dd6b468"
+      },
+      {
+        "name": "metadata",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "mnt",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "overlay.d",
+        "mode": "0o40750",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "overlay.d/sbin",
+        "mode": "0o40750",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "overlay.d/sbin/init-ld.xz",
+        "mode": "0o100644",
+        "size": 1556,
+        "sha256": "440cea2f2754fe73ff65496e5ca764a035f53644623f486e037146b458164214"
+      },
+      {
+        "name": "overlay.d/sbin/magisk.xz",
+        "mode": "0o100644",
+        "size": 158792,
+        "sha256": "ba82d76c6b7bdfbe7cfa7ea86eb43ad86c40df1356ac0757b329ec97e9313537"
+      },
+      {
+        "name": "overlay.d/sbin/stub.xz",
+        "mode": "0o100644",
+        "size": 65732,
+        "sha256": "4fc706f8317ff4116d7015c5d2bed81885a32a0ef84c3fadeccbbfdce080d083"
+      },
+      {
+        "name": "proc",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "second_stage_resources",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "sys",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "system",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "system/bin",
+        "mode": "0o40751",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "system/bin/snapuserd",
+        "mode": "0o120755",
+        "size": 17,
+        "sha256": "1807bcb1c9080b455472f1cb9933b8176cb776e2141262c071009b5e7f2f779f"
+      },
+      {
+        "name": "system/bin/snapuserd_ramdisk",
+        "mode": "0o100755",
+        "size": 1337768,
+        "sha256": "9aa6c9bf21bcda67a902bb3e9ad4a734d343600048822fdd5f969630d5af0875"
+      },
+      {
+        "name": "system/etc",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "system/etc/init",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "system/etc/init/snapuserd.rc",
+        "mode": "0o100644",
+        "size": 537,
+        "sha256": "3a6966f87823b2726a231e7244adf78ad91d581bf4e8b1580630ebb82cc6c498"
+      },
+      {
+        "name": "system/etc/ramdisk",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "name": "system/etc/ramdisk/build.prop",
+        "mode": "0o100644",
+        "size": 810,
+        "sha256": "a25303dffd0802ceeeb7b6c195916847e51fc49a5cb4e908cf9aa9dab6e76abd"
+      }
+    ],
+    "changed_stock_entries": [
+      "init"
+    ],
+    "backup_magisk_text": "KEEPVERITY=true\nKEEPFORCEENCRYPT=true\nRECOVERYMODE=false\nVENDORBOOT=false\nPREINITDEVICE=sde9\nSHA1=9fb10960a427468bdbbbce171d6f163b2ef83f2c\n",
+    "backup_init_xz_decompressed_matches_stock": true,
+    "backup_init_sha256": "1bf1042dd55ea46a48fdabba28021ccd8e7a86f1f95b3cc1d972e2e6f9c83c14",
+    "restored_ramdisk_names_modes_contents_match_supplied_stock": true,
+    "original_image_sha1_matches_magisk_record": true,
+    "recorded_original_sha1": "9fb10960a427468bdbbbce171d6f163b2ef83f2c",
+    "magisk_backup_settings": {
+      "KEEPVERITY": "true",
+      "KEEPFORCEENCRYPT": "true",
+      "RECOVERYMODE": "false",
+      "VENDORBOOT": "false",
+      "PREINITDEVICE": "sde9",
+      "SHA1": "9fb10960a427468bdbbbce171d6f163b2ef83f2c"
+    }
+  },
+  "supplied_original_sha256": "7746e1b3746360975563767f3af657ef47eaa4ab0eeb9c359cc38be94399b340",
+  "supplied_original_sha1": "9fb10960a427468bdbbbce171d6f163b2ef83f2c",
+  "relationship_to_supplied_original_verified": true,
+  "relationship_evidence": [
+    "Magisk stored SHA1 matches complete supplied original image",
+    "Decompressed .backup/init.xz matches original init byte for byte",
+    "Restoring backed-up init and excluding Magisk-added entries reproduces all original ramdisk entry names, modes and contents"
+  ],
+  "outer_avb_hash_descriptor_matches_modified_image": false,
+  "outer_avb_note": "The descriptor retains the original image digest and does not authenticate the patched content. Its verification failure is recorded, not treated as a valid signature.",
+  "match_to_current_init_boot_partition_verified": false,
+  "oem_firmware_authenticity_verified": false,
+  "installable": false
+}

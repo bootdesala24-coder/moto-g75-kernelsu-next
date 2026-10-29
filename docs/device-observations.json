@@ -55,5 +55,8 @@
   "boot_partition_hashes_equal_in_photo": true,
   "uploaded_boot_full_file_differs_from_observed_partition_hash": true,
   "current_boot_dump_required": true,
-  "original_init_boot_common_magisk_markers_found": false
+  "original_init_boot_common_magisk_markers_found": false,
+  "supplied_magisk_patched_init_boot_sha256": "75cfea5daec646433d4c9f591873e741dd7fe8ed3b3882f72ba3270d6f48fab8",
+  "supplied_magisk_patch_relation_to_original_verified": true,
+  "supplied_magisk_patched_init_boot_matches_current_partition_verified": false
 }
