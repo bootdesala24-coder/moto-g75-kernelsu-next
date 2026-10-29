@@ -1,9 +1,11 @@
 {
   "schema": 1,
   "kernel": {
-    "url": "https://github.com/MotorolaMobilityLLC/kernel-msm.git",
-    "branch": "android-16-release-w1uq36h.73-28",
-    "commit": "48fd2e5da097c2da710ffa7910d28ae253339c03",
+    "url": "https://android.googlesource.com/kernel/common",
+    "tag": "android15-6.6-2025-05_r19",
+    "commit": "88d70c0b44bff103947b599e40bb36bd5af92891",
+    "upstream_build_id": "14541233",
+    "source_identity_matches_device": true,
     "version": "6.6.87",
     "kmi": "android15-6.6-8"
   },

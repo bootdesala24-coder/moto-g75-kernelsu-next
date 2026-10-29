@@ -19,7 +19,7 @@ class ValidationTests(unittest.TestCase):
         self.assertFalse(device["exact_source_match_verified"])
         self.assertFalse(device["device_boot_test_passed"])
 
-    def test_image_rejects_wrong_page_size_and_truncation(self):
+    def test_image_checks_page_size_and_allows_bss_memory_footprint(self):
         with tempfile.TemporaryDirectory() as temp:
             path = Path(temp) / "Image"
             raw = bytearray(128)
@@ -33,6 +33,12 @@ class ValidationTests(unittest.TestCase):
                 check_image(path)
             struct.pack_into("<QQ", raw, 16, 256, 2)
             path.write_bytes(raw)
+            self.assertEqual(check_image(path)["memory_footprint"], 256)
+            struct.pack_into("<Q", raw, 16, 64)
+            path.write_bytes(raw)
+            with self.assertRaises(ValueError):
+                check_image(path)
+            path.write_bytes(raw[:32])
             with self.assertRaises(ValueError):
                 check_image(path)
 

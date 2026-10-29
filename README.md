@@ -20,14 +20,15 @@ para instalar, que inicialize no Moto G75 ou que seja idêntico ao kernel origin
 
 ## Fontes e limites da primeira compilação
 
-- Motorola: `MotorolaMobilityLLC/kernel-msm`, ramo
-  `android-16-release-w1uq36h.73-28`, commit
-  `48fd2e5da097c2da710ffa7910d28ae253339c03`.
-- Essa fonte é Linux 6.6.87 e declara KMI 8, mas corresponde ao firmware **.73-28**.
-  O telefone usa **.73-38**. A equivalência exata não está comprovada.
+- AOSP/Google: `kernel/common`, tag `android15-6.6-2025-05_r19`, commit
+  `88d70c0b44bff103947b599e40bb36bd5af92891`.
+- A tag oficial aponta para o build **14541233**. O prefixo do commit e esse build ID
+  coincidem com `g88d70c0b44bf-ab14541233` na foto do telefone. A fonte é Linux 6.6.87,
+  KMI 8. A equivalência binária, os módulos OEM e as imagens de boot ainda não foram
+  verificados. Isso não comprova que uma recompilação será instalável.
 - KernelSU Next: tag `v3.4.2`, commit
   `4c706b5938665866ebe16944a481a7b91e3396af`. Manager padrão da mesma release.
-- Android Clang `r510928`, conforme o `build.config.constants` da Motorola.
+- Android Clang `r510928`, conforme o `build.config.constants` dessa tag AOSP.
   O conteúdo extraído é conferido pelo hash da árvore Git original antes de executar
   o compilador. Todos os identificadores estão em `sources.lock.json`.
 - Compilação direta via Kbuild com `gki_defconfig`, ThinLTO e CFI. Ainda não reproduz
@@ -84,6 +85,6 @@ python3 -m unittest discover -s tests -v
 python3 scripts/validate.py --inputs
 ```
 
-Fontes: [Motorola](https://github.com/MotorolaMobilityLLC/kernel-msm/tree/android-16-release-w1uq36h.73-28),
+Fontes: [Tag AOSP e build 14541233](https://android.googlesource.com/kernel/common/+/refs/tags/android15-6.6-2025-05_r19),
 [KernelSU Next v3.4.2](https://github.com/KernelSU-Next/KernelSU-Next/releases/tag/v3.4.2),
 [Clang fixado](https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/a88a49e4f9d0ad9562e3dd75a3c197689d1a63f3/clang-r510928/).

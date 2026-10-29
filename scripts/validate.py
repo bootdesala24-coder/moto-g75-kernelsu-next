@@ -29,6 +29,11 @@ def validate_inputs(root=ROOT):
         raise ValueError("Source kernel version differs from observed device")
     if device["page_size_expected"] != 4096:
         raise ValueError("This experiment targets 4 KB pages only")
+    observed = re.search(r"-g([0-9a-f]+)-ab([0-9]+)-", device["kernel_release"])
+    if not observed or not lock["kernel"]["commit"].startswith(observed[1]):
+        raise ValueError("Pinned source does not match the observed kernel commit")
+    if lock["kernel"]["upstream_build_id"] != observed[2]:
+        raise ValueError("Upstream build ID does not match the observed kernel")
     return lock, device
 
 
@@ -43,9 +48,12 @@ def check_image(path):
         raise ValueError("Big-endian Image is not supported")
     if (flags >> 1) & 3 != 1:
         raise ValueError("Image does not declare 4 KB pages")
-    if not 64 <= size <= path.stat().st_size:
-        raise ValueError("Invalid or truncated Image size")
-    return {"architecture": "arm64", "page_size": 4096, "image_size": size}
+    # image_size is the memory footprint (_end - _text), including BSS;
+    # it can legitimately exceed the length of the on-disk Image.
+    if size < path.stat().st_size or size < 64:
+        raise ValueError("Image memory footprint is smaller than its file")
+    return {"architecture": "arm64", "page_size": 4096,
+            "memory_footprint": size, "file_size": path.stat().st_size}
 
 
 def config(path):
@@ -127,7 +135,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.inputs:
         validate_inputs()
-        print("Input consistency OK; exact firmware/source correspondence remains unverified.")
+        print("Input consistency and observed upstream kernel identity OK; device binaries remain unverified.")
     elif args.compare:
         report = compare(*args.compare)
         print(json.dumps(report, indent=2, sort_keys=True))

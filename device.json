@@ -11,6 +11,7 @@
   "bootloader_unlocked_user_report": true,
   "stock_firmware_confirmed": null,
   "existing_root": null,
+  "observed_kernel_identifiers_match_upstream": true,
   "exact_source_match_verified": false,
   "original_boot_image_sha256": null,
   "vendor_abi_verified": false,

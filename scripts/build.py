@@ -47,7 +47,8 @@ def main(variant):
     output, compiler = work / "out", work / "clang"
     report = {"variant": variant, "build_succeeded": False, "installable": False,
               "device_tested": False, "vendor_abi_verified": False,
-              "source_firmware": "W1UQ36H.73-28",
+              "source_tag": lock["kernel"]["tag"],
+              "observed_kernel_identifiers_match_upstream": True,
               "target_firmware": device["firmware"],
               "exact_source_match_verified": False, "sources": lock,
               "workflow_commit": os.environ.get("GITHUB_SHA"),
@@ -55,7 +56,8 @@ def main(variant):
     json_write(artifacts / "provenance.json", report)
     (artifacts / "DO-NOT-FLASH.txt").write_text(
         "EXPERIMENTAL BUILD — NOT AN INSTALLATION PACKAGE\n"
-        "Source firmware: W1UQ36H.73-28; target device: W1UQ36H.73-38.\n"
+        "Source: android15-6.6-2025-05_r19; target firmware: W1UQ36H.73-38.\n"
+        "Source commit and upstream build ID match the photographed kernel release.\n"
         "The exact installed kernel and vendor modules have not been validated.\n"
         "No boot.img, init_boot.img, AnyKernel ZIP or flashing command is supplied.\n"
         "A successful build does not establish device compatibility or security.\n")
