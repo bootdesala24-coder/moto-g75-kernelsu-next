@@ -19,7 +19,13 @@ para instalar, que inicialize no Moto G75 ou que seja idêntico ao kernel origin
 | Slot observado | a |
 | SELinux observado | Enforcing |
 | Root existente | Magisk, informado pelo proprietário |
-| Bootloader | Proprietário informa desbloqueado; getprop retorna locked; falta conferir no fastboot |
+| Bootloader | Foto da inicialização mostra “The boot loader is unlocked”; getprop retorna locked |
+
+A foto enviada depois da coleta confirma o aviso de bootloader desbloqueado na
+inicialização. A opção **Desbloqueio de OEM** aparece desligada nas configurações;
+essa opção controla a permissão para desbloquear e não bloqueia novamente um
+bootloader já desbloqueado. A causa do valor `locked` dentro do Android ainda não
+foi determinada. Não foi realizada consulta direta por fastboot.
 
 O `kernel-config.gz` enviado pelo proprietário foi descompactado e comparado byte a
 byte com a configuração da referência oficial: são idênticos. SHA-256 da configuração
@@ -83,8 +89,9 @@ comandos de flash. Não há release automática nem indicação de instalação.
 
 ## Pendências para uma eventual instalação
 
-- Resolver a divergência de estado do bootloader por consulta no fastboot. SKU XT,
-  tamanho de página e slot foram coletados; sistema Motorola e Magisk foram relatados.
+- Desbloqueio observado no aviso de inicialização; SKU XT, tamanho de página e slot
+  coletados; sistema Motorola e Magisk relatados. Não refazer o desbloqueio nem
+  bloquear novamente para tentar corrigir a propriedade divergente no Android.
 - Obter firmware original **W1UQ36H.73-38 / canal retbr**, com origem verificável,
   e as imagens originais e módulos pertinentes; guardar hashes e cópias de restauração.
 - Identificar layout de boot, slot ativo, cabeçalhos, compactação e AVB/rollback a

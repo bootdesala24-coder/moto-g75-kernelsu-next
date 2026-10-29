@@ -4,8 +4,10 @@ O proprietário confirmou sistema original Motorola com **Magisk** e acesso a um
 computador Windows. A coleta confirmou SKU **XT2437-1**, slot **a**, páginas de 4096
 bytes e configuração do kernel idêntica à referência Google. A versão do Magisk
 ainda não foi coletada. O estado de bootloader informado por `getprop` foi `locked`,
-em divergência com o relato do proprietário; a consulta abaixo permite conferir
-diretamente no fastboot.
+mas uma foto posterior da inicialização mostra **The boot loader is unlocked**.
+A opção Desbloqueio de OEM desligada não bloqueia novamente o bootloader. A consulta
+abaixo fica documentada como verificação adicional; não é preciso refazer o
+desbloqueio. A causa da propriedade divergente no Android não foi determinada.
 
 1. Obtenha o [Android SDK Platform-Tools oficial para Windows](https://developer.android.com/tools/releases/platform-tools) e extraia o ZIP.
 2. Baixe `coletar-dados.cmd` deste repositório e coloque-o na pasta que contém `adb.exe`.
