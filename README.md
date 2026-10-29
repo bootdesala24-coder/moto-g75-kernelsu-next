@@ -1,9 +1,42 @@
 # Moto G75 — laboratório de compilação KernelSU Next
 
-Este projeto compila duas imagens **experimentais**: uma referência GKI sem root e
-outra com KernelSU Next v3.4.2 integrado. Não é um pacote de instalação e ainda não
-há validação no aparelho. Um workflow verde não significa que o kernel seja seguro
-para instalar, que inicialize no Moto G75 ou que seja idêntico ao kernel original.
+Este projeto compila uma referência GKI e um kernel com KernelSU Next v3.4.2
+integrado. A compilação e as verificações estáticas passaram. Foi preparado um
+pacote candidato para o **XT2437-1, W1UQ36H.73-38, retbr, slot a**, com boot sem
+Magisk, init_boot sem patch, Manager oficial e cópias para restauração.
+**Ainda não houve teste físico no aparelho. Não há garantia de inicialização ou
+de segurança de 100%.** As imagens e os backups pessoais não são publicados neste
+repositório; os scripts, hashes e relatórios permitem revisar a preparação.
+
+## Pacote candidato preparado
+
+A execução [40807792629](https://github.com/bootdesala24-coder/moto-g75-kernelsu-next/actions/runs/40807792629)
+passou nos quatro jobs. A comparação manteve os mesmos 9.110 símbolos exportados,
+com `CONFIG_KSU` como única diferença de configuração entre as duas variantes.
+O certificado público original está na lista confiável de ambos os kernels;
+as tabelas de proteção coincidem com as do kernel instalado.
+
+O artefato KernelSU também passou na comparação dos **3.407 requisitos do núcleo
+extraídos dos módulos reais do proprietário**. A imagem `boot-kernelsu-next.img`
+tem SHA-256 `c7e9d4f752a804c81107cb1c057fa7f5f8abec3a7bd2a5e98fe682575bf07160`.
+Ela preserva os campos do cabeçalho original, salvo o tamanho do novo kernel,
+usa kernel sem compressão e ramdisk vazio. O hash AVB foi recalculado e conferido
+com algoritmo `NONE`; isso não é uma assinatura OEM.
+
+O pacote inclui a base init_boot cujo conteúdo foi relacionado ao backup interno
+do Magisk instalado, o Manager oficial com assinatura APK v2 e certificado
+conferidos contra a identidade esperada pelo kernel, e os backups atuais do
+boot/init_boot. O procedimento guarda módulos e scripts Magisk em uma pasta
+separada, sem apagá-los. A preparação e a restauração foram simuladas em diretórios
+temporários, inclusive recusa de modelo errado, repetição e sobrescrita de dados.
+A execução em Windows e no telefone continua dependente do teste do proprietário.
+
+Veja [validação do pacote](docs/packaged-kernel-validation.json),
+[manifesto da entrega](docs/delivery-package.json),
+[comparação do Actions](docs/ci-comparison-40807792629.json) e
+[instruções de migração e retorno](windows/LEIA-ME-PACOTE.txt).
+`analysis/package_boot.py` recusa insumos com hashes inesperados e repete os checks
+antes de empacotar; `analysis/finalize_package.py` monta e verifica o ZIP.
 
 ## Resultado da compilação experimental
 
@@ -18,7 +51,8 @@ Esse resultado compara duas compilações do projeto. A análise posterior confi
 que o kernel extraído do `boot_a` instalado é idêntico à referência oficial Google.
 A análise dos módulos reais, recebidos posteriormente, está descrita abaixo. A primeira compilação não
 continha o certificado público original de assinatura dos módulos; a correção
-descrita abaixo precisa de uma nova execução. Não há pacote liberado para instalação.
+descrita abaixo foi concluída na execução 40807792629. O pacote atual permanece
+um candidato a teste físico, sem validação de inicialização no aparelho.
 
 ### Preservação da confiança nos módulos
 
@@ -35,9 +69,9 @@ imagem não basta para passar na verificação. Os offsets e hashes de referênc
 fixados em `sources.lock.json`; a análise inicial está em
 [`docs/module-trust-inspection.json`](docs/module-trust-inspection.json).
 
-Essas verificações preservam a confiança e as listas de proteção. Elas ainda não
-confirmam CRCs, assinaturas e dependências dos módulos reais do aparelho, nem sua
-operação com o kernel recompilado.
+Essas verificações preservam a confiança e as listas de proteção. A análise dos
+CRCs, assinaturas e dependências reais foi realizada separadamente, conforme a
+seção seguinte; a operação física dos drivers continua pendente.
 
 ### Verificação dos módulos reais do aparelho
 
@@ -69,7 +103,9 @@ Isso ainda **não valida o carregamento real nem o comportamento dos drivers**.
 A primeira compilação não contém o certificado original no keyring, por isso esse
 resultado de CRC não a torna adequada para instalação. A execução
 [40807792629](https://github.com/bootdesala24-coder/moto-g75-kernelsu-next/actions/runs/40807792629)
-está compilando a correção; seus artefatos ainda precisam passar pela mesma comparação.
+concluiu a correção e a comparação posterior dos módulos passou. As tabelas
+Module.symvers das compilações anterior e corrigida são idênticas byte a byte;
+a correção acrescenta a confiança no certificado original.
 
 O [relatório](docs/device-module-validation.json), o
 [manifesto de arquivos](docs/device-module-manifest.json) e os
@@ -218,7 +254,8 @@ foi atualizado para a próxima compilação; os artefatos antigos preservam suas
   uma referência técnica, não um backup do boot Motorola.
 - O certificado público original será incorporado à lista de confiança da nova
   compilação, junto ao certificado do laboratório. A aceitação dos módulos reais
-  do aparelho ainda precisa ser verificada antes de qualquer instalação.
+  do aparelho passou nos checks estáticos documentados; o carregamento real
+  ainda precisa ser testado.
 - Não inclui SUSFS adicional, overclock, alterações térmicas, desativação de SELinux,
   alteração da assinatura autorizada do Manager ou autorização automática de root.
 
@@ -248,8 +285,10 @@ Os artefatos incluem imagens brutas, `.config` como `kernel.config`, `Module.sym
 `System.map`, certificado público original, cabeçalhos das tabelas de proteção,
 logs, origem dos insumos, versões dos pacotes e `SHA256SUMS`.
 O nome do kernel contém `lab` para identificar o experimento. Os arquivos ficam no
-Actions por 14 dias. Não são produzidos `boot.img`, `init_boot.img`, ZIP AnyKernel ou
-comandos de flash. Não há release automática nem indicação de instalação.
+Actions por 14 dias. O workflow entrega kernels brutos e diagnósticos. O pacote
+com boot, init_boot e instruções é preparado separadamente pelos scripts em
+`analysis/`, após verificar os artefatos e as imagens do proprietário. Não há
+release pública automática nem validação física implícita.
 
 ## Pendências para uma eventual instalação
 

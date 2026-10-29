@@ -1,0 +1,21 @@
+{
+  "file_name": "moto-g75-kernelsu-next-v3.4.2.zip",
+  "size": 49300609,
+  "sha256": "85b8e517982994597cd09027a61a4d2be3b08e3c74c3907daace667dfef95e21",
+  "files": [
+    "FONTES.txt",
+    "KernelSU_Next_v3.4.2_33355-release.apk",
+    "LEIA-ME.txt",
+    "SHA256SUMS.txt",
+    "VALIDACAO.json",
+    "boot-kernelsu-next.img",
+    "boot-magisk-backup-a.img",
+    "conferir-pacote.cmd",
+    "init_boot-magisk-backup-a.img",
+    "init_boot-sem-magisk.img",
+    "preparar-migracao.sh",
+    "restaurar-modulos-magisk.sh"
+  ],
+  "boot_sha256": "c7e9d4f752a804c81107cb1c057fa7f5f8abec3a7bd2a5e98fe682575bf07160",
+  "device_boot_test_passed": false
+}

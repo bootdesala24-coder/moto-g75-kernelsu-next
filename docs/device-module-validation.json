@@ -27,7 +27,7 @@
   "missing": [],
   "crc_mismatches": [],
   "policy_issues": [],
-  "comparison_build_run": 40796422378,
+  "comparison_build_run": 40807792629,
   "provider_loading_order_checked": false,
   "namespace_and_license_enforcement_checked": true,
   "hardware_tested": false,
@@ -38,12 +38,12 @@
     "installable": false,
     "module_file_records": 618,
     "required_core_exports_checked": 3407,
-    "run_id": "40796422378",
+    "run_id": "40807792629",
     "scope": "Required core CRCs, GPL export use, declared namespaces and vermagic; hardware behavior and full ABI equivalence are not established",
     "static_core_module_checks_passed": true,
     "unique_module_hashes": 448,
     "variant": "kernelsu-next",
-    "workflow_commit": "476ab8948c9e664fd9d11cdea6e762ccd039e0a5"
+    "workflow_commit": "4f35aa7973b574d63593624d988cfbe4764f0078"
   },
   "dependency_lists": {
     "dependency_path_references": 3425,
@@ -528,5 +528,14 @@
   },
   "original_module_certificate_sha256": "5601bbb5a627b517e1f8855e4ce8aec595a9764d2c013b85d8cfcde0808ca954",
   "initial_build_certificate_missing": true,
-  "corrected_build_validation_pending": true
+  "corrected_build_validation_pending": false,
+  "corrected_build_module_trust_checks": {
+    "original_certificate_in_builtin_keyring": true,
+    "original_certificate_sha256": "5601bbb5a627b517e1f8855e4ce8aec595a9764d2c013b85d8cfcde0808ca954",
+    "protected_exports_table_matches_original": true,
+    "scope": "Static trust and symbol-policy checks; actual device modules and hardware remain untested",
+    "unprotected_table_matches_original": true
+  },
+  "initial_and_corrected_module_symvers_byte_identical": true,
+  "module_symvers_sha256": "8e9d8d9501439f8dc803d5e251502bbc8f8f4195de36c47774a104896be7e026"
 }

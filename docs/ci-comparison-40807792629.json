@@ -1,0 +1,19 @@
+{
+  "added": [],
+  "changed": [],
+  "config_changes": {
+    "CONFIG_KSU": [
+      "n",
+      "y"
+    ]
+  },
+  "device_tested": false,
+  "installable": false,
+  "modified_symbols": 9110,
+  "passed": true,
+  "reference_symbols": 9110,
+  "removed": [],
+  "scope": "Comparison against a locally compiled GKI reference, not the installed Motorola kernel",
+  "unexpected_config_changes": {},
+  "vendor_abi_verified": false
+}

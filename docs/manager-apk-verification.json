@@ -1,0 +1,13 @@
+{
+  "apk_sha256": "774a5511f7034a4930e881114e202319cbdc34c5aaaa5c7c6b6d2902364e4c58",
+  "size": 16682167,
+  "release": "v3.4.2",
+  "certificate_sha256": "79e590113c4c4c0c222978e413a5faa801666957b1212a328e46c00c69821bf7",
+  "certificate_size": 998,
+  "certificate_matches_compiled_manager_identity": true,
+  "apk_v2_signature_verified": true,
+  "apk_v2_content_digest_verified": true,
+  "apk_variant": "standard, not spoofed",
+  "apk_signer_public_key_matches_certificate": true,
+  "single_signer_and_matching_algorithm_lists_verified": true
+}

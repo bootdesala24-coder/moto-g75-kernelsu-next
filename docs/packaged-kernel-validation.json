@@ -1,0 +1,89 @@
+{
+  "target": "moto g75 XT2437-1 / sorap / W1UQ36H.73-38 / retbr / slot a",
+  "kernel_release": "6.6.87-android15-8-lab-4k",
+  "kernelsu_release": "v3.4.2",
+  "workflow_commit": "4f35aa7973b574d63593624d988cfbe4764f0078",
+  "run_id": "40807792629",
+  "comparison": {
+    "passed": true,
+    "reference_symbols": 9110,
+    "modified_symbols": 9110,
+    "removed": [],
+    "changed": [],
+    "added": [],
+    "config_changes": {
+      "CONFIG_KSU": [
+        "n",
+        "y"
+      ]
+    },
+    "unexpected_config_changes": {},
+    "vendor_abi_verified": false,
+    "device_tested": false,
+    "installable": false,
+    "scope": "Comparison against a locally compiled GKI reference, not the installed Motorola kernel"
+  },
+  "module_trust_checks": {
+    "reference": {
+      "original_certificate_in_builtin_keyring": true,
+      "unprotected_table_matches_original": true,
+      "protected_exports_table_matches_original": true,
+      "original_certificate_sha256": "5601bbb5a627b517e1f8855e4ce8aec595a9764d2c013b85d8cfcde0808ca954",
+      "scope": "Static trust and symbol-policy checks; actual device modules and hardware remain untested"
+    },
+    "kernelsu-next": {
+      "original_certificate_in_builtin_keyring": true,
+      "unprotected_table_matches_original": true,
+      "protected_exports_table_matches_original": true,
+      "original_certificate_sha256": "5601bbb5a627b517e1f8855e4ce8aec595a9764d2c013b85d8cfcde0808ca954",
+      "scope": "Static trust and symbol-policy checks; actual device modules and hardware remain untested"
+    }
+  },
+  "device_module_checks": {
+    "static_core_module_checks_passed": true,
+    "required_core_exports_checked": 3407,
+    "module_file_records": 618,
+    "unique_module_hashes": 448,
+    "workflow_commit": "4f35aa7973b574d63593624d988cfbe4764f0078",
+    "run_id": "40807792629",
+    "variant": "kernelsu-next",
+    "failures": [],
+    "hardware_tested": false,
+    "installable": false,
+    "scope": "Required core CRCs, GPL export use, declared namespaces and vermagic; hardware behavior and full ABI equivalence are not established"
+  },
+  "original_input_sha256": {
+    "stock_boot": "6ae39d54a44b84cbf950d46749ccfec683a0fb922fa648a9136e0d10a6821b0e",
+    "stock_init": "7746e1b3746360975563767f3af657ef47eaa4ab0eeb9c359cc38be94399b340",
+    "current_boot": "55c2ccece3ef93e0daba10a8b8a9332f83d3dcf6437cfaa973678851776c4c71",
+    "current_init": "eaaa88a4d55572e34510fba22066f7f9c4eb3837fb463b63e9221680fad8514c",
+    "manager": "774a5511f7034a4930e881114e202319cbdc34c5aaaa5c7c6b6d2902364e4c58",
+    "avbtool": "e5a664a38db623da00f080219bc0ee60a640a9dc4a872803616fae4938ac749b"
+  },
+  "boot_header_version": 4,
+  "ramdisk_size": 0,
+  "kernel_compression": "none",
+  "boot_partition_size": 100663296,
+  "outer_avb_algorithm": "NONE",
+  "outer_avb_hash_verified": true,
+  "outer_avb_verification_output": "Verifying image ../delivery/moto-g75-kernelsu-next-v3.4.2/boot.img using embedded public key\nvbmeta: Successfully verified footer and NONE vbmeta struct in ../delivery/moto-g75-kernelsu-next-v3.4.2/boot.img\nboot: Successfully verified sha256 hash of ../delivery/moto-g75-kernelsu-next-v3.4.2/boot.img for image of 36728832 bytes",
+  "oem_signature": false,
+  "device_boot_test_passed": false,
+  "delivery_status": "Candidate for an owner-controlled hardware test; no guarantee of safe boot",
+  "manager_verification": {
+    "apk_sha256": "774a5511f7034a4930e881114e202319cbdc34c5aaaa5c7c6b6d2902364e4c58",
+    "size": 16682167,
+    "release": "v3.4.2",
+    "certificate_sha256": "79e590113c4c4c0c222978e413a5faa801666957b1212a328e46c00c69821bf7",
+    "certificate_size": 998,
+    "certificate_matches_compiled_manager_identity": true,
+    "apk_v2_signature_verified": true,
+    "apk_v2_content_digest_verified": true,
+    "apk_variant": "standard, not spoofed",
+    "apk_signer_public_key_matches_certificate": true,
+    "single_signer_and_matching_algorithm_lists_verified": true
+  },
+  "migration_scripts_simulation_passed": true,
+  "windows_execution_tested": false,
+  "actions_all_four_jobs_passed": true
+}

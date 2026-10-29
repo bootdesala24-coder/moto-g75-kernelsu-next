@@ -1,0 +1,108 @@
+MOTO G75 XT2437-1 - KERNELSU NEXT 3.4.2
+Firmware alvo: W1UQ36H.73-38 / retbr / slot a
+Kernel: 6.6.87-android15-8-lab-4k, paginas de 4096 bytes.
+
+Este e um kernel compilado com KernelSU Next integrado (GKI). O pacote permite
+substituir o Magisk no boot e no init_boot. Os testes de compilacao, assinaturas,
+interfaces dos modulos e integridade passaram. Ainda nao houve teste fisico
+neste telefone: nao existe garantia de inicializacao ou de seguranca de 100%.
+
+ANTES DE COMECAR
+- Guarde uma copia deste ZIP no computador. Ele contem os backups do boot e
+  init_boot que foram lidos do seu aparelho com Magisk e conferidos por hash.
+- Faça backup dos seus dados pessoais, mantenha a bateria carregada e use
+  um cabo USB confiavel. O procedimento nao pede formatacao nem desbloqueio.
+- Extraia TODOS os arquivos deste pacote na pasta onde estao adb.exe e
+  fastboot.exe. Use o mesmo CMD que funcionou na coleta.
+- Nao use em outro modelo, firmware ou slot. Nao atualize o sistema durante
+  esta migracao. Nao bloqueie novamente o bootloader com estas imagens.
+
+1. CONFERIR E PREPARAR - ANDROID INICIADO
+Execute uma linha por vez. Se uma linha falhar, pare; nao execute as seguintes.
+
+conferir-pacote.cmd
+adb.exe install -r KernelSU_Next_v3.4.2_33355-release.apk
+adb.exe push preparar-migracao.sh /data/local/tmp/g75-preparar-migracao.sh
+adb.exe shell "su -c 'sh /data/local/tmp/g75-preparar-migracao.sh'"
+
+Autorize Shell no Magisk se solicitado. A ultima linha precisa mostrar
+PREPARACAO_OK. O script confere modelo, firmware, slot e os hashes atuais.
+Ele guarda os modulos e scripts antigos em /data/adb/g75-magisk-backup-20261029,
+sem apaga-los e sem gravar particoes. Nao repita essa preparacao se ja terminou.
+
+2. ENTRAR NO BOOTLOADER E CONFERIR O SLOT
+
+adb.exe reboot bootloader
+fastboot.exe getvar current-slot
+
+O slot precisa ser a. Se aparecer b, erro ou waiting for any device, pare.
+Waiting indica que a conexao/driver fastboot ainda precisa ser resolvido;
+interrompa com Ctrl+C. Nao execute comandos de flash enquanto houver esse erro.
+Para voltar ao Android sem gravar nada: fastboot.exe reboot
+
+3. TESTE TEMPORARIO, SE O BOOTLOADER SUPORTAR
+
+fastboot.exe boot boot-kernelsu-next.img
+
+Esse comando tenta iniciar o novo kernel sem grava-lo na particao. O init_boot
+instalado ainda contem Magisk nesta etapa; a migracao definitiva ocorre no passo 4.
+O suporte a fastboot boot nao foi confirmado neste Moto G75. Se o comando for
+recusado, isso nao prova incompatibilidade do kernel. Nao trate a recusa como um
+teste aprovado: a instalacao permanente seria o primeiro teste fisico.
+
+Se iniciar, confira o kernel com: adb.exe shell uname -r
+O resultado esperado e 6.6.87-android15-8-lab-4k. Teste Wi-Fi, rede movel,
+Bluetooth, cameras, audio, biometria, carregamento e suspensao. Se houver falha,
+nao avance para o passo 4. Reiniciar normalmente retorna ao kernel gravado.
+
+4. MIGRACAO PERMANENTE PARA KERNELSU NEXT
+Se fez o teste temporario, volte ao bootloader e confira novamente current-slot.
+Use este passo somente com o slot a e estando preparado para restaurar os backups
+se o aparelho nao iniciar. Este passo grava as duas particoes indicadas.
+
+fastboot.exe flash boot_a boot-kernelsu-next.img
+fastboot.exe flash init_boot_a init_boot-sem-magisk.img
+fastboot.exe reboot
+
+Cada flash precisa terminar com OKAY. Se um falhar, nao continue a instalacao:
+use os backups do passo 5 antes de reiniciar. Nao grave vendor_boot ou vbmeta,
+nao use erase, nao desative AVB com comandos adicionais e nao altere o slot b.
+
+Quando Android iniciar, abra KernelSU Next. O kernel deve aparecer funcionando.
+Confira tambem: adb.exe shell getenforce (esperado: Enforcing).
+O root sera gerenciado por KernelSU Next. A imagem boot nao contem ramdisk Magisk,
+e init_boot-sem-magisk.img e a base sem patch conferida contra o backup interno
+do Magisk. Nenhum modulo antigo foi ativado automaticamente na migracao.
+
+Depois de confirmar o funcionamento, desinstale o APLICATIVO Magisk pelas
+Configuracoes do Android. Nao execute a funcao de restauracao/desinstalacao
+completa do Magisk depois do flash: ela pode restaurar imagens anteriores.
+Ative complementos no KernelSU Next somente depois de testar o sistema basico.
+
+5. VOLTAR AO ESTADO ANTERIOR COM MAGISK
+Se nao iniciar, entre no bootloader pela combinacao fisica de teclas do aparelho
+e conecte ao computador. No Moto G75, tente manter Power para desligar/reiniciar
+e entao Power + Volume para baixo para abrir o menu de bootloader.
+Confira current-slot a antes de restaurar. Nao escolha apagar dados.
+
+fastboot.exe flash boot_a boot-magisk-backup-a.img
+fastboot.exe flash init_boot_a init_boot-magisk-backup-a.img
+fastboot.exe reboot
+
+Esses arquivos restauram as duas particoes atuais que voce enviou. Os modulos
+antigos continuam guardados no backup. Para reativa-los, SOMENTE depois de
+voltar ao Android com Magisk:
+
+adb.exe push restaurar-modulos-magisk.sh /data/local/tmp/g75-restaurar-modulos.sh
+adb.exe shell "su -c 'sh /data/local/tmp/g75-restaurar-modulos.sh'"
+adb.exe reboot
+
+O restaurador se recusa a sobrescrever novas pastas com conteudo. Se isso ocorrer,
+preserve ambas as copias e resolva o conflito antes de restaurar modulos.
+
+ORIGEM E CONFERENCIAS
+Codigo e Actions: https://github.com/bootdesala24-coder/moto-g75-kernelsu-next
+Build: https://github.com/bootdesala24-coder/moto-g75-kernelsu-next/actions/runs/40807792629
+Manager: release oficial KernelSU-Next v3.4.2, variante normal 33355.
+VALIDACAO.json registra as verificacoes estaticas e as limitacoes.
+SHA256SUMS.txt permite conferir os arquivos antes de usar.
