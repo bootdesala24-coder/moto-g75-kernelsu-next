@@ -47,6 +47,25 @@ análise não dependa de presumir que o slot ainda é `a`. Uma falha de acesso n
 significa que a imagem seja incompatível. O script foi revisado estaticamente;
 sua execução em Windows depende da coleta pelo proprietário.
 
+## Copiar o estado atual do slot a
+
+O terminal fotografado pelo proprietário é **cmd.exe**, o slot observado é `_a` e
+a leitura root foi autorizada no Magisk. Nesse terminal, dentro de `platform-tools`,
+os comandos abaixo copiam as duas partições para arquivos no computador:
+
+```cmd
+adb.exe exec-out "su -c 'cat /dev/block/by-name/boot_a'" > boot-atual-a.img
+adb.exe exec-out "su -c 'cat /dev/block/by-name/init_boot_a'" > init-boot-atual-a.img
+```
+
+Execute uma linha por vez e aguarde o prompt retornar. O redirecionamento binário
+acima é para **cmd.exe**; não usar esse procedimento em Windows PowerShell 5.
+Use somente com o slot `_a` confirmado e nomes de saída ainda não usados, pois o
+redirecionamento substitui arquivos existentes com esses nomes. Não há gravação
+nas partições do telefone. As cópias representam o estado atual; `init_boot` pode
+estar modificado pelo Magisk. Depois da transferência, os hashes devem ser
+conferidos antes de tratar essas cópias como utilizáveis para recuperação.
+
 ## Conferir estado do bootloader
 
 Estes comandos reiniciam para o bootloader, consultam duas variáveis e retornam ao

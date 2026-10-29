@@ -1,0 +1,150 @@
+{
+  "file_name": "init_boot[1](1).img",
+  "file_size": 8388608,
+  "file_sha256": "7746e1b3746360975563767f3af657ef47eaa4ab0eeb9c359cc38be94399b340",
+  "header_version": 4,
+  "kernel_size": 0,
+  "ramdisk_size": 2455247,
+  "ramdisk_compression": "lz4_legacy",
+  "ramdisk": {
+    "uncompressed_size": 4503552,
+    "sha256": "16dcfbbf9e324f055cc89f915b994533c04f5e477155f6ce3c6fc577a8cca59a",
+    "entries": [
+      {
+        "name": "debug_ramdisk",
+        "size": 0,
+        "mode": "0o40755",
+        "sha256": null
+      },
+      {
+        "name": "dev",
+        "size": 0,
+        "mode": "0o40755",
+        "sha256": null
+      },
+      {
+        "name": "init",
+        "size": 3162008,
+        "mode": "0o100750",
+        "sha256": "1bf1042dd55ea46a48fdabba28021ccd8e7a86f1f95b3cc1d972e2e6f9c83c14"
+      },
+      {
+        "name": "metadata",
+        "size": 0,
+        "mode": "0o40755",
+        "sha256": null
+      },
+      {
+        "name": "mnt",
+        "size": 0,
+        "mode": "0o40755",
+        "sha256": null
+      },
+      {
+        "name": "proc",
+        "size": 0,
+        "mode": "0o40755",
+        "sha256": null
+      },
+      {
+        "name": "second_stage_resources",
+        "size": 0,
+        "mode": "0o40755",
+        "sha256": null
+      },
+      {
+        "name": "sys",
+        "size": 0,
+        "mode": "0o40755",
+        "sha256": null
+      },
+      {
+        "name": "system",
+        "size": 0,
+        "mode": "0o40755",
+        "sha256": null
+      },
+      {
+        "name": "system/bin",
+        "size": 0,
+        "mode": "0o40751",
+        "sha256": null
+      },
+      {
+        "name": "system/bin/snapuserd",
+        "size": 17,
+        "mode": "0o120755",
+        "sha256": "1807bcb1c9080b455472f1cb9933b8176cb776e2141262c071009b5e7f2f779f"
+      },
+      {
+        "name": "system/bin/snapuserd_ramdisk",
+        "size": 1337768,
+        "mode": "0o100755",
+        "sha256": "9aa6c9bf21bcda67a902bb3e9ad4a734d343600048822fdd5f969630d5af0875"
+      },
+      {
+        "name": "system/etc",
+        "size": 0,
+        "mode": "0o40755",
+        "sha256": null
+      },
+      {
+        "name": "system/etc/init",
+        "size": 0,
+        "mode": "0o40755",
+        "sha256": null
+      },
+      {
+        "name": "system/etc/init/snapuserd.rc",
+        "size": 537,
+        "mode": "0o100644",
+        "sha256": "3a6966f87823b2726a231e7244adf78ad91d581bf4e8b1580630ebb82cc6c498"
+      },
+      {
+        "name": "system/etc/ramdisk",
+        "size": 0,
+        "mode": "0o40755",
+        "sha256": null
+      },
+      {
+        "name": "system/etc/ramdisk/build.prop",
+        "size": 810,
+        "mode": "0o100644",
+        "sha256": "a25303dffd0802ceeeb7b6c195916847e51fc49a5cb4e908cf9aa9dab6e76abd"
+      }
+    ],
+    "markers": {
+      "magisk": -1,
+      ".backup/.magisk": -1,
+      ".backup/init": -1,
+      "overlay.d/sbin": -1,
+      "kernelsu": -1
+    }
+  },
+  "ramdisk_build_properties": {
+    "ro.product.bootimage.brand": "motorola",
+    "ro.product.bootimage.device": "paros",
+    "ro.product.bootimage.manufacturer": "motorola",
+    "ro.product.bootimage.model": "paros",
+    "ro.product.bootimage.name": "paros",
+    "ro.bootimage.build.date": "Tue Apr 28 17:15:35 CDT 2026",
+    "ro.bootimage.build.date.utc": "1777414535",
+    "ro.bootimage.build.fingerprint": "motorola/paros/paros:15/VUQ35HV-W1-ST28/ac0a9:user/release-keys",
+    "ro.bootimage.build.id": "VUQ35HV-W1-ST28",
+    "ro.bootimage.build.tags": "release-keys",
+    "ro.bootimage.build.type": "user",
+    "ro.bootimage.build.version.incremental": "ac0a9",
+    "ro.bootimage.build.version.release": "15",
+    "ro.bootimage.build.version.release_or_codename": "15",
+    "ro.bootimage.build.version.sdk": "35"
+  },
+  "avb_outer_algorithm": "NONE",
+  "avb_hash_descriptor_verified": true,
+  "avb_verification_tool_commit": "761178607206f4cb2af79ed9eec52d8cbd814adb",
+  "magisk_common_patch_markers_found": false,
+  "stock_authenticity_verified": false,
+  "match_to_installed_firmware_verified": false,
+  "match_to_original_pre_magisk_image_verified": false,
+  "installable": false,
+  "scope": "Owner-supplied candidate init_boot. No common Magisk markers were found; this is not proof of firmware authenticity or a match to the currently installed image."
+}

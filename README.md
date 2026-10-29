@@ -16,9 +16,9 @@ O [relatório preservado](docs/ci-comparison-40796422378.json) reproduz os dados
 
 Esse resultado compara duas compilações do projeto. Os módulos e as imagens de boot
 do telefone continuam pendentes de validação. O proprietário informou instalação do
-Magisk em `init_boot` e enviou uma imagem candidata a original; seu conteúdo e sua
-correspondência com W1UQ36H.73-38 ainda não foram examinados. Não há pacote liberado
-para instalação.
+Magisk em `init_boot`. As imagens candidatas de `boot` e `init_boot` foram examinadas;
+falta compará-las com as cópias atuais das partições do aparelho. Não há pacote
+liberado para instalação.
 
 ### Imagem de boot recebida
 
@@ -35,8 +35,7 @@ Motorola nem substitui verificar a cadeia AVB do firmware. Seus metadados indica
 fingerprint Android 16 coletado do sistema. Isso não basta para concluir que o boot
 seja incompatível; a imagem completa precisa ser comparada com a partição ativa.
 O script [`windows/conferir-boot.cmd`](windows/conferir-boot.cmd) coleta os hashes
-por leitura usando o Magisk já instalado. O `init_boot` candidato ainda não foi
-inspecionado, pois seu anexo anterior não estava acessível no ambiente restaurado.
+por leitura usando o Magisk já instalado.
 
 A coleta posterior, fotografada pelo proprietário após autorizar Shell no Magisk,
 mostra o mesmo SHA-256 para `boot_a` e `boot_b`, começando por `55c2ccec`. Esse hash
@@ -44,6 +43,21 @@ difere do arquivo enviado, que começa por `6ae39d54`. O slot exibido continua s
 `_a`. Essa comparação de hashes completos ainda não distingue diferenças nos
 componentes da imagem de diferenças no tamanho ou preenchimento da partição.
 O próximo passo é extrair por leitura o `boot_a` instalado e comparar os arquivos.
+
+### Imagem de init_boot recebida novamente
+
+O proprietário reiterou que aplicou o patch do Magisk em **init_boot**. O arquivo
+reenviado, `init_boot[1](1).img`, tem 8 MiB, cabeçalho v4, nenhum kernel e um ramdisk
+LZ4 legacy de 2.455.247 bytes. O hash AVB interno confere. O ramdisk foi descompactado
+e seu CPIO analisado; não contém os marcadores comuns `magisk`, `.backup/.magisk`,
+`.backup/init` ou `overlay.d/sbin`. Isso é compatível com uma cópia anterior ao
+patch, mas não autentica o arquivo como original nem confirma a versão instalada.
+
+O `build.prop` do ramdisk identifica `VUQ35HV-W1-ST28`, Android 15, em concordância
+com os metadados do boot candidato. As cópias atuais de `boot_a` e `init_boot_a`
+precisam ser obtidas para comparação e recuperação. A cópia do `init_boot_a`
+instalado pode conter o Magisk e não será rotulada como original sem análise.
+Os detalhes estão no [relatório do init_boot](docs/init-boot-image-inspection.json).
 
 ## Aparelho identificado
 
