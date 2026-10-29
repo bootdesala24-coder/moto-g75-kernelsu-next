@@ -9,14 +9,25 @@ para instalar, que inicialize no Moto G75 ou que seja idêntico ao kernel origin
 
 | Campo | Valor observado |
 |---|---|
-| Modelo | moto g75 5G; SKU XT ainda não confirmado |
+| Modelo | moto g75 5G; XT2437-1; codinome sorap |
 | Firmware | W1UQ36H.73-38 |
 | Sistema/canal | Android 16 / retbr |
 | Patch Android | 2026-04-01 |
 | Kernel | 6.6.87-android15-8-g88d70c0b44bf-ab14541233-4k |
 | KMI | android15-6.6, geração 8 |
-| Páginas | 4 KB esperado pelo sufixo; confirmar no aparelho |
-| Bootloader | Desbloqueado, informado pelo proprietário |
+| Páginas | 4096 bytes, confirmado por getconf |
+| Slot observado | a |
+| SELinux observado | Enforcing |
+| Root existente | Magisk, informado pelo proprietário |
+| Bootloader | Proprietário informa desbloqueado; getprop retorna locked; falta conferir no fastboot |
+
+O `kernel-config.gz` enviado pelo proprietário foi descompactado e comparado byte a
+byte com a configuração da referência oficial: são idênticos. SHA-256 da configuração
+descompactada: `4bc095f8fb1b94d9841393ae949492f38328d9919f7e99d0853fdf2c989b4719`.
+Isso confirma a configuração de entrada; não confirma equivalência binária do kernel
+nem compatibilidade dos módulos. Os dados coletados estão em
+[`docs/device-observations.json`](docs/device-observations.json). O `device.json`
+preserva as entradas da primeira compilação, anterior ao recebimento da coleta.
 
 ## Fontes e limites da primeira compilação
 
@@ -72,7 +83,8 @@ comandos de flash. Não há release automática nem indicação de instalação.
 
 ## Pendências para uma eventual instalação
 
-- Confirmar SKU XT, sistema original e existência de outro root.
+- Resolver a divergência de estado do bootloader por consulta no fastboot. SKU XT,
+  tamanho de página e slot foram coletados; sistema Motorola e Magisk foram relatados.
 - Obter firmware original **W1UQ36H.73-38 / canal retbr**, com origem verificável,
   e as imagens originais e módulos pertinentes; guardar hashes e cópias de restauração.
 - Identificar layout de boot, slot ativo, cabeçalhos, compactação e AVB/rollback a

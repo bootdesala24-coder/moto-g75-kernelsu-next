@@ -1,8 +1,11 @@
 # Diagnóstico pelo Windows
 
 O proprietário confirmou sistema original Motorola com **Magisk** e acesso a um
-computador Windows. A versão do Magisk, o SKU XT e o slot ativo ainda não foram
-coletados. As fotos e esses relatos não substituem a leitura dos arquivos reais.
+computador Windows. A coleta confirmou SKU **XT2437-1**, slot **a**, páginas de 4096
+bytes e configuração do kernel idêntica à referência Google. A versão do Magisk
+ainda não foi coletada. O estado de bootloader informado por `getprop` foi `locked`,
+em divergência com o relato do proprietário; a consulta abaixo permite conferir
+diretamente no fastboot.
 
 1. Obtenha o [Android SDK Platform-Tools oficial para Windows](https://developer.android.com/tools/releases/platform-tools) e extraia o ZIP.
 2. Baixe `coletar-dados.cmd` deste repositório e coloque-o na pasta que contém `adb.exe`.
@@ -24,3 +27,34 @@ O `boot.img` atual pode estar modificado pelo Magisk. Uma cópia dele não deve 
 identificada como firmware original sem a verificação correspondente. A migração
 para KernelSU Next precisa considerar esse root existente; não instalar a imagem
 experimental nem remover Magisk nesta etapa.
+
+## Conferir estado do bootloader
+
+Estes comandos reiniciam para o bootloader, consultam duas variáveis e retornam ao
+Android. Execute-os no terminal do Windows aberto na pasta `platform-tools`, com
+somente o Moto G75 conectado. Termine o que estiver fazendo no telefone antes de
+reiniciar.
+
+```powershell
+.\adb.exe reboot bootloader
+```
+
+Quando a tela do bootloader aparecer, execute:
+
+```powershell
+.\fastboot.exe getvar unlocked
+.\fastboot.exe getvar securestate
+```
+
+Copie as respostas dessas duas consultas para a conversa. Se alguma variável não
+for suportada, envie também a mensagem de erro; isso não confirma bloqueio. Se
+aparecer `waiting for any device`, interrompa com Ctrl+C e informe o problema de
+conexão. Para retornar ao Android, use:
+
+```powershell
+.\fastboot.exe reboot
+```
+
+`getvar` consulta informações. Não use comandos `flashing lock`, `flashing unlock`,
+`oem unlock`, `flash` ou `erase` para essa verificação. O campo `secure` isolado não
+equivale ao estado de desbloqueio.

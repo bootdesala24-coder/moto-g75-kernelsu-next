@@ -1,0 +1,31 @@
+{
+  "evidence": "aparelho.txt and kernel-config.gz provided by owner",
+  "model": "moto g75 5G",
+  "hardware_sku": "XT2437-1",
+  "device": "sorap",
+  "board_platform": "parrot",
+  "firmware": "W1UQ36H.73-38",
+  "android": 16,
+  "software_channel": "retbr",
+  "android_security_patch": "2026-04-01",
+  "kernel_release": "6.6.87-android15-8-g88d70c0b44bf-ab14541233-4k",
+  "page_size_observed": 4096,
+  "slot_suffix_observed": "_a",
+  "selinux_observed": "Enforcing",
+  "stock_firmware_user_report": true,
+  "existing_root_user_report": "Magisk",
+  "bootloader_unlocked_user_report": true,
+  "vbmeta_device_state_getprop": "locked",
+  "bootloader_fastboot_verified": false,
+  "kernel_config_decompressed_sha256": "4bc095f8fb1b94d9841393ae949492f38328d9919f7e99d0853fdf2c989b4719",
+  "kernel_config_matches_upstream_reference_byte_for_byte": true,
+  "partition_names_observed": [
+    "boot_a", "boot_b", "init_boot_a", "init_boot_b",
+    "vendor_boot_a", "vendor_boot_b", "vbmeta_a", "vbmeta_b",
+    "vbmeta_system_a", "vbmeta_system_b"
+  ],
+  "device_kernel_binary_verified": false,
+  "vendor_abi_verified": false,
+  "device_boot_test_passed": false,
+  "installable": false
+}
