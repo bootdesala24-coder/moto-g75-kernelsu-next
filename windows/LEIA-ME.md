@@ -79,6 +79,32 @@ nas partições do telefone. As cópias representam o estado atual; `init_boot` 
 estar modificado pelo Magisk. Depois da transferência, os hashes devem ser
 conferidos antes de tratar essas cópias como utilizáveis para recuperação.
 
+## Coleta após a conferência do init_boot e dos caminhos dos módulos
+
+A foto posterior mostrou que o hash de `init_boot_a` difere das duas imagens já
+recebidas. Também confirmou os diretórios reais dos módulos. Com o mesmo aparelho
+no slot `a`, execute no **cmd.exe**, na pasta `platform-tools`, uma linha por vez:
+
+```cmd
+adb.exe exec-out "su -c 'cat /dev/block/by-name/init_boot_a'" > init-boot-atual-a.img
+adb.exe exec-out "su -c 'toybox tar -czf - -C / system_dlkm/lib/modules vendor_dlkm/lib/modules'" > modulos-g75.tar.gz
+adb.exe exec-out "su -c 'cat /dev/block/by-name/vendor_boot_a'" > vendor-boot-atual-a.img
+```
+
+Espere o prompt retornar após cada linha. Os arquivos são gravados no computador;
+as partições e os módulos do telefone são somente lidos. Não reutilize nomes que
+identifiquem backups anteriores que ainda deseja guardar. O primeiro arquivo
+permite conferir o estado atual do init_boot; o segundo contém módulos e suas
+listas de carregamento; vendor_boot permite examinar o ramdisk e eventuais módulos
+usados no início da inicialização. Envie os três arquivos na conversa. Não é
+necessário repetir `boot-atual-a.img`, que já foi conferido.
+
+O `tar` usa caminhos relativos à raiz para não gerar avisos sobre a remoção da
+barra inicial. As opções de criação, gzip e diretório constam da
+[ajuda oficial do Toybox no Android](https://android.googlesource.com/platform/external/toybox/+/988e2e2ba7c9a7540de39bb77185f20c83da8eb6/android/device/generated/help.h).
+A sintaxe foi revisada; a execução e a integridade dos arquivos coletados ainda
+dependem da transferência pelo proprietário. Se houver erro, envie a mensagem.
+
 ## Conferir estado do bootloader
 
 Estes comandos reiniciam para o bootloader, consultam duas variáveis e retornam ao

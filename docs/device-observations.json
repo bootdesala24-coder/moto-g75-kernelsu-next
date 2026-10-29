@@ -63,5 +63,13 @@
   "current_boot_dump_matches_phone_hash": true,
   "current_boot_contains_magisk_ramdisk": true,
   "current_boot_kernel_matches_official_reference": true,
-  "current_boot_magisk_record_matches_supplied_original": true
+  "current_boot_magisk_record_matches_supplied_original": true,
+  "init_boot_a_sha256_photo_transcription": "eaaa88a4d55572e34510fba22066f7f9c4eb3837fb463b63e9221680fad8514c",
+  "init_boot_hash_evidence": "Owner photograph WhatsApp Image 2026-10-28 at 23.31.27.jpeg; transcription awaits confirmation against uploaded current image",
+  "init_boot_a_differs_from_both_supplied_images": true,
+  "current_init_boot_dump_required": true,
+  "module_directory_symlinks_observed": {
+    "/system/lib/modules": "/system_dlkm/lib/modules",
+    "/vendor/lib/modules": "/vendor_dlkm/lib/modules"
+  }
 }

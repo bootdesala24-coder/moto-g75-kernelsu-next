@@ -71,8 +71,16 @@ Magisk nesse ramdisk coincide com o hash completo do `boot[1].img` fornecido.
 Isso identifica uma cópia fiel do boot atual e sua relação com a base anterior ao
 patch. Não determina quando ou como o patch em `boot` foi aplicado. O relato de
 patch em `init_boot` também está documentado e o arquivo correspondente foi
-analisado. Ainda falta conferir o hash do `init_boot_a` instalado. O relatório do
+analisado. O relatório do
 boot atual está em [`docs/current-boot-image-inspection.json`](docs/current-boot-image-inspection.json).
+
+A consulta posterior de `init_boot_a`, fotografada pelo proprietário, retorna um
+SHA-256 iniciado por `eaaa88a4`, diferente tanto da cópia sem patch (`7746e1b3...`)
+quanto da cópia Magisk recebida (`75cfea5d...`). Portanto, nenhuma delas foi
+confirmada como backup do estado atual de `init_boot_a`; é necessário receber a
+cópia instalada para análise. A mesma foto confirma `/system/lib/modules` como
+link para `/system_dlkm/lib/modules` e `/vendor/lib/modules` como link para
+`/vendor_dlkm/lib/modules`. Os dados foram registrados em `docs/device-observations.json`.
 
 ### Imagem de init_boot recebida novamente
 
