@@ -1,0 +1,18 @@
+{
+  "model": "moto g75 5G",
+  "hardware_sku": null,
+  "android": 16,
+  "software_channel": "retbr",
+  "firmware": "W1UQ36H.73-38",
+  "android_security_patch": "2026-04-01",
+  "kernel_release": "6.6.87-android15-8-g88d70c0b44bf-ab14541233-4k",
+  "kmi": "android15-6.6-8",
+  "page_size_expected": 4096,
+  "bootloader_unlocked_user_report": true,
+  "stock_firmware_confirmed": null,
+  "existing_root": null,
+  "exact_source_match_verified": false,
+  "original_boot_image_sha256": null,
+  "vendor_abi_verified": false,
+  "device_boot_test_passed": false
+}

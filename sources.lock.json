@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "kernel": {
+    "url": "https://github.com/MotorolaMobilityLLC/kernel-msm.git",
+    "branch": "android-16-release-w1uq36h.73-28",
+    "commit": "48fd2e5da097c2da710ffa7910d28ae253339c03",
+    "version": "6.6.87",
+    "kmi": "android15-6.6-8"
+  },
+  "kernelsu": {
+    "url": "https://github.com/KernelSU-Next/KernelSU-Next.git",
+    "tag": "v3.4.2",
+    "commit": "4c706b5938665866ebe16944a481a7b91e3396af"
+  },
+  "clang": {
+    "version": "r510928",
+    "repository_commit": "a88a49e4f9d0ad9562e3dd75a3c197689d1a63f3",
+    "directory_tree": "5c8ecb6fa0e54db3b116ac04e4689e46c3f6eb19",
+    "archive": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/a88a49e4f9d0ad9562e3dd75a3c197689d1a63f3/clang-r510928.tar.gz"
+  }
+}

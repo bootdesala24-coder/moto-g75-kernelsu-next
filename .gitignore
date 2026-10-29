@@ -1,0 +1,5 @@
+work/
+artifacts/
+downloaded/
+__pycache__/
+*.pyc

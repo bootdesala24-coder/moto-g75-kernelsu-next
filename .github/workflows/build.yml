@@ -1,0 +1,94 @@
+name: Experimental GKI 6.6.87 and KernelSU Next
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/build.yml'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'sources.lock.json'
+      - 'device.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kernel-lab-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s tests -v
+      - run: python3 scripts/validate.py --inputs
+
+  build:
+    needs: checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        variant: [reference, kernelsu-next]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            build-essential bc bison flex libssl-dev libelf-dev zlib1g-dev \
+            libzstd-dev dwarves lz4 rsync cpio git curl xz-utils \
+            binutils-aarch64-linux-gnu
+      - name: Build and verify experimental kernel
+        env:
+          VARIANT: ${{ matrix.variant }}
+        run: |
+          mkdir -p artifacts
+          set -o pipefail
+          python3 -u scripts/build.py "$VARIANT" 2>&1 | tee "artifacts/$VARIANT.log"
+      - name: Preserve build results and diagnostics
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: experimental-${{ matrix.variant }}
+          path: artifacts/
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 1
+
+  compare:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7
+        with:
+          pattern: experimental-*
+          path: downloaded
+      - name: Compare exported symbol CRCs and configuration
+        run: |
+          python3 scripts/validate.py --compare \
+            downloaded/experimental-reference/reference \
+            downloaded/experimental-kernelsu-next/kernelsu-next \
+            > comparison.json
+          cat comparison.json
+          printf '%s\n' 'Experimental build only. Device compatibility is NOT verified.' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: experimental-comparison
+          path: comparison.json
+          if-no-files-found: error
+          retention-days: 14
