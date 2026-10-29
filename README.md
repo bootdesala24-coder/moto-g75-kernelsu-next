@@ -31,8 +31,16 @@ para instalar, que inicialize no Moto G75 ou que seja idêntico ao kernel origin
 - Android Clang `r510928`, conforme o `build.config.constants` dessa tag AOSP.
   O conteúdo extraído é conferido pelo hash da árvore Git original antes de executar
   o compilador. Todos os identificadores estão em `sources.lock.json`.
-- Compilação direta via Kbuild com `gki_defconfig`, ThinLTO e CFI. Ainda não reproduz
-  o ambiente Kleaf hermético nem os fragmentos e módulos OEM do firmware instalado.
+- Configuração extraída da imagem certificada publicada pelo Google para o build
+  14541233. ZIP, kernel e configuração têm hashes SHA-256 fixados. Essa referência
+  usa `CONFIG_LTO_NONE=y` com CFI habilitado; esses valores são preservados.
+- Compilação direta via Kbuild. O ambiente Kleaf hermético não é reproduzido;
+  `abi_symbollist.raw` é gerado pela união das listas arm64 da fonte fixada. O
+  relatório registra diferenças da configuração oficial. A imagem Google é apenas
+  uma referência técnica, não um backup do boot Motorola.
+- As chaves de assinatura de módulos geradas nesta compilação não são as chaves
+  privadas do Google. A aceitação dos módulos existentes, inclusive os protegidos,
+  ainda precisa ser verificada antes de qualquer instalação.
 - Não inclui SUSFS adicional, overclock, alterações térmicas, desativação de SELinux,
   alteração da assinatura autorizada do Manager ou autorização automática de root.
 
@@ -46,7 +54,7 @@ de 150 minutos. As permissões são somente leitura; nenhum segredo é necessár
 Os jobs verificam entradas, compilam `Image`, imagens comprimidas e módulos e conferem:
 
 1. Commit de origem, versão do kernel, compilador e geração KMI.
-2. Configuração arm64/4 KB, CFI, ThinLTO, MODVERSIONS e proteções selecionadas.
+2. Configuração arm64/4 KB, CFI, modo LTO da referência, MODVERSIONS e proteções selecionadas.
 3. Presença de KernelSU integrado apenas na variante correspondente, sem debug.
 4. Cabeçalho, tamanho e arquitetura do `Image`.
 5. CRC, classe e namespace dos símbolos exportados, comparando as duas compilações.

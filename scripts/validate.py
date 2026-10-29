@@ -5,6 +5,8 @@ import hashlib
 import json
 import re
 import struct
+import zipfile
+import zlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -56,6 +58,26 @@ def check_image(path):
             "memory_footprint": size, "file_size": path.stat().st_size}
 
 
+def reference_config(archive, reference):
+    if sha256(archive) != reference["archive_sha256"]:
+        raise ValueError("Official reference archive digest mismatch")
+    with zipfile.ZipFile(archive) as zipped:
+        boot = zipped.read("boot-6.6.img")
+    if boot[:8] != b"ANDROID!" or struct.unpack_from("<I", boot, 40)[0] != 4:
+        raise ValueError("Unexpected reference boot header")
+    size = struct.unpack_from("<I", boot, 8)[0]
+    kernel = boot[4096:4096 + size]
+    if hashlib.sha256(kernel).hexdigest() != reference["kernel_sha256"]:
+        raise ValueError("Official reference kernel digest mismatch")
+    pos = kernel.find(b"IKCFG_ST")
+    if pos == -1:
+        raise ValueError("Official kernel does not contain IKCONFIG")
+    cfg = zlib.decompress(kernel[pos + 8:], wbits=31)
+    if hashlib.sha256(cfg).hexdigest() != reference["config_sha256"]:
+        raise ValueError("Official reference configuration digest mismatch")
+    return cfg.decode()
+
+
 def config(path):
     result = {}
     for line in Path(path).read_text().splitlines():
@@ -70,7 +92,7 @@ def config(path):
 def check_config(path, variant):
     cfg = config(path)
     for name in ("ARM64", "ARM64_4K_PAGES", "KPROBES", "EXT4_FS", "MODULES",
-                 "MODVERSIONS", "CFI_CLANG", "LTO_CLANG_THIN", "SECURITY_SELINUX",
+                 "MODVERSIONS", "CFI_CLANG", "LTO_NONE", "SECURITY_SELINUX",
                  "SECURITY", "HARDENED_USERCOPY", "FORTIFY_SOURCE"):
         if cfg.get("CONFIG_" + name) != "y":
             raise ValueError(f"Missing required CONFIG_{name}=y")

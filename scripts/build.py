@@ -9,7 +9,7 @@ import subprocess
 import tarfile
 from pathlib import Path
 
-from validate import ROOT, check_config, check_image, sha256, validate_inputs
+from validate import ROOT, check_config, check_image, config as read_config, reference_config, sha256, validate_inputs
 
 
 def run(*args, cwd=None, env=None, capture=False):
@@ -125,13 +125,35 @@ def main(variant):
     make = ["make", "-C", source, f"O={output}", "ARCH=arm64", "LLVM=1",
             "LLVM_IAS=1", "CROSS_COMPILE=aarch64-linux-gnu-", "LOCALVERSION=",
             "KCFLAGS=-D__ANDROID_COMMON_KERNEL__"]
-    run(*make, "gki_defconfig", env=env)
+    refzip = work / "upstream-reference.zip"
+    run("curl", "--fail", "--location", "--retry", "3", "--connect-timeout", "30",
+        "--max-time", "600", "--output", refzip, lock["upstream_reference"]["url"])
+    original_config = reference_config(refzip, lock["upstream_reference"])
+    output.mkdir()
     config = output / ".config"
-    shutil.copy2(config, artifacts / "initial-gki.config")
+    config.write_text(original_config)
+    upstream_config = artifacts / "upstream-reference.config"
+    upstream_config.write_text(original_config)
+    # Kleaf generates this union from the pinned AOSP symbol lists.
+    # Retain trimming and provide a concrete whitelist in the output directory.
+    keep = set()
+    for path in sorted((source / "android").glob("abi_gki_aarch64*")):
+        if path.is_file() and "." not in path.name:
+            for line in path.read_text().splitlines():
+                name = line.strip()
+                if re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*", name):
+                    keep.add(name)
+    if len(keep) < 1000:
+        raise ValueError("Incomplete AOSP exported symbol whitelist")
+    whitelist = output / "abi_symbollist.raw"
+    whitelist.write_text("\n".join(sorted(keep)) + "\n")
+    shutil.copy2(whitelist, source / "abi_symbollist.raw")
+    shutil.copy2(whitelist, artifacts)
+    report["whitelist_symbols"] = len(keep)
+    report["whitelist_sha256"] = sha256(whitelist)
     cfgargs = [source / "scripts/config", "--file", config,
                "--set-str", "LOCALVERSION", "-android15-8-lab-4k",
-               "--disable", "LOCALVERSION_AUTO", "--disable", "LTO_NONE",
-               "--enable", "LTO_CLANG", "--enable", "LTO_CLANG_THIN"]
+               "--disable", "LOCALVERSION_AUTO"]
     if variant == "kernelsu-next":
         cfgargs += ["--enable", "KSU", "--disable", "KSU_DEBUG",
                     "--disable", "KSU_DISABLE_MANAGER", "--disable", "KSU_DISABLE_POLICY"]
@@ -139,6 +161,12 @@ def main(variant):
     run(*make, "olddefconfig", env=env)
     check_config(config, variant)
     shutil.copy2(config, artifacts / "kernel.config")
+    before, after = read_config(upstream_config), read_config(config)
+    report["changes_from_upstream_config"] = {
+        key: [before.get(key, "n"), after.get(key, "n")]
+        for key in before.keys() | after.keys()
+        if before.get(key, "n") != after.get(key, "n")}
+    json_write(artifacts / "provenance.json", report)
     (artifacts / "source-integration.diff").write_text(
         run("git", "diff", "--no-ext-diff", cwd=source, capture=True) + "\n")
     jobs = min(os.cpu_count() or 2, 4)

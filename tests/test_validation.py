@@ -9,7 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from validate import check_image, compare, symbols, validate_inputs
 
 REQUIRED = ("ARM64", "ARM64_4K_PAGES", "KPROBES", "EXT4_FS", "MODULES", "MODVERSIONS",
-            "CFI_CLANG", "LTO_CLANG_THIN", "SECURITY_SELINUX", "SECURITY",
+            "CFI_CLANG", "LTO_NONE", "SECURITY_SELINUX", "SECURITY",
             "HARDENED_USERCOPY", "FORTIFY_SOURCE")
 
 
