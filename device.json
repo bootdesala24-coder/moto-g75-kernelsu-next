@@ -1,6 +1,6 @@
 {
   "model": "moto g75 5G",
-  "hardware_sku": null,
+  "hardware_sku": "XT2437-1",
   "android": 16,
   "software_channel": "retbr",
   "firmware": "W1UQ36H.73-38",
@@ -9,11 +9,17 @@
   "kmi": "android15-6.6-8",
   "page_size_expected": 4096,
   "bootloader_unlocked_user_report": true,
-  "stock_firmware_confirmed": null,
-  "existing_root": null,
+  "existing_root": "Magisk",
   "observed_kernel_identifiers_match_upstream": true,
   "exact_source_match_verified": false,
-  "original_boot_image_sha256": null,
+  "original_boot_image_sha256": "6ae39d54a44b84cbf950d46749ccfec683a0fb922fa648a9136e0d10a6821b0e",
   "vendor_abi_verified": false,
-  "device_boot_test_passed": false
+  "device_boot_test_passed": false,
+  "device": "sorap",
+  "board_platform": "parrot",
+  "stock_firmware_user_report": true,
+  "device_kernel_binary_verified": true,
+  "current_boot_image_sha256": "55c2ccece3ef93e0daba10a8b8a9332f83d3dcf6437cfaa973678851776c4c71",
+  "current_init_boot_match_verified": false,
+  "device_evidence": "docs/device-observations.json"
 }

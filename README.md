@@ -14,11 +14,30 @@ exportados em cada variante, sem adições, remoções ou mudanças de CRC, clas
 namespace. A única diferença de configuração entre as duas variantes foi `CONFIG_KSU`.
 O [relatório preservado](docs/ci-comparison-40796422378.json) reproduz os dados do job.
 
-Esse resultado compara duas compilações do projeto. Os módulos e as imagens de boot
-do telefone continuam pendentes de validação. O proprietário informou instalação do
-Magisk em `init_boot`. As imagens candidatas de `boot` e `init_boot` foram examinadas;
-falta compará-las com as cópias atuais das partições do aparelho. Não há pacote
-liberado para instalação.
+Esse resultado compara duas compilações do projeto. A análise posterior confirmou
+que o kernel extraído do `boot_a` instalado é idêntico à referência oficial Google.
+Os módulos do aparelho ainda não foram comparados. A primeira compilação não
+continha o certificado público original de assinatura dos módulos; a correção
+descrita abaixo precisa de uma nova execução. Não há pacote liberado para instalação.
+
+### Preservação da confiança nos módulos
+
+A compilação agora extrai o certificado público do kernel Google conferido por
+SHA-256 e o inclui em `CONFIG_SYSTEM_TRUSTED_KEYS`. Não usa nem precisa da chave
+privada do Google. `CONFIG_MODULE_SIG_PROTECT`, CFI e as demais proteções verificadas
+continuam habilitadas. A chave privada gerada pelo laboratório não é publicada.
+
+O Actions verifica, pelos endereços de `System.map`, que o certificado original está
+na lista de certificados confiáveis do `Image` compilado. Também exige igualdade
+binária com as tabelas originais de 8.925 símbolos acessíveis a módulos sem assinatura
+e 506 símbolos de exportação protegida. Encontrar o certificado em outra parte da
+imagem não basta para passar na verificação. Os offsets e hashes de referência estão
+fixados em `sources.lock.json`; a análise inicial está em
+[`docs/module-trust-inspection.json`](docs/module-trust-inspection.json).
+
+Essas verificações preservam a confiança e as listas de proteção. Elas ainda não
+confirmam CRCs, assinaturas e dependências dos módulos reais do aparelho, nem sua
+operação com o kernel recompilado.
 
 ### Imagem de boot recebida
 
@@ -40,9 +59,20 @@ por leitura usando o Magisk já instalado.
 A coleta posterior, fotografada pelo proprietário após autorizar Shell no Magisk,
 mostra o mesmo SHA-256 para `boot_a` e `boot_b`, começando por `55c2ccec`. Esse hash
 difere do arquivo enviado, que começa por `6ae39d54`. O slot exibido continua sendo
-`_a`. Essa comparação de hashes completos ainda não distingue diferenças nos
-componentes da imagem de diferenças no tamanho ou preenchimento da partição.
-O próximo passo é extrair por leitura o `boot_a` instalado e comparar os arquivos.
+`_a`.
+
+A cópia posterior `boot-atual-a.img` tem 96 MiB e SHA-256
+`55c2ccece3ef93e0daba10a8b8a9332f83d3dcf6437cfaa973678851776c4c71`,
+exatamente o valor fotografado no telefone. Seu kernel é idêntico byte a byte ao
+kernel do boot anterior e à referência Google. A diferença inclui um ramdisk Magisk
+de 360.841 bytes, onde o boot anterior tinha ramdisk vazio. O `SHA1` guardado pelo
+Magisk nesse ramdisk coincide com o hash completo do `boot[1].img` fornecido.
+
+Isso identifica uma cópia fiel do boot atual e sua relação com a base anterior ao
+patch. Não determina quando ou como o patch em `boot` foi aplicado. O relato de
+patch em `init_boot` também está documentado e o arquivo correspondente foi
+analisado. Ainda falta conferir o hash do `init_boot_a` instalado. O relatório do
+boot atual está em [`docs/current-boot-image-inspection.json`](docs/current-boot-image-inspection.json).
 
 ### Imagem de init_boot recebida novamente
 
@@ -54,9 +84,9 @@ e seu CPIO analisado; não contém os marcadores comuns `magisk`, `.backup/.magi
 patch, mas não autentica o arquivo como original nem confirma a versão instalada.
 
 O `build.prop` do ramdisk identifica `VUQ35HV-W1-ST28`, Android 15, em concordância
-com os metadados do boot candidato. As cópias atuais de `boot_a` e `init_boot_a`
-precisam ser obtidas para comparação e recuperação. A cópia do `init_boot_a`
-instalado pode conter o Magisk e não será rotulada como original sem análise.
+com os metadados do boot candidato. A cópia atual de `boot_a` já foi conferida.
+O próximo passo para `init_boot_a` é comparar seu SHA-256 com os arquivos recebidos;
+uma nova cópia só é necessária se nenhum corresponder ao conteúdo instalado.
 Os detalhes estão no [relatório do init_boot](docs/init-boot-image-inspection.json).
 
 O arquivo `magisk_patched-30700_flRoZ[1].img` também foi analisado. O campo `SHA1`
@@ -94,10 +124,11 @@ foi determinada. Não foi realizada consulta direta por fastboot.
 O `kernel-config.gz` enviado pelo proprietário foi descompactado e comparado byte a
 byte com a configuração da referência oficial: são idênticos. SHA-256 da configuração
 descompactada: `4bc095f8fb1b94d9841393ae949492f38328d9919f7e99d0853fdf2c989b4719`.
-Isso confirma a configuração de entrada; não confirma equivalência binária do kernel
-nem compatibilidade dos módulos. Os dados coletados estão em
-[`docs/device-observations.json`](docs/device-observations.json). O `device.json`
-preserva as entradas da primeira compilação, anterior ao recebimento da coleta.
+Isso confirma a configuração de entrada. A cópia posterior de `boot_a` confirmou
+também igualdade binária do kernel instalado com a referência Google. A compatibilidade
+da recompilação com os módulos ainda não foi estabelecida. Os dados coletados estão
+em [`docs/device-observations.json`](docs/device-observations.json), e `device.json`
+foi atualizado para a próxima compilação; os artefatos antigos preservam suas entradas.
 
 ## Fontes e limites da primeira compilação
 
@@ -105,8 +136,8 @@ preserva as entradas da primeira compilação, anterior ao recebimento da coleta
   `88d70c0b44bff103947b599e40bb36bd5af92891`.
 - A tag oficial aponta para o build **14541233**. O prefixo do commit e esse build ID
   coincidem com `g88d70c0b44bf-ab14541233` na foto do telefone. A fonte é Linux 6.6.87,
-  KMI 8. A equivalência binária, os módulos OEM e as imagens de boot ainda não foram
-  verificados. Isso não comprova que uma recompilação será instalável.
+  KMI 8. O kernel instalado coincide byte a byte com a referência Google desse build.
+  Isso não comprova que uma recompilação será instalável.
 - KernelSU Next: tag `v3.4.2`, commit
   `4c706b5938665866ebe16944a481a7b91e3396af`. Manager padrão da mesma release.
 - Android Clang `r510928`, conforme o `build.config.constants` dessa tag AOSP.
@@ -119,9 +150,9 @@ preserva as entradas da primeira compilação, anterior ao recebimento da coleta
   `abi_symbollist.raw` é gerado pela união das listas arm64 da fonte fixada. O
   relatório registra diferenças da configuração oficial. A imagem Google é apenas
   uma referência técnica, não um backup do boot Motorola.
-- As chaves de assinatura de módulos geradas nesta compilação não são as chaves
-  privadas do Google. A aceitação dos módulos existentes, inclusive os protegidos,
-  ainda precisa ser verificada antes de qualquer instalação.
+- O certificado público original será incorporado à lista de confiança da nova
+  compilação, junto ao certificado do laboratório. A aceitação dos módulos reais
+  do aparelho ainda precisa ser verificada antes de qualquer instalação.
 - Não inclui SUSFS adicional, overclock, alterações térmicas, desativação de SELinux,
   alteração da assinatura autorizada do Manager ou autorização automática de root.
 
@@ -140,13 +171,16 @@ Os jobs verificam entradas, compilam `Image`, imagens comprimidas e módulos e c
 4. Cabeçalho, tamanho e arquitetura do `Image`.
 5. CRC, classe e namespace dos símbolos exportados, comparando as duas compilações.
 6. Diferenças de configuração inesperadas entre referência e KernelSU.
+7. Certificado público original na lista confiável e tabelas de proteção idênticas
+   às do kernel original, conferidos dentro de cada `Image` compilado.
 
 Essa comparação **não** é uma análise ABI completa nem uma comparação com os módulos
 binários da Motorola. Os módulos são compilados para diagnóstico, mas não são
 empacotados para substituição de `vendor_dlkm` ou `system_dlkm`.
 
 Os artefatos incluem imagens brutas, `.config` como `kernel.config`, `Module.symvers`,
-`System.map`, logs, origem dos insumos, versões dos pacotes e `SHA256SUMS`.
+`System.map`, certificado público original, cabeçalhos das tabelas de proteção,
+logs, origem dos insumos, versões dos pacotes e `SHA256SUMS`.
 O nome do kernel contém `lab` para identificar o experimento. Os arquivos ficam no
 Actions por 14 dias. Não são produzidos `boot.img`, `init_boot.img`, ZIP AnyKernel ou
 comandos de flash. Não há release automática nem indicação de instalação.

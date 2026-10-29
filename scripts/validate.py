@@ -58,7 +58,7 @@ def check_image(path):
             "memory_footprint": size, "file_size": path.stat().st_size}
 
 
-def reference_config(archive, reference):
+def reference_kernel(archive, reference):
     if sha256(archive) != reference["archive_sha256"]:
         raise ValueError("Official reference archive digest mismatch")
     with zipfile.ZipFile(archive) as zipped:
@@ -69,6 +69,11 @@ def reference_config(archive, reference):
     kernel = boot[4096:4096 + size]
     if hashlib.sha256(kernel).hexdigest() != reference["kernel_sha256"]:
         raise ValueError("Official reference kernel digest mismatch")
+    return kernel
+
+
+def reference_config(archive, reference):
+    kernel = reference_kernel(archive, reference)
     pos = kernel.find(b"IKCFG_ST")
     if pos == -1:
         raise ValueError("Official kernel does not contain IKCONFIG")
@@ -76,6 +81,61 @@ def reference_config(archive, reference):
     if hashlib.sha256(cfg).hexdigest() != reference["config_sha256"]:
         raise ValueError("Official reference configuration digest mismatch")
     return cfg.decode()
+
+
+def reference_module_material(kernel, reference):
+    """Extract only pinned public data from the authenticated reference bytes."""
+    if hashlib.sha256(kernel).hexdigest() != reference["kernel_sha256"]:
+        raise ValueError("Reference kernel digest mismatch for module trust")
+    material = {}
+    for name in ("certificate", "unprotected", "protected_exports"):
+        entry = reference["module_trust"][name]
+        start, size = entry["offset"], entry["size"]
+        if start < 0 or size <= 0 or start + size > len(kernel):
+            raise ValueError(f"Invalid reference range: {name}")
+        data = kernel[start:start + size]
+        if hashlib.sha256(data).hexdigest() != entry["sha256"]:
+            raise ValueError(f"Reference module trust digest mismatch: {name}")
+        material[name] = data
+    return material
+
+
+def check_module_trust(image, system_map, material, table_sizes):
+    """Check trusted certificate and protection tables at their linked addresses."""
+    raw = Path(image).read_bytes()
+    required = {"_text", "system_certificate_list", "system_certificate_list_size",
+                "gki_unprotected_symbols", "gki_protected_exports_symbols"}
+    addresses = {}
+    for line in Path(system_map).read_text().splitlines():
+        fields = line.split()
+        if len(fields) == 3 and fields[2] in required:
+            if fields[2] in addresses:
+                raise ValueError(f"Ambiguous linked symbol: {fields[2]}")
+            addresses[fields[2]] = int(fields[0], 16)
+    if addresses.keys() != required:
+        raise ValueError("Missing linked symbols for module trust verification")
+
+    def read_at(name, size):
+        offset = addresses[name] - addresses["_text"]
+        if offset < 0 or size <= 0 or offset + size > len(raw):
+            raise ValueError(f"Linked data outside Image: {name}")
+        return raw[offset:offset + size]
+
+    size = struct.unpack("<Q", read_at("system_certificate_list_size", 8))[0]
+    cert = material["certificate"]
+    if not cert or cert not in read_at("system_certificate_list", size):
+        raise ValueError("Original module certificate missing from builtin trusted keyring")
+    for name in ("unprotected", "protected_exports"):
+        expected = material[name]
+        if table_sizes.get(f"gki_{name}_symbols") != len(expected):
+            raise ValueError(f"Module protection table size differs from reference: {name}")
+        if not expected or read_at(f"gki_{name}_symbols", len(expected)) != expected:
+            raise ValueError(f"Module protection table differs from reference: {name}")
+    return {"original_certificate_in_builtin_keyring": True,
+            "unprotected_table_matches_original": True,
+            "protected_exports_table_matches_original": True,
+            "original_certificate_sha256": hashlib.sha256(cert).hexdigest(),
+            "scope": "Static trust and symbol-policy checks; actual device modules and hardware remain untested"}
 
 
 def config(path):
@@ -93,9 +153,15 @@ def check_config(path, variant):
     cfg = config(path)
     for name in ("ARM64", "ARM64_4K_PAGES", "KPROBES", "EXT4_FS", "MODULES",
                  "MODVERSIONS", "CFI_CLANG", "LTO_NONE", "SECURITY_SELINUX",
-                 "SECURITY", "HARDENED_USERCOPY", "FORTIFY_SOURCE"):
+                 "SECURITY", "HARDENED_USERCOPY", "FORTIFY_SOURCE", "MODULE_SIG",
+                 "MODULE_SIG_ALL", "MODULE_SIG_PROTECT", "MODULE_SIG_SHA1",
+                 "SYSTEM_TRUSTED_KEYRING", "TRIM_UNUSED_KSYMS"):
         if cfg.get("CONFIG_" + name) != "y":
             raise ValueError(f"Missing required CONFIG_{name}=y")
+    if cfg.get("CONFIG_SYSTEM_TRUSTED_KEYS") != '"certs/upstream-gki.pem"':
+        raise ValueError("Original module certificate is not configured as trusted")
+    if cfg.get("CONFIG_UNUSED_KSYMS_WHITELIST") != '"abi_symbollist.raw"':
+        raise ValueError("Unexpected module symbol whitelist")
     if cfg.get("CONFIG_KSU", "n") != ("y" if variant == "kernelsu-next" else "n"):
         raise ValueError("Unexpected KernelSU configuration")
     for name in ("KSU_DEBUG", "KSU_DISABLE_MANAGER", "KSU_DISABLE_POLICY"):
@@ -157,7 +223,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.inputs:
         validate_inputs()
-        print("Input consistency and observed upstream kernel identity OK; device binaries remain unverified.")
+        print("Input consistency and upstream identity OK; rebuilt-kernel module compatibility and hardware remain unverified.")
     elif args.compare:
         report = compare(*args.compare)
         print(json.dumps(report, indent=2, sort_keys=True))

@@ -5,11 +5,14 @@ import json
 import os
 import re
 import shutil
+import ssl
 import subprocess
 import tarfile
 from pathlib import Path
 
-from validate import ROOT, check_config, check_image, config as read_config, reference_config, sha256, validate_inputs
+from validate import (ROOT, check_config, check_image, check_module_trust,
+                      config as read_config, reference_config, reference_kernel,
+                      reference_module_material, sha256, validate_inputs)
 
 
 def run(*args, cwd=None, env=None, capture=False):
@@ -51,6 +54,7 @@ def main(variant):
               "observed_kernel_identifiers_match_upstream": True,
               "target_firmware": device["firmware"],
               "exact_source_match_verified": False, "sources": lock,
+              "installed_kernel_matches_google_reference": device["device_kernel_binary_verified"],
               "workflow_commit": os.environ.get("GITHUB_SHA"),
               "run_id": os.environ.get("GITHUB_RUN_ID")}
     json_write(artifacts / "provenance.json", report)
@@ -58,7 +62,7 @@ def main(variant):
         "EXPERIMENTAL BUILD — NOT AN INSTALLATION PACKAGE\n"
         "Source: android15-6.6-2025-05_r19; target firmware: W1UQ36H.73-38.\n"
         "Source commit and upstream build ID match the photographed kernel release.\n"
-        "The exact installed kernel and vendor modules have not been validated.\n"
+        "The installed kernel matches the pinned Google reference; existing modules remain unvalidated.\n"
         "No boot.img, init_boot.img, AnyKernel ZIP or flashing command is supplied.\n"
         "A successful build does not establish device compatibility or security.\n")
     shutil.copy2(ROOT / "device.json", artifacts)
@@ -129,7 +133,16 @@ def main(variant):
     run("curl", "--fail", "--location", "--retry", "3", "--connect-timeout", "30",
         "--max-time", "600", "--output", refzip, lock["upstream_reference"]["url"])
     original_config = reference_config(refzip, lock["upstream_reference"])
+    module_material = reference_module_material(
+        reference_kernel(refzip, lock["upstream_reference"]), lock["upstream_reference"])
     output.mkdir()
+    # Trust the original public module key as well as the lab signing key.
+    # No original private key is needed, stored or published.
+    certificate_pem = ssl.DER_cert_to_PEM_cert(module_material["certificate"])
+    for directory in (source / "certs", output / "certs"):
+        directory.mkdir(exist_ok=True)
+        (directory / "upstream-gki.pem").write_text(certificate_pem)
+    (artifacts / "upstream-gki.pem").write_text(certificate_pem)
     config = output / ".config"
     config.write_text(original_config)
     upstream_config = artifacts / "upstream-reference.config"
@@ -153,6 +166,7 @@ def main(variant):
     report["whitelist_sha256"] = sha256(whitelist)
     cfgargs = [source / "scripts/config", "--file", config,
                "--set-str", "LOCALVERSION", "-android15-8-lab-4k",
+               "--set-str", "SYSTEM_TRUSTED_KEYS", "certs/upstream-gki.pem",
                "--disable", "LOCALVERSION_AUTO"]
     if variant == "kernelsu-next":
         cfgargs += ["--enable", "KSU", "--disable", "KSU_DEBUG",
@@ -174,6 +188,23 @@ def main(variant):
     image = output / "arch/arm64/boot/Image"
     report["image_checks"] = check_image(image)
     check_config(config, variant)
+    linked_sizes = run("llvm-nm", "--print-size", "--defined-only", output / "vmlinux",
+                       env=env, capture=True)
+    tables = {"gki_unprotected_symbols", "gki_protected_exports_symbols"}
+    table_sizes = {}
+    table_lines = []
+    for line in linked_sizes.splitlines():
+        fields = line.split()
+        if len(fields) == 4 and fields[3] in tables:
+            if fields[3] in table_sizes:
+                raise ValueError("Ambiguous module protection table size")
+            table_sizes[fields[3]] = int(fields[1], 16)
+            table_lines.append(line)
+    (artifacts / "module-trust-symbols.txt").write_text("\n".join(table_lines) + "\n")
+    report["module_trust_checks"] = check_module_trust(
+        image, output / "System.map", module_material, table_sizes)
+    for name in ("unprotected", "protected_exports"):
+        shutil.copy2(output / "kernel/module" / f"gki_module_{name}.h", artifacts)
     release = (output / "include/config/kernel.release").read_text().strip()
     if release != "6.6.87-android15-8-lab-4k":
         raise ValueError(f"Unexpected kernel release: {release}")

@@ -49,6 +49,19 @@ sua execução em Windows depende da coleta pelo proprietário.
 
 ## Copiar o estado atual do slot a
 
+**Resultado recebido:** `boot-atual-a.img` já foi copiado e seu hash confere com o
+mostrado no telefone. Ele contém o kernel Google original e um ramdisk Magisk.
+Não é necessário repetir essa cópia. Para identificar qual dos arquivos de
+`init_boot` recebidos corresponde ao instalado, basta esta leitura no mesmo CMD:
+
+```cmd
+adb.exe shell "su -c 'sha256sum /dev/block/by-name/init_boot_a'"
+```
+
+Envie o resultado. Se ele corresponder a uma cópia já recebida, não será preciso
+transferir o `init_boot` novamente. Os comandos abaixo ficam como referência de
+backup, não como solicitação para repetir os arquivos já conferidos.
+
 O terminal fotografado pelo proprietário é **cmd.exe**, o slot observado é `_a` e
 a leitura root foi autorizada no Magisk. Nesse terminal, dentro de `platform-tools`,
 os comandos abaixo copiam as duas partições para arquivos no computador:

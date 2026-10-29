@@ -18,7 +18,28 @@
     "url": "https://dl.google.com/android/gki/gki-certified-boot-android15-6.6-2025-05_r19.zip",
     "archive_sha256": "4722eae864358aca506ab52e4eeeeda28f8a3d716d4f0cd1bfeba262319d8f2d",
     "kernel_sha256": "8e22c324821950c83d235a6c7f38895ee92431529356f911a3bdc94888699c88",
-    "config_sha256": "4bc095f8fb1b94d9841393ae949492f38328d9919f7e99d0853fdf2c989b4719"
+    "config_sha256": "4bc095f8fb1b94d9841393ae949492f38328d9919f7e99d0853fdf2c989b4719",
+    "module_trust": {
+      "certificate": {
+        "offset": 34118400,
+        "size": 1357,
+        "sha256": "5601bbb5a627b517e1f8855e4ce8aec595a9764d2c013b85d8cfcde0808ca954"
+      },
+      "unprotected": {
+        "offset": 17467480,
+        "size": 499800,
+        "symbols": 8925,
+        "entry_width": 56,
+        "sha256": "4238848ff2d88dbb3d1e1d16b3ebf05eb1bc0f5d30aaf0c121a5ab741f373492"
+      },
+      "protected_exports": {
+        "offset": 17445216,
+        "size": 22264,
+        "symbols": 506,
+        "entry_width": 44,
+        "sha256": "6e736179148f6b1e35a4b895332131141b16043284ef6b1298773bda1099723a"
+      }
+    }
   },
   "clang": {
     "version": "r510928",

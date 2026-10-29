@@ -34,7 +34,7 @@
     "vbmeta_system_a",
     "vbmeta_system_b"
   ],
-  "device_kernel_binary_verified": false,
+  "device_kernel_binary_verified": true,
   "vendor_abi_verified": false,
   "device_boot_test_passed": false,
   "installable": false,
@@ -54,9 +54,14 @@
   "boot_b_sha256_photo_transcription": "55c2ccece3ef93e0daba10a8b8a9332f83d3dcf6437cfaa973678851776c4c71",
   "boot_partition_hashes_equal_in_photo": true,
   "uploaded_boot_full_file_differs_from_observed_partition_hash": true,
-  "current_boot_dump_required": true,
+  "current_boot_dump_required": false,
   "original_init_boot_common_magisk_markers_found": false,
   "supplied_magisk_patched_init_boot_sha256": "75cfea5daec646433d4c9f591873e741dd7fe8ed3b3882f72ba3270d6f48fab8",
   "supplied_magisk_patch_relation_to_original_verified": true,
-  "supplied_magisk_patched_init_boot_matches_current_partition_verified": false
+  "supplied_magisk_patched_init_boot_matches_current_partition_verified": false,
+  "current_boot_dump_sha256": "55c2ccece3ef93e0daba10a8b8a9332f83d3dcf6437cfaa973678851776c4c71",
+  "current_boot_dump_matches_phone_hash": true,
+  "current_boot_contains_magisk_ramdisk": true,
+  "current_boot_kernel_matches_official_reference": true,
+  "current_boot_magisk_record_matches_supplied_original": true
 }
