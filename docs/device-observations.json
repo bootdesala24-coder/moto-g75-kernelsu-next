@@ -42,5 +42,10 @@
   "original_init_boot_candidate_received": true,
   "original_init_boot_candidate_inspected": false,
   "original_init_boot_firmware_match_verified": false,
-  "original_init_boot_sha256": null
+  "original_init_boot_sha256": null,
+  "uploaded_boot_sha256": "6ae39d54a44b84cbf950d46749ccfec683a0fb922fa648a9136e0d10a6821b0e",
+  "uploaded_boot_inspected": true,
+  "uploaded_boot_kernel_matches_official_reference": true,
+  "uploaded_boot_matches_active_partition_verified": false,
+  "original_init_boot_candidate_accessible_in_restored_workspace": false
 }

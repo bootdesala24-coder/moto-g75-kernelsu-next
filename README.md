@@ -20,6 +20,24 @@ Magisk em `init_boot` e enviou uma imagem candidata a original; seu conteúdo e 
 correspondência com W1UQ36H.73-38 ainda não foram examinados. Não há pacote liberado
 para instalação.
 
+### Imagem de boot recebida
+
+A análise de `boot[1].img` encontrou uma imagem Android v4 de 96 MiB, kernel sem
+compressão e ramdisk vazio. O kernel é idêntico byte a byte à referência Google
+fixada em `sources.lock.json`; a configuração embutida coincide com a coletada no
+telefone. O hash AVB interno da imagem completa também confere. O
+[relatório de inspeção](docs/boot-image-inspection.json) registra tamanhos, hashes e
+metadados; nenhum arquivo binário do proprietário foi publicado no repositório.
+
+O VBMeta externo usa algoritmo `NONE`: conferir esse hash não autentica a origem
+Motorola nem substitui verificar a cadeia AVB do firmware. Seus metadados indicam
+`motorola/paros/paros:15/VUQ35HV-W1-ST28/ac0a9:user/release-keys`, diferente do
+fingerprint Android 16 coletado do sistema. Isso não basta para concluir que o boot
+seja incompatível; a imagem completa precisa ser comparada com a partição ativa.
+O script [`windows/conferir-boot.cmd`](windows/conferir-boot.cmd) coleta os hashes
+por leitura usando o Magisk já instalado. O `init_boot` candidato ainda não foi
+inspecionado, pois seu anexo anterior não estava acessível no ambiente restaurado.
+
 ## Aparelho identificado
 
 | Campo | Valor observado |

@@ -30,6 +30,23 @@ identificada como firmware original sem a verificação correspondente. A migra�
 para KernelSU Next precisa considerar esse root existente; não instalar a imagem
 experimental nem remover Magisk nesta etapa.
 
+## Comparar a imagem enviada com o boot instalado
+
+A imagem `boot[1].img` enviada contém o mesmo kernel da referência oficial Google,
+mas ainda falta comparar a imagem completa com a partição ativa do aparelho.
+
+1. Baixe `conferir-boot.cmd` e coloque-o na pasta com `adb.exe`.
+2. Conecte somente o Moto G75, com Android iniciado e depuração USB autorizada.
+3. Abra o script e autorize **Shell** se o Magisk solicitar acesso root.
+4. Envie `conferencia-boot.txt` da pasta `conferencia-boot-...` criada ao lado do script.
+
+Esse script verifica o SKU XT2437-1, consulta firmware e slot e usa `su` somente
+para executar `id` e `sha256sum` sobre `boot_a` e `boot_b`. Não grava partições,
+reinicia o aparelho ou instala/remove root. Os dois slots são lidos para que a
+análise não dependa de presumir que o slot ainda é `a`. Uma falha de acesso não
+significa que a imagem seja incompatível. O script foi revisado estaticamente;
+sua execução em Windows depende da coleta pelo proprietário.
+
 ## Conferir estado do bootloader
 
 Estes comandos reiniciam para o bootloader, consultam duas variáveis e retornam ao

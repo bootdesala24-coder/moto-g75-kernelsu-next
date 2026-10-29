@@ -1,0 +1,50 @@
+{
+  "file_name": "boot[1].img",
+  "file_size": 100663296,
+  "file_sha256": "6ae39d54a44b84cbf950d46749ccfec683a0fb922fa648a9136e0d10a6821b0e",
+  "boot_header_version": 4,
+  "header_size": 1584,
+  "kernel_size": 36456960,
+  "kernel_compression": "none",
+  "ramdisk_size": 0,
+  "boot_signature_size_field": 0,
+  "kernel_sha256": "8e22c324821950c83d235a6c7f38895ee92431529356f911a3bdc94888699c88",
+  "kernel_byte_identical_to_official_gki_reference": true,
+  "kernel_release": "6.6.87-android15-8-g88d70c0b44bf-ab14541233-4k",
+  "kernel_config_sha256": "4bc095f8fb1b94d9841393ae949492f38328d9919f7e99d0853fdf2c989b4719",
+  "kernel_config_byte_identical_to_device_collection": true,
+  "footer": {
+    "magic": "AVBf",
+    "version": [
+      1,
+      0
+    ],
+    "original_image_size": 36478976,
+    "vbmeta_offset": 36478976,
+    "vbmeta_size": 768
+  },
+  "outer_vbmeta_algorithm": 0,
+  "outer_vbmeta_algorithm_name": "NONE",
+  "outer_hash_descriptors": [
+    {
+      "partition": "boot",
+      "image_size": 36478976,
+      "algorithm": "sha256",
+      "salt": "8e22c324821950c83d235a6c7f38895ee92431529356f911a3bdc94888699c88",
+      "digest": "f8a2381b3814b7702190ec421e28b1585099d8946d36c2cb7853b41ebf2bfaa7",
+      "digest_matches": true,
+      "flags": 0
+    }
+  ],
+  "outer_avb_properties": {
+    "com.android.build.boot.os_version": "15",
+    "com.android.build.boot.fingerprint": "motorola/paros/paros:15/VUQ35HV-W1-ST28/ac0a9:user/release-keys",
+    "com.android.build.boot.security_patch": "2026-04-01"
+  },
+  "outer_metadata_oem_signature_authenticated": false,
+  "firmware_package_origin_verified": false,
+  "match_to_current_boot_partition_verified": false,
+  "device_tested": false,
+  "installable": false,
+  "scope": "Read-only inspection of owner-supplied image; OEM firmware provenance and live partition match remain unverified."
+}
