@@ -1,0 +1,5756 @@
+[
+  {
+    "path": "modules/system_dlkm/lib/modules/6lowpan.ko",
+    "size": 43921,
+    "sha256": "0608cff2bd86669e2994feb1944e4c2c11a47117fa56929ec22514c8b10abc77",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/8021q.ko",
+    "size": 73305,
+    "sha256": "1ce334cdf25437e38fd678a0d20722d7651fe0e0e2d792b7c84301d353294f5a",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/9pnet.ko",
+    "size": 169113,
+    "sha256": "ae1206d93eeb37eebf09636025378bc65554716c65479710a680fc8a8419bbca",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/9pnet_fd.ko",
+    "size": 39081,
+    "sha256": "145def264f0c6740d1a5ded61296412e863f9ddeab48238c660ab68893e23e19",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/aqc111.ko",
+    "size": 48257,
+    "sha256": "1bfb303a81a338b439f56653e15ea7460bc8cb61abe8f5b2236305eb164548e0",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/asix.ko",
+    "size": 99257,
+    "sha256": "09e834c5fb3edbeb59a2bcfc2016656a7fcf2b58e5ce7b9c9b353a10c4e0008b",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/ax88179_178a.ko",
+    "size": 73297,
+    "sha256": "56c69066053c715d45b62db1c5c6ee1a2b082f09ad575ed92a5d19b612bc4248",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/bluetooth.ko",
+    "size": 1264729,
+    "sha256": "97fea58abf02389a31d31dbb04ecfdb137c3c01d394ccc036e0e07d6b495ead3",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/bsd_comp.ko",
+    "size": 21441,
+    "sha256": "1ea73fce9ec09a9ac902e90a2811712eacced7577fe35800f7300d6050e5ff0e",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/btbcm.ko",
+    "size": 46305,
+    "sha256": "2d6f66cec0fb5ae7982586262311710015c795f508652edd4ab0953bcb6c779f",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/btqca.ko",
+    "size": 46377,
+    "sha256": "60903119d2ed56c98ce8ad09c682df201f5d843a48b6fa185d70854240888bfa",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/btsdio.ko",
+    "size": 31769,
+    "sha256": "ded0cf25dac6b8092212ebe89743991df18279ec85f9a8038c92d876598cd83a",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/can-bcm.ko",
+    "size": 52089,
+    "sha256": "efea4e6b2ace3ac0de72b8a2ad7f28301a23dbc6ce69c3b0a3245097a0b048f9",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/can-dev.ko",
+    "size": 80337,
+    "sha256": "4b8784f1e442c8f328003f80df59ff1fc961296c7af74ef3c33865ed22b4b993",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/can-gw.ko",
+    "size": 43441,
+    "sha256": "669143bbd07a62b68fe28918b126a4a24523bdf298832c2090768352f80fda6f",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/can-raw.ko",
+    "size": 44065,
+    "sha256": "d7cb05fdd53cddda2ecf80a53e7897a9597a5152892ad44c6e2b6cd34567f036",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/can.ko",
+    "size": 50105,
+    "sha256": "d0ea9c0f1ff3364287c6ba29ba1a785869bcbc539b908a168eb7edb992d4d8c4",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/cctrng.ko",
+    "size": 27697,
+    "sha256": "cf0c82aee8c50c8ff219ac538bad20f5820456c571949613e8fbf411f964767e",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/cdc-acm.ko",
+    "size": 77449,
+    "sha256": "ec6c0a4b5b90b6c38e1734e02bd6f552811b4445fd8b336ceb46d1c086f254d0",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/cdc_eem.ko",
+    "size": 20161,
+    "sha256": "362257d40b062724df8862eb23599d14965c85c46bcc5803959a664720f4ab6d",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/cdc_ether.ko",
+    "size": 33553,
+    "sha256": "f935939368a885009efa8e4d5b82331b4957a8624253956b176d4a1348b91a88",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/cdc_ncm.ko",
+    "size": 58881,
+    "sha256": "ca0b71b9e61d95678261fe35bdd10fd2e9a02a9b148153aeb12db0a8e3bf1186",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/clk-gate_test.ko",
+    "size": 61729,
+    "sha256": "bd6962b607bc7d4bd51afd6525a90fe1d36f216dbe83c297d6a4df16d6f46594",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/clk_test.ko",
+    "size": 196105,
+    "sha256": "317c35ae93a5e81306d48dfeb3f4098438e7d3b41c6a89bada368f1c5deb776b",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/dev_addr_lists_test.ko",
+    "size": 36809,
+    "sha256": "da4a4442d02e7f51053d037a23fb3d60f07c0c1823870406834140a380447288",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/diag.ko",
+    "size": 14801,
+    "sha256": "bcb660d6e4be2bc5cc66f064bbbd1584411cedbffbd4fc3477030f7fab08caf3",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/ext4-inode-test.ko",
+    "size": 16985,
+    "sha256": "2da2b9894c7679b7d0f31559419cec341eb1e9ca3fc6b74c56895205d1dbc80d",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/fat_test.ko",
+    "size": 19249,
+    "sha256": "e68dbba208d0433f2c8fbc87beb95f009941ce4bf3134c7894be58a3978de147",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/ftdi_sio.ko",
+    "size": 160409,
+    "sha256": "284485ec43f4ae44b2ce0596cbcaf4e1d5a475d541f6a290e9a6bf8b2b20ada5",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/gzvm.ko",
+    "size": 108169,
+    "sha256": "31a3488f6a96be8466c11e7328906e7f0a4703c6f1de24aea84a7a00ca5f86d5",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/hci_uart.ko",
+    "size": 181425,
+    "sha256": "d81842fa19f6e58b642d5ea321cdec5b65525d4cf6792b0d3537779384514368",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/hid-uclogic-test.ko",
+    "size": 43297,
+    "sha256": "00d3b00fa40a8e16e292304729a6bf19c4783b62933b3148504cb65424612c74",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/hidp.ko",
+    "size": 78457,
+    "sha256": "2fca0122c6aecca3eec45e61849a18ca56fe517e02591c6522e877bb5f2ad76e",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/ieee802154.ko",
+    "size": 266313,
+    "sha256": "c757ac5f6da10f47f14529098aa85b2441198c18dace73341b73c08a19abb4fd",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/ieee802154_6lowpan.ko",
+    "size": 47289,
+    "sha256": "1aed775b397eb34e349a700132dcc96814a5901df8dde2281cfae8c7d779ec4d",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/ieee802154_socket.ko",
+    "size": 51505,
+    "sha256": "3430f94ffa12df0a33c5902d1e678326718cc4ab5c474e9df1529f2822b6f52d",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/iio-test-format.ko",
+    "size": 62353,
+    "sha256": "c74746c1b2c32c3a715d2ed9cbc012fdebcea1f75e088d00280a57f268d80613",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/input_test.ko",
+    "size": 25785,
+    "sha256": "0ed64f06bbaf9459923fba1865a5e27f78eca205fb01a5273dec53e84452c6c7",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/kheaders.ko",
+    "size": 4187521,
+    "sha256": "dd1a060aef96380be2b480df859688fbc31e8adc830ddc3c2d5500e7372b795b",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/kunit-example-test.ko",
+    "size": 25929,
+    "sha256": "016411703c59cfd4697c6770d5de06c266ea277f5d15c96075fd0b32e40e1146",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/kunit-test.ko",
+    "size": 75913,
+    "sha256": "24e46bf685453c3c27785eb6c9a73151c1c3e93b75dae1d6d9a7a3b41dddc83c",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/kunit.ko",
+    "size": 102609,
+    "sha256": "a75d9e63a6e088653e5e84c0d41e00d0c34db9e9ded666f9d0292efaabb98489",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/l2tp_core.ko",
+    "size": 111401,
+    "sha256": "bf7b6611ae61eba82a6b2a43dfc6c92113d932fbf4df09e71c7bf8987ad9a80c",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/l2tp_ppp.ko",
+    "size": 56913,
+    "sha256": "9084a2d59bbdc1db30267e0bac1feb7568087134b8f4bedbca13832730514660",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/lib_test.ko",
+    "size": 15449,
+    "sha256": "4fc8af79b7b514e412484defab3116734fc9dd8ef8048a535c607e19b3c775ee",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/libarc4.ko",
+    "size": 11489,
+    "sha256": "55001515376a6897bfc30a3922686ab8e4ce8b77822ba501dd6b146c07cf7bff",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/mac802154.ko",
+    "size": 260249,
+    "sha256": "06abea63e37713be69722710395a51db5259b45f91425432d238d7fdf4895c41",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/macsec.ko",
+    "size": 117281,
+    "sha256": "87c3710e9fb905d45753ae381f45dd06c043b5bf0e016a729aa26332079fbe32",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/mii.ko",
+    "size": 21041,
+    "sha256": "bf691ec9d536b8f545b6101ec1e4491a05d7deb0580eee19a473155acda5471b",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/nfc.ko",
+    "size": 182497,
+    "sha256": "e0538c94ba62d4460fcff14fec1b430a24df3e75b117e921ee09d6b0aa870ba1",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/nhc_dest.ko",
+    "size": 12337,
+    "sha256": "e6098422f2463737102462c77e1e4f0239845a1263fac795afcad993feb2cd61",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/nhc_fragment.ko",
+    "size": 12345,
+    "sha256": "0d99b2967c20bfa0302058cfab57415a5eb8c7385ec92a2b74742e0cfb3d65ae",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/nhc_hop.ko",
+    "size": 12337,
+    "sha256": "bf319716aa9bcdd4b9d31df1664e8207c8a5c5b20bd9aa723d36d837774606a5",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/nhc_ipv6.ko",
+    "size": 12273,
+    "sha256": "632d600941099a7031280ac418834e479c6854327e1652a3ff094e5b1f272281",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/nhc_mobility.ko",
+    "size": 12345,
+    "sha256": "d5e7f9912fa021dc59a0b3c1e0ae1e96cd141dfecb3403b9016742774e5d3a5f",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/nhc_routing.ko",
+    "size": 12281,
+    "sha256": "97b3cb1193e526953dd273cee689fd70470bd49fb17761e945c12c18a1db1143",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/nhc_udp.ko",
+    "size": 15625,
+    "sha256": "5e20de65f276d222d8cf0f5fbe080f1c0f56e71e99d58cb542c78710d9552a36",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/open-dice.ko",
+    "size": 18417,
+    "sha256": "adab7dfa1745d8a6b08059746583430b2c017f7245687059039d25d298a76398",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/ppp_deflate.ko",
+    "size": 22377,
+    "sha256": "f5e828f71eabd373dbaa251d181fb6e95d297aa4a07253e7be3988bb2a62898b",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/ppp_generic.ko",
+    "size": 87633,
+    "sha256": "f8430c7be48fdb819b12346a6438a288c3d138ef09af1f33abc6a8a74a2dd4d6",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/ppp_mppe.ko",
+    "size": 24753,
+    "sha256": "13d848d038a7af62775a9495ab64b2b710c78800be1ac2a7bbfd25f161e7699a",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/pppox.ko",
+    "size": 20089,
+    "sha256": "a9c9016e49989cefaeda836dd258ce78f7cffb46f266a9d00804693b9f14b9c4",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/pps_core.ko",
+    "size": 37185,
+    "sha256": "f6a521f5566b575fee573344b2c52275db27b65970f351f122c5486901fbbc85",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/pptp.ko",
+    "size": 34785,
+    "sha256": "731de3b614828785cbda7e05ac167d29a2645ee445bb47c1ef6a5c7043583c94",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/ptp.ko",
+    "size": 66921,
+    "sha256": "39afcd184c3d92cc848bb84c538a3428b63278737a3106b9c11329cd38fd9cf3",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/ptp_kvm.ko",
+    "size": 18817,
+    "sha256": "69cd2b1e14b115bbe23a8e2df47a9e5bf59733d4d5805de0b74399cc26e421ac",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/r8152.ko",
+    "size": 227169,
+    "sha256": "c0f552271bc0b6b920a9e3f648c62d5451c827aa24f8b2060a0d9df5b06f0637",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/r8153_ecm.ko",
+    "size": 18833,
+    "sha256": "616d0671ce4767cf26fc70f67fd41d297467c8644c76497fbd2c4c813e0c9406",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/regmap-kunit.ko",
+    "size": 112113,
+    "sha256": "1018fc3755419e4cf28221b6dfe17a33e95503cbe258afe081bf5731d0099c55",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/regmap-ram.ko",
+    "size": 13001,
+    "sha256": "64a1ee139428f68867e7dd1927a11ea13b9888fdecce0f6eee504c0d546c1e46",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/regmap-raw-ram.ko",
+    "size": 13921,
+    "sha256": "d9d2f997c7de27147bd45169bbdea3e9a2742521376046d0bd2385134fa9e454",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/rfcomm.ko",
+    "size": 143369,
+    "sha256": "f9eba396076ee18f9b697b0d8673fbfe15f9ce05d5d5bb45567503c15547b476",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/rfkill.ko",
+    "size": 59817,
+    "sha256": "768cf4e7e0442e94f39c05ce8d70ef7ccb308f2425e1da4b833ac095eceaee68",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/rtl8150.ko",
+    "size": 39089,
+    "sha256": "f9c0cee1523bd46e5c836b95193bdd2c0e8e6468edc85c401bfea7cffade004d",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/slcan.ko",
+    "size": 38761,
+    "sha256": "7c26c3e308f9f9c6680b01ecbcdaee898879fea198dcc9c1703bbeee56b54769",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/slhc.ko",
+    "size": 20873,
+    "sha256": "b6e75ff79fa66e81e36e4d4fe8d9bd6980462b072ab4240454eaafda09f187b2",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/soc-topology-test.ko",
+    "size": 57473,
+    "sha256": "7da064ca0c0e96754471a422e26347eedfd30352603409d0422212bc1cb31cd4",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/soc-utils-test.ko",
+    "size": 17593,
+    "sha256": "fd1cc1ddce21b9aa945b80cd74cf05254b619d56de1001b730b25cac4f829cc9",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/time_test.ko",
+    "size": 15465,
+    "sha256": "adbf3d07e489bdbe87af282bcc802bd3e5091b8700b1392bcb41a8a62c9ad062",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/tipc.ko",
+    "size": 690353,
+    "sha256": "1f7ad7185488c062b539e1002c077d0eb6306b761702f1a709ffe526de660084",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/tls.ko",
+    "size": 153489,
+    "sha256": "368d642ae46e193d765dbb79b33cb802e1bc3d8d4edaf9976c8d615b2af04f56",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/usbmon.ko",
+    "size": 69753,
+    "sha256": "a6bdfdc99a9c7f4b1f703663a828dcb5a55b3df8c79ec1c59763087602c8fbff",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/usbnet.ko",
+    "size": 80129,
+    "sha256": "e47e2d7d6b0ebcd3d12d40544a62b560c24559f00fb012fb1ee76226253e8857",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/usbserial.ko",
+    "size": 84849,
+    "sha256": "ed2aaeea4ee696bc3df8f1fa0f04a487c54c894b1656af9381748cab000c13b4",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/vcan.ko",
+    "size": 20249,
+    "sha256": "4282a918411a74eac5b294ea534369a6a13b35c062cb20091968a4024b540fea",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/vcpu_stall_detector.ko",
+    "size": 21433,
+    "sha256": "3692d6e75afc1a96218fd8f6b4b06dfd4a8ea76edb56f634ea5cd9bc66ce067a",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/virtio_balloon.ko",
+    "size": 44265,
+    "sha256": "40c382fcc4fe1c037208b5e9d40ca3bfb04930058d6c8462b9956c65edf9deb4",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/virtio_blk.ko",
+    "size": 54785,
+    "sha256": "f1e713c0bb5878a4641dbb9825ce875dcc13fd5cbd1c637a0a11175341b1406c",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/virtio_console.ko",
+    "size": 67793,
+    "sha256": "ca0e4ba9da531c041ee85b49dd93841ad0a5605d0c21b02f7ca969ddeef0fa16",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/virtio_pci.ko",
+    "size": 58633,
+    "sha256": "4fe298152d5729b9d0e76a3ed9456ebadede5b54a35e12067a23bceb9221816a",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/virtio_pci_legacy_dev.ko",
+    "size": 24385,
+    "sha256": "c747df56bd5ee333e4b1fe653f37c1511dee44a252042ebf6468c9dacf5927f4",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/virtio_pci_modern_dev.ko",
+    "size": 34985,
+    "sha256": "457dd44c7eb5ea58808a10d01eb2a3507967c3829c9066033094f92f95b0b267",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/vmw_vsock_virtio_transport.ko",
+    "size": 41113,
+    "sha256": "66d5a2dfc1306840df8ec6c8bbf27c449a7b7709b8df0ed24386d2ab5f2c4984",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/wwan.ko",
+    "size": 53929,
+    "sha256": "30ee9110d4da77a9ed5381cf90a91662ffc40166158ba5cab8a93ee6086365c5",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/zram.ko",
+    "size": 58593,
+    "sha256": "bb95cc66e97fb8a4b5e417c3f828800e3457de00f8760aa70bec212d3c704713",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/system_dlkm/lib/modules/zsmalloc.ko",
+    "size": 56217,
+    "sha256": "237f81bb7a73b5de6bb203be698f73f2c3d7b9d3a52297d7a3f2912a4451aa12",
+    "signature": {
+      "present": true,
+      "verified_with_original_certificate": true,
+      "size": 681,
+      "verification_message": "CMS Verification successful"
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/adsp_loader_dlkm.ko",
+    "size": 24264,
+    "sha256": "8f80b14649cc844e4922cfec9470436b616e24ef751126f5fa3da6f60462ef3b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/altmode-glink.ko",
+    "size": 34208,
+    "sha256": "ed78c364fd3ba9d57032bb125e9afea725209cf4bfa67c079e3ba7d9feb46b4b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/audio_pkt_dlkm.ko",
+    "size": 39832,
+    "sha256": "afc5e6a6d432e93feb580ab349db7dbbad0ec38060bab070922ca2b05b07bdb4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/audio_prm_dlkm.ko",
+    "size": 24608,
+    "sha256": "794c63ba94c3d23aa228ac4199c8d00f7a3427fd4e234c3bf3d842d2ae3ae797",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/audpkt_ion_dlkm.ko",
+    "size": 36096,
+    "sha256": "d8bf500b7753df8874caa62d9339740cc74fcffa8a3be0b6dd1c625614e811d2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/aw87xxx_dlkm.ko",
+    "size": 188424,
+    "sha256": "b5812f6c5f3dc3e4317a430eb0348aa34067d3cd8a0b743d010c9ceee569bf9a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/aw882xx_dlkm.ko",
+    "size": 321912,
+    "sha256": "ce6e78018aee734f761d902342f80e0430c05a4cee3387e56f48e163c500ab2b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/bam_dma.ko",
+    "size": 59448,
+    "sha256": "a4fe725f724ec8234a58f1156557c021425b7c41235b52f947c08961cf643940",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/bcl_soc.ko",
+    "size": 20320,
+    "sha256": "ce40a7c1da092f3503a4efd304443cac2852eab8654de529f644b7d966680a34",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/bm_adsp_ulog.ko",
+    "size": 42664,
+    "sha256": "f3eec5aa56833bde64aaf7405c07299fb3b7398f32462cd43e272216d4d12e80",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/boot_stats.ko",
+    "size": 15400,
+    "sha256": "094c51b383c83f21f1d2900a0892e70ed6e0af627bf4465120bf2981ce1dfcdc",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/bt_fm_slim.ko",
+    "size": 49544,
+    "sha256": "a57adae13350e43b2797b55b91f80c8208e4629a6c39b1a3c979f15e6cc48ba6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/btpower.ko",
+    "size": 144848,
+    "sha256": "d34f9339e7f3a932d8aa6407766e864d3271a241e81bdd8cabfe752effda9599",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/bwmon.ko",
+    "size": 85040,
+    "sha256": "0dee5377dcdd83c17f3d9f3dc44507b2e057e7caf15d4966083b64758f34daee",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/camcc-parrot.ko",
+    "size": 79784,
+    "sha256": "271fdc41d0841c03adc37deec994d9d85e5e1306f5c6f05617f772092c1a2749",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/camcc-sm4450.ko",
+    "size": 73648,
+    "sha256": "aabcb820c6a01fa2ff1b3ded077d81f50d87bf50aa7e9e2dd72d70c2cf8da745",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/camera.ko",
+    "size": 7064696,
+    "sha256": "0a275f110b80d9d9a1afa3f70e38a6e37b775f693d799290ab69e86bbe398200",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/cdsprm.ko",
+    "size": 95408,
+    "sha256": "ca4b72ad581e6d9ccf239900eb4757d6ac3652a11ea13eaa5b75d9be1fecd6b9",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/cfg80211.ko",
+    "size": 2074008,
+    "sha256": "b780a9cfd9c6561386819a29cfacb4fa7bde887ee9d52425cc4b21ed1507857f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/charger-ulog-glink.ko",
+    "size": 30136,
+    "sha256": "d3499dc575ba58181e5a6df23c640f0f14c21995fff8d6ed06b2a61c067971c8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/cnss_nl.ko",
+    "size": 16104,
+    "sha256": "35cf3ee6a28b72f000c594761ebbe4044bbb49b008eb87cac3d7aa9fc5477bd0",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/cnss_prealloc.ko",
+    "size": 24952,
+    "sha256": "f0d4f1a38badf3a7f0c9ecbd7047acdd65312680f7ac43247a342b215a509765",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/cnss_utils.ko",
+    "size": 33696,
+    "sha256": "9accb049b77ba823f0ae73ab1aad0ae2565f16ee568a1c3937fa7501ea371f38",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/con_dfpar.ko",
+    "size": 21384,
+    "sha256": "75ea02d6ec0171d95960bd48fa3a91dea61c17f2709bc3eb241cf7457af57f21",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight-csr.ko",
+    "size": 46664,
+    "sha256": "6825df20697d559622675f5fd43fba020befc66cdacbf84afb2338c9cf1793df",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight-cti.ko",
+    "size": 97024,
+    "sha256": "8e001f53767bafdb1d0d906677cbc755c1598c52188786305fc827618242bef2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight-dummy.ko",
+    "size": 24128,
+    "sha256": "9c2f073efee4791988548e3a054bee4563c8147843f831f7a2d919254f189d5c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight-funnel.ko",
+    "size": 39592,
+    "sha256": "f2a2206326ef5f5a3ecf23309d0e31b2379985992171a33a7f6e749a1eb5d38a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight-qmi.ko",
+    "size": 32232,
+    "sha256": "3eb25a54fdb818d5545c458a4fbc30d8181236bb69dea9a91200809efc1e9a51",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight-remote-etm.ko",
+    "size": 26112,
+    "sha256": "80cbf3f0454c4f32ded740c954547629b271e08694cf3aa7f5c84635e98642be",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight-replicator.ko",
+    "size": 41376,
+    "sha256": "a755ecca72016aa810a1e15130a4499ea526e5a345e1d37a07491c2d607a3d26",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight-stm.ko",
+    "size": 41168,
+    "sha256": "ac640a61fc8b9ea9b5d9f0275fff71489bfba190dff20c1b104ae384869081d7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight-tgu.ko",
+    "size": 27008,
+    "sha256": "d01683f6c5037159c4883c44544faf8e1ec490d1b526058fd7b1e9b26f77b7e2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight-tmc-sec.ko",
+    "size": 37104,
+    "sha256": "d075b2002914c0cf5109edf97d511a2c4719fcbf3e67c80da04c006aa893c052",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight-tmc.ko",
+    "size": 129120,
+    "sha256": "1020d98e22d72132744d292570b09f513349de384db37d276312501bef36b73a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight-tpda.ko",
+    "size": 37072,
+    "sha256": "86d299f11376713abae09f547a4aee16dc28ad2977864d7ecd5cfa20bd94156a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight-tpdm.ko",
+    "size": 137824,
+    "sha256": "63defae7689b831f48932f7706bfe2257c505be5ce79ca44352999b6d641a7a8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/coresight.ko",
+    "size": 171688,
+    "sha256": "96e58378d24bc915e7af9729b0a3bb0642011e39a2080163d47df38fbc3554d7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/cpucp_log.ko",
+    "size": 42376,
+    "sha256": "efa7c223e0b9693de45664c3e0290dd8d422afd010ac1dbedb35967f3362d2f6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/ddr_cdev.ko",
+    "size": 16448,
+    "sha256": "cb87a647ae68293c0175f060b83ee954d20ffffa1712c859a6cbf64ff8b88533",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/debugcc-parrot.ko",
+    "size": 69816,
+    "sha256": "bc0091efef47a6e0201eb3526e312ad4e6306186ea6fefeb0928c91a0522b586",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/debugcc-sm4450.ko",
+    "size": 62288,
+    "sha256": "ee72ec50756a382ec0b3fedf450327e5120d2c32bbdcc150a5659c1c4c401925",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/dio8015.ko",
+    "size": 28344,
+    "sha256": "12b0c19c2f0c46d468ac9cacd9bf6519570c6900ad872b3575e20145198c7af0",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/dmesg_dumper.ko",
+    "size": 33488,
+    "sha256": "ec35fee77b6ff4dc88ef1337b323eb01db9e8b0fbe766ddee9a0dd834ea21c5c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/drm_display_helper.ko",
+    "size": 274648,
+    "sha256": "6fa3a3a0865ed1a783ae9a76d29646a9a855e7a0d89b578ba19474201aaf7e22",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/drm_dp_aux_bus.ko",
+    "size": 24088,
+    "sha256": "db8308cbcd9f27f7fbc7ce0c92716b24da4249c4ff1cdbf80509b238624ca22a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/dwc3-msm.ko",
+    "size": 217752,
+    "sha256": "62dd4b66478d9f35660c82359f48e08ecea77c512a71f5ded6eff2fa0327bc23",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/ehset.ko",
+    "size": 16400,
+    "sha256": "0fadd1f45f9c31bcf94f471c8effd635d9bf3e1359ffb7fb766623f8f586af4e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/eud.ko",
+    "size": 37328,
+    "sha256": "7b159bc53f4c41d0c25983624af007772d55f941575faf49530768e2b11f84cc",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/f_fs_ipc_log.ko",
+    "size": 77144,
+    "sha256": "7228b5d18b12b75dca560ea1365ef91d2d54bc6e0316cb793ff032d599bad8f2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/focaltech_0flash_v2_mmi.ko",
+    "size": 198544,
+    "sha256": "7fa6e766139e5ff1f55cda93b87e93660bfb8a4bb33292db2aa9e96f30daf860",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/fpc1020_mmi.ko",
+    "size": 36496,
+    "sha256": "76a0ffb5d8aa22087e5c2d7dc7a73e3aa7c7944a43bd1eac343e6cae2a8b8c2a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/frpc-adsprpc.ko",
+    "size": 278576,
+    "sha256": "a1434a88d531f8d99b9a8ad2116077e2d7736550313f19a03d349d637c21eb58",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/fs19xx_dlkm.ko",
+    "size": 131808,
+    "sha256": "e5769c01db7dab31f9e8e3f3bcf76a04725ea390359b3cd24d07098c275f6503",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/fsa4480-i2c.ko",
+    "size": 25488,
+    "sha256": "ff8b151bf7b2eb64958299c6ca6e844728c469cc2ab77bcd9243d6a59536971e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/gh_ctrl.ko",
+    "size": 25072,
+    "sha256": "de7afb5d8919a596f2f0d5ee8429d3883ea3a92d3e733e4a5992ea6f94a7ecb2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/gh_irq_lend.ko",
+    "size": 28888,
+    "sha256": "940fd828550ace3b58956f9231890bcc00eb46d567cf590ca8ce1fc2b39b399b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/gh_mem_notifier.ko",
+    "size": 15920,
+    "sha256": "65a5a4f385e7378f4123d45e664dc08bda58774e887f7b54458066a123e46ff7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/gh_panic_notifier.ko",
+    "size": 36128,
+    "sha256": "fd605d9988c47dcfcf5ace6cb6f9f24dae9161baaec5ca376b9a669a730e4689",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/gh_rm_booster.ko",
+    "size": 24512,
+    "sha256": "1ca163cee3a94d88c846d1d45be6586406790d5e74a9e36db3595964e3fb718a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/gh_tlmm_vm_mem_access.ko",
+    "size": 25128,
+    "sha256": "101fbbd39ba0c4efa5abac998c17e6cab1466869e96ea6d11b330b5b064e66aa",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/gic_intr_routing.ko",
+    "size": 35536,
+    "sha256": "bc2315648fa737555565d0ec6a22daede01db11c73135c40d61a67b930c89990",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/glink_pkt.ko",
+    "size": 73640,
+    "sha256": "6e1f096e04471c1e81260e3d6f2957f037b83b224b56509e09c20be34f4edb12",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/goodix_fod_mmi.ko",
+    "size": 48248,
+    "sha256": "acfbafec54c1900a0edc52d605988f01b5c2503eda306a9333a5149a6f33c958",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/governor_gpubw_mon.ko",
+    "size": 17120,
+    "sha256": "94b8d71f3133c9583e91d1061c9d9ac0ce4b5b63626f8ee84df32495fd4509a3",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/governor_msm_adreno_tz.ko",
+    "size": 25592,
+    "sha256": "7c302370ad905764fba2604ccfdfbcec28e229e9350c4ae57b6c1fc3fa3acbf3",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/gpr_dlkm.ko",
+    "size": 41056,
+    "sha256": "d31e0ae5f9a431783fec7d0db4e3a34be625809cca49f5d60736100c4b7ab6a2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/gpucc-parrot.ko",
+    "size": 38264,
+    "sha256": "2119f734562869aadd1bd2e7cd5810bfa557390bde5697e0b9eef33a7aa7c816",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/gpucc-sm4450.ko",
+    "size": 46728,
+    "sha256": "9fe6f5b98d23914389c0ba1484fd397da5b531aeb1942a8e905de01cef883d99",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/gsim.ko",
+    "size": 529352,
+    "sha256": "d1aeaa10e7f5e8a25088e5b6debd19c232dd19c2d3197af552c9ccaad3a4d589",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/hdcp_qseecom_dlkm.ko",
+    "size": 87960,
+    "sha256": "16d7de82a7c4f859815a0e4d7ab8c13912e2d47c12946bff9995005002904eeb",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/hdmi_dlkm.ko",
+    "size": 36752,
+    "sha256": "d37eefc382963dccc0a826fddf2563bd607d08ac53e44eacbc5663c05a24b19b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/heap_mem_ext_v01.ko",
+    "size": 14808,
+    "sha256": "f736d17910e9a62be6b0bc89c205b0ccbc7ae88ad6da45c1c15a05dca3c9b612",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/hung_task_enh.ko",
+    "size": 20608,
+    "sha256": "7c2dc8ce74c34f48d88778a7f294de7ee589f000ecb9e1d9cf12e17d9d4b10b4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/hvc_gunyah.ko",
+    "size": 23560,
+    "sha256": "57f39a76b5998cdea97fb1fa38e87ae8f3c1f0e26690ff0c5c1b53aec83720e8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/i2c-msm-geni.ko",
+    "size": 129896,
+    "sha256": "47f6f847d9041967e4f0fd28aa82cd278b2107eb4eeadc1f8f0dd841fb52c2f6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/icnss2.ko",
+    "size": 431368,
+    "sha256": "3affc28ee508f28d729f3ca2779c2bbda6c36fb40ff2d9e08e9d882d3ccee25d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/ili9882_mmi.ko",
+    "size": 554920,
+    "sha256": "8ba6e814a44b7bd7747a23d9dea00bbe228e7e75a13ceecfc0e35530db46461c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/ipam.ko",
+    "size": 6138504,
+    "sha256": "4b1e0dbd17d3be356bf01c53504340bc14f22b91b0a8b0a71f057114912834d6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/ipanetm.ko",
+    "size": 13400,
+    "sha256": "199a4ee81eac444490f235bb481802e0c90e225c40f27331c5e703d76aa67ebf",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/ktd3136_bl.ko",
+    "size": 67480,
+    "sha256": "76e5358fb220ca9904527c6276d5d448d9a1b905a70c3150605f8bb69a6d3d8e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/leds-aw2016.ko",
+    "size": 34424,
+    "sha256": "74397778f492f378964d17df8cb4d7253bd35ef23b5a03ebf47fc39c220d03f8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/leds-qpnp-flash-v2.ko",
+    "size": 83888,
+    "sha256": "c9738b6294ea43b7d2fb7dfb79f89399489b9e3ec5455eff694f78da151f2d5f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/leds-qpnp-vibrator-ldo.ko",
+    "size": 26120,
+    "sha256": "4a328006ebfccadfddaab564a93414937624b1e3fa6c3c65687ce96dec1a2097",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/leds-qti-tri-led.ko",
+    "size": 25832,
+    "sha256": "30736a50214b38a76c7ba8f95cd6e629e494e1a6cc6c7ba7557f275219490cf5",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/leds_aw99703.ko",
+    "size": 62464,
+    "sha256": "16223b82faffa17cb865adbfbdb64b89c00a24eac4a8d1a4ba11aff145f62201",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/lpass_cdc_dlkm.ko",
+    "size": 99936,
+    "sha256": "90261a650a62ee8eeefdb712e3cad168e692e3e9a671fad083f9fd8474c9733f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/lpass_cdc_rx_macro_dlkm.ko",
+    "size": 209848,
+    "sha256": "8bd4a8d0da8b8b77d3301e9e82b9c99311124340673faf72b478749de6f5bdce",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/lpass_cdc_tx_macro_dlkm.ko",
+    "size": 135440,
+    "sha256": "43455e654adf2323486ca7a0d5e49be37a398c72a737116b91b206e54b4233db",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/lpass_cdc_va_macro_dlkm.ko",
+    "size": 114552,
+    "sha256": "b83ecaa683c565dc06dcf4f29dc770ad4af868bbe83b65c08cea786e1d3e7878",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/lpass_cdc_wsa2_macro_dlkm.ko",
+    "size": 127936,
+    "sha256": "dccf62bccc92eb9ba16c77a9b30d344e2d31e958cbb237751d8b7278091709cc",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/lpass_cdc_wsa_macro_dlkm.ko",
+    "size": 127672,
+    "sha256": "2f241b9979d48e63d5cd1ae92ca6d4ba317c10fb5bb952ba8f0f49bc49d07da3",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/lvstest.ko",
+    "size": 25488,
+    "sha256": "78853a5d2f6ebc59c9a46b0f39276d5e4b2bc30dd148be88e69201656c8d0ddf",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/machine_dlkm.ko",
+    "size": 133432,
+    "sha256": "a8883fe0a776569fb0b4551ee80b63ef14b5803b5cfff34c9af1f51ea0b03847",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/mbhc_dlkm.ko",
+    "size": 82680,
+    "sha256": "8fd2357a0230e06b7f2d68ab1d7193842be803d9f97da553baa9a300268d6f55",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/mem_object.ko",
+    "size": 27672,
+    "sha256": "7995d48d6e6a3c98581293c5e3e1655874466a9bdea2f83aa84b15fae3aec9f3",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/memlat.ko",
+    "size": 71504,
+    "sha256": "84d964d9f31908cf6e527d195942b36718f8da6f43da42a458c0d89dc23d6e32",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/mhi.ko",
+    "size": 263584,
+    "sha256": "436a235eb3f32d70f8cc4d734136d2492fb634b5b8446ba0d255361f76f6b36f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/mhi_dev_dtr.ko",
+    "size": 25808,
+    "sha256": "38e493d1694e9fbb64c38f0b46781b1b0d6ecea84ec86c1a1e3f55f0f2131b65",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/mhi_dev_uci.ko",
+    "size": 47968,
+    "sha256": "cacd37ad262fa34cf14118f524a5a1314f1194df4fac8abde9d54a851c4147de",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/mm_tune.ko",
+    "size": 19264,
+    "sha256": "0375bb5432613644f4aa672f234b055b564ef4516f6cea1c633f0f93b55987ac",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/mmi_annotate.ko",
+    "size": 26840,
+    "sha256": "971a8c7fa8a15fb58167f03402e64f6bd3e48ffc88808575606569a760281e48",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/mmi_charger.ko",
+    "size": 116352,
+    "sha256": "43ed8090187b26de8cf59baa18f22d53b7bcc8683a824ca303cf9ed3717d4dac",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/mmi_info.ko",
+    "size": 52584,
+    "sha256": "4988edbbe0ef534f853b3d355bb81fa33fe747284bf08775eed51f77470b6518",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/mmi_relay.ko",
+    "size": 21584,
+    "sha256": "56aeb3ccd0dd839e6a5fce9a04acbeffd435738eecc00cef79c36a0b92db1f05",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/mmi_stow.ko",
+    "size": 16488,
+    "sha256": "f5292e30c6db7e8d3812b7120411044e0619eed2220200b02f6e16647ca04207",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/mmi_sys_temp.ko",
+    "size": 27464,
+    "sha256": "96ea7c6e5e1b69763efc11cb92efb9360942c9c1226325140a4d25e5fa208687",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/mmrm_test_module.ko",
+    "size": 134912,
+    "sha256": "3ce555c2c6fd42fc79abca158062a89ca1e290e09f221088ed3e3cd1785aba6a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/moto_binder.ko",
+    "size": 52408,
+    "sha256": "a7360ebf6741d58e630203b6373c54a6820928d642499cda12a8e84d0d0fa3cb",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/moto_f_usbnet.ko",
+    "size": 46720,
+    "sha256": "59b544b7cc487a1739e0dfdcfba08021244975e911f35d27e71b6d4aecf4fc5a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/moto_mm.ko",
+    "size": 22096,
+    "sha256": "14c75ace4f55f2ecc7506316fd59e0c45f19fdf3f97cc1d68e3d795a695a5c58",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/moto_mmap_fault.ko",
+    "size": 13040,
+    "sha256": "c8931dcef3b010b40a195a4556ce4a167079b746d697b2039f3cfd495c979537",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/moto_reboot_reason.ko",
+    "size": 17304,
+    "sha256": "21bbdab76e736aa47385a59b2b88509d65c5debc67fee51e1a76c1bbfef0a1d8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/moto_sched.ko",
+    "size": 109800,
+    "sha256": "ceee865f56d638363e1d9945399d8b79807998f7ef90b97c677f13e88ec9dbb1",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/moto_swap.ko",
+    "size": 429448,
+    "sha256": "d0f4ba8b2e786fb2b95dae93e6013a78506ce33df2924d1f26381f95ab02ec21",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/msm-mmrm.ko",
+    "size": 98304,
+    "sha256": "efced6b121c407c26f086e5a78f1bfe68f1623cfbf698690015d8ff0409d97a6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/msm_drm.ko",
+    "size": 6725784,
+    "sha256": "338bb6642d411712852fc6a7795ec06ddb93080814fdcde39bb0ab315b8e0a6b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/msm_ext_display.ko",
+    "size": 27368,
+    "sha256": "7584f4769b4990e329b6e0757622f53d6298cbbac1757bda80736f29e85c0679",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/msm_geni_serial.ko",
+    "size": 195408,
+    "sha256": "2a671e75524ba497087ec36f2305562004d714e8d7d3f142586a5963f3b5387f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/msm_gpi.ko",
+    "size": 149120,
+    "sha256": "e186f4a3425d5cc1e2bec557b9bf6ebbe033e4b241c6c58b7eb628311d2c9dc2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/msm_kgsl.ko",
+    "size": 2951952,
+    "sha256": "058906cb572895d8910eadcc690caf114c7eb9a26329a8b537e9b44e713fa84e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/msm_memshare.ko",
+    "size": 49376,
+    "sha256": "24deeb0ebc9ae3b9a46cb8886617fae3aa827abee8409a985586d60839e87dcc",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/msm_performance.ko",
+    "size": 46048,
+    "sha256": "aed4cce8ed4d9374bdff08aba4eea4ce712cd55a27575be179d9fbb4dfbfbc89",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/msm_sharedmem.ko",
+    "size": 19344,
+    "sha256": "999827070b17be0db746d4d10daabb0b0ef53c078bddc122c904be8211477279",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/msm_show_resume_irq.ko",
+    "size": 19848,
+    "sha256": "464c1646ccdf0ae758b7333fa3b6718d974c9a17344e7198cb54be7a6151efe0",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/msm_sysstats.ko",
+    "size": 34608,
+    "sha256": "3e189ca1f702b18e9e929f5f3e349f65a333f55cfabb3f6fef35076b62775125",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/msm_video.ko",
+    "size": 1406064,
+    "sha256": "f9961332c02936d4877d720211801b03ab923292b4a9622d29c8775142d88df5",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/nxp-nci.ko",
+    "size": 67360,
+    "sha256": "cd19b323782e0425d02b1ad5f305a9e7b3ad701497fcf074340aef9a721b20e9",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/panel_event_notifier.ko",
+    "size": 16304,
+    "sha256": "a1a02dbe18425393b7bf062cd96f3d4f3c7501a09956d506b1d209220d2554df",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/pci-msm-drv.ko",
+    "size": 456472,
+    "sha256": "8f2caa1cdac15bb4e82a2c8608c4d71f15ac9f22e3eeb26bdac080797afdd4e1",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/pdr_interface.ko",
+    "size": 36376,
+    "sha256": "93c3b2452db973902bce7e15545354dde5592ff111080caaeff2a5afab4e1396",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/phy-generic.ko",
+    "size": 24864,
+    "sha256": "3ae50fe18bb40042407930204908d0fbd5be168c1d215c2dad65c76d93ac984d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/phy-msm-snps-hs.ko",
+    "size": 42968,
+    "sha256": "2c8d7e9e9f36f608e72a4aa662f819f670b186ba8bac5cf3c18dc19cc5f3755f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/phy-msm-ssusb-qmp.ko",
+    "size": 44096,
+    "sha256": "41d6b23b142ad48575a9ab70208415dfc0ec89ba2abf5df42e3f38142e0fc6cb",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/phy-qcom-emu.ko",
+    "size": 19120,
+    "sha256": "3ef50d928ae10f7caddb83eef48613aacebb0e2a942c07001c5309e151ad2e24",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/pinctrl-spmi-gpio.ko",
+    "size": 62192,
+    "sha256": "639297c1adac910b56d51f4a43fef099de4e0ec925884ab5728449d7f48194f4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/pinctrl-spmi-mpp.ko",
+    "size": 39920,
+    "sha256": "94456b6ca99225c478c4ef5c6b14144628a98c70ea841f1cea9404696fba355b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/pinctrl_lpi_dlkm.ko",
+    "size": 41160,
+    "sha256": "da5f47be14ffba0eb08b44b21347f39776abf23ff8fc1fadc04e5f806da5b8f0",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/pm8941-pwrkey.ko",
+    "size": 24408,
+    "sha256": "ce3c1742f16d4f084c2718c055f8be7c5cdfa8f69e4dd0fdcbbd3d35876faeee",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/pmic-glink-debug.ko",
+    "size": 25728,
+    "sha256": "33783dae6beb3f1d9140261c8995dadbe0c4a3c26c6460b654985369136e1528",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/pmic-pon-log.ko",
+    "size": 31624,
+    "sha256": "6a05c19b86b141aa970e855a4865a8c7805112f7338bcade374de4dff739760e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/policy_engine.ko",
+    "size": 20160,
+    "sha256": "be860c687c1767625edf750189cdc8586c1cba5745b2a6f379813418dc163122",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/pwm-qti-lpg.ko",
+    "size": 57416,
+    "sha256": "078aa94a7777a25c45ae27439dba9c0608d378615f8889f81e1ade3cc0bfa028",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/q6_dlkm.ko",
+    "size": 16048,
+    "sha256": "99fc25574791a42a2afd56c974a9f48945cd74c6fd637182283dcf707e1846d7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/q6_notifier_dlkm.ko",
+    "size": 32936,
+    "sha256": "0b83056bfb50a49ac2e7e1a14ee2e6c6a1844508db84070ef1783d2cba54190d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/q6_pdr_dlkm.ko",
+    "size": 13088,
+    "sha256": "93b038cb18525ee3400ca8ca71bacc3f8074c09dc80e04cdf7e52a82a2be8b4c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qca_cld3_qca6750.ko",
+    "size": 14825960,
+    "sha256": "4b20bd36caa7bff00e1603f919c6c46c325b5496d4a9b843c4e4976356da0827",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qce50_dlkm.ko",
+    "size": 136632,
+    "sha256": "30cfee17d4f84dd22b0004aa249e42c383a656d90e8373948aaab1b356cb8f1f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcedev-mod_dlkm.ko",
+    "size": 151080,
+    "sha256": "34c20010a55d2bfd2883d36e0320cd0e08b86c45706a0821051a601e897cc3e0",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom-amoled-regulator.ko",
+    "size": 33216,
+    "sha256": "39a80b4a33d54eaa9bd2defe733519a3d1328c7a88de6de0cc376ed105e0cafa",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom-cpufreq-hw.ko",
+    "size": 55992,
+    "sha256": "b36c9ad9ced6db6c0ed4abe62112d5c1254d71026a8bdc7efa9f4692fb8afeb7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom-hv-haptics.ko",
+    "size": 188056,
+    "sha256": "95ac586191fe922c7b95cbecff9ef3fce3dfd377338b357763b7d8d93eeff574",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom-i2c-pmic.ko",
+    "size": 33776,
+    "sha256": "b80110620d84fc87600131b6d84580deeaa1861f8c33b78f5eed8b231ed831c1",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom-pon.ko",
+    "size": 16232,
+    "sha256": "6c1ff2ae22267e95e4999c643277abf9c30acb52a7e4ac0a5e05d195d02810c4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom-spmi-adc-tm5.ko",
+    "size": 35632,
+    "sha256": "12f9e16f159a1725cdda9d0277fcb503c4e3bc0afeec5d818e0484a169843d76",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom-spmi-adc5.ko",
+    "size": 60616,
+    "sha256": "8a6d2ff395d0cfae5728bfedf1cf4199357aea719d5c122a3b08b0b560e75be9",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom-spmi-temp-alarm.ko",
+    "size": 27400,
+    "sha256": "df88eeff0f0224b3dd0a5c2c7bccbd28eddd9ac70abb2d19f1353d1d0c41bdc5",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom-spmi-wled.ko",
+    "size": 62400,
+    "sha256": "d3e109066d5d234711cd9d4cb55d99224088f2577b054d0326685d2d7255fef1",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom-vadc-common.ko",
+    "size": 36640,
+    "sha256": "43d5cecfb01629141bab50d5d4e13c7c47fbc73210fc645f4abc972ae1a053f8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_cpuss_sleep_stats.ko",
+    "size": 30384,
+    "sha256": "02be04fe6057a37e626431c2f497544e5b3c15ed8e24ca79363d98ec631ab51d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_glink.ko",
+    "size": 92472,
+    "sha256": "7f51073062d2b7ec0de108ec7a50e8f85566e2aca035168a14873878425b4446",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_glink_smem.ko",
+    "size": 24536,
+    "sha256": "accb86f39c9927f39c01bf691f4ed186e7aad29133cc475a3b35e562d35ae4bc",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_iommu_debug.ko",
+    "size": 95424,
+    "sha256": "6f384e46287c09dec8a117bbfade20631306affdbc405819b7e04d8d026def54",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_logbuf_boot_log.ko",
+    "size": 14760,
+    "sha256": "a92a9c344193710dc7c30a970b1d6d95500164bc3b533ded6ce3f981ea5605b7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_logbuf_vendor_hooks.ko",
+    "size": 12840,
+    "sha256": "ea7e556e14161972b10a41d86f8e96a4c792786c6ecda2b63a7a7f25bbed78f3",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_lpm.ko",
+    "size": 95280,
+    "sha256": "4589957b7e45b226abf03b690c68514c680f4137df4cf02798407c37f41e4af6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_pil_info.ko",
+    "size": 17792,
+    "sha256": "809d68b49562ac8a623ed021afb86998ab740da76fe31d111c5f32ffa58c9e14",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_pm8008-regulator.ko",
+    "size": 46552,
+    "sha256": "a5ccb8c15040856460c47fc4b749e8eb4053654f9c504e937d121f59dc0b165f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_q6v5.ko",
+    "size": 30808,
+    "sha256": "45f49584074cbe1f1dce91c15caa8ee177277b1a9279fb0652a04804f3a175ea",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_q6v5_pas.ko",
+    "size": 114632,
+    "sha256": "73ba79f7e36795b5cb98c73b154e5141955d1b909391594a94cba0d7879a5e7e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_ramdump.ko",
+    "size": 25192,
+    "sha256": "9d4b8fb3e3f90f77de5a7140c173c94b4f6bc577c6fce6fb21a69af4031a90b6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_smd.ko",
+    "size": 42544,
+    "sha256": "4945a91b41c5f5190ae8104932bcc92e4a52a76d92da44f91c5e0c5bfd191b44",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_soc_wdt.ko",
+    "size": 17864,
+    "sha256": "6043b38e1608bd8fbecb755ba42403008152327dc6ab062e013d7e5cb525895c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_stats.ko",
+    "size": 61192,
+    "sha256": "67e41c90208ab0c3ed0a1bb6009251ff62414780953f2addaa5aa9d8fc3c53fb",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_sysmon.ko",
+    "size": 43744,
+    "sha256": "dd78d7463b0a91988e13a68e872547d677d41c27592b53f012be928380acf872",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcom_va_minidump.ko",
+    "size": 37992,
+    "sha256": "df098ac131de116f12640669df1423ab49afba560bc0a16c228954cfe82a1e79",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qcrypto-msm_dlkm.ko",
+    "size": 133656,
+    "sha256": "f0acd3a30820af56b8b188429305184c1b2fdbedc16929403a42ea7044853b50",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qfprom-sys.ko",
+    "size": 15832,
+    "sha256": "f9853d0c656c0b57a5b5c9ee489360e03fc574c1e17ce6e72d1982c83a84e340",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qmi_helpers.ko",
+    "size": 40360,
+    "sha256": "ea23cee3fb0ac2330d9b33978dc7287eed9e923cc38105a968013183cfcdf1a4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qpnp-lcdb-regulator.ko",
+    "size": 81880,
+    "sha256": "118aa80cbcefbf937d77ad94e7915a720c9096a13b6a480d1d45c30ac360951b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qpnp-power-on.ko",
+    "size": 76080,
+    "sha256": "e4afa8bc4c3c5a7468c8ccc7e6b0ca85c887eaef25bc58f5faf8cf3c5f2ee7ea",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qpnp_adaptive_charge.ko",
+    "size": 27064,
+    "sha256": "b8288629f164ae13d25f271b135441899da9d0e3b2c6623ba1a24b7dca2aab88",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qrng_dlkm.ko",
+    "size": 29592,
+    "sha256": "a308b68605c709441bdb832ac63a2147ec8be9e8b21b93f569bcfd79f148c27f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qrtr-mhi.ko",
+    "size": 22920,
+    "sha256": "5cf26f4a9b02a1a4e2e76800b9bc2f9b70318ee4781b7518f5a759d1d6efeb6b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qrtr-smd.ko",
+    "size": 17040,
+    "sha256": "96495e29ab5c89b35fd510e8cc75554de08a51201112b2b0a74dfdddfb42c1a6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qsee_ipc_irq_bridge.ko",
+    "size": 32680,
+    "sha256": "a0c949e0e81602871df9df9b030b71f09aac689a749ef64d068cfce938d6fc7a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qseecom_dlkm.ko",
+    "size": 311392,
+    "sha256": "656060593674432dba7a51fcec832c3d19e462134cf23ae7efc9c418ba7708ae",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qseecom_proxy.ko",
+    "size": 16432,
+    "sha256": "19847d2abc07ed236335b4cd4e3b3e20e926af90fea11295669529d829156566",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qti-fixed-regulator.ko",
+    "size": 21720,
+    "sha256": "abefb22000294a8c2c27f1dd7ec9dc236eba0a50c4460b83cfd102de9dcebacf",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qti-glink-adc.ko",
+    "size": 21680,
+    "sha256": "54b61ff89a5a57d91360cfaeae1c24b09d640b67c3988a9210cf8eff09cb02ec",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qti-ocp-notifier.ko",
+    "size": 21512,
+    "sha256": "c055db1bcb678558c5785b25e439b1513a63f2f60ebe4e649cc0cd3c91b24275",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qti_battery_charger.ko",
+    "size": 92240,
+    "sha256": "f5cc78d751fa4488b83f638d48e82110b7fc057611c48c5075ef1223f1dd4263",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qti_battery_debug.ko",
+    "size": 37744,
+    "sha256": "e2e73bf01533cdc9b9646c5f4e3751781c384764bb2cf258b0c8f59010ec2a7c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qti_cpufreq_cdev.ko",
+    "size": 21424,
+    "sha256": "b481eda52fd46237a834dcc511ca5a559cb09141b187b856c0d7a70d1263a509",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qti_devfreq_cdev.ko",
+    "size": 18472,
+    "sha256": "0371075a116444deb9d87f291d8d16d0ef9d55edf5bafa3e0029e645543a3248",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qti_glink_charger.ko",
+    "size": 174056,
+    "sha256": "bdfe6828fa6fea82004c310e1509fe05809c688803b9cbc2068ac7b5028922eb",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qti_pmic_glink.ko",
+    "size": 40536,
+    "sha256": "9365c7c03a0730f61313131e64ed7c060feede2aa55c8a1be2947865ce90f1d0",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qti_qmi_cdev.ko",
+    "size": 34240,
+    "sha256": "123f0ff4b75f6237c9197dfc13601e50738172b1456d15b190905eb14f5cd025",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qti_qmi_sensor_v2.ko",
+    "size": 41752,
+    "sha256": "fb12e3e21b97819c1c3c59c2b30b4fd7666c2d5eb98ff0837e07f3a925d23056",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/qti_userspace_cdev.ko",
+    "size": 15808,
+    "sha256": "713126c5bc9688e47d5c59a66cb1c0d2936133e1cb8e0b41c7f5b8402461b3ae",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/radio-i2c-rtc6226-qca.ko",
+    "size": 88104,
+    "sha256": "f4c4753c5c5a8892ae17a64a713b42197401e4773e097f9972a3844e4cdfda68",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/rdbg.ko",
+    "size": 35176,
+    "sha256": "431a7849746161505e134542fa91514b572ddf2f5b2148a00193bd8ce0b4feca",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/reboot-mode.ko",
+    "size": 16816,
+    "sha256": "e3e6f733eefc22322f55559bb3871120bb803c94d5693207e656091dcb83b52d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/rmnet_aps.ko",
+    "size": 48648,
+    "sha256": "7072120a590f33125ff229b29cafc04a9696c3b1eb69f4ff57c35ebca986cfc8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/rmnet_core.ko",
+    "size": 440544,
+    "sha256": "d587a146146aa7f50a823387668f903acc8f9835abe9f4454d6b1b1a7fe9f00a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/rmnet_ctl.ko",
+    "size": 25280,
+    "sha256": "e15f14ecc774f54e97f430a8a401c2b1f822896341f9490f23c0cf900ff5a975",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/rmnet_mem.ko",
+    "size": 45056,
+    "sha256": "756107d43a02ea91ccf84facb8ab408e99c4268537b3ad3b34316fd84e1bb5db",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/rmnet_offload.ko",
+    "size": 38104,
+    "sha256": "b8ca9046d8c0740fe723e7136c411f2998ade7494f2dc8351ad3a80d79a4c2b5",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/rmnet_perf.ko",
+    "size": 51120,
+    "sha256": "c5ddeefe88f590cc9ac017bcd5ad629ed8d6721b0ac21be9ff0f438cf4643605",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/rmnet_perf_tether.ko",
+    "size": 25376,
+    "sha256": "4a4b995ad2514b84ebd599111c055eca87493796536ae2a5a7bd066fee1cae51",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/rmnet_sch.ko",
+    "size": 18848,
+    "sha256": "7c6fe8799e50f2654f95f1a9aa1ad8ef8ee58af89e0995e91c1f15ccc76c19e4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/rmnet_shs.ko",
+    "size": 306680,
+    "sha256": "66023f91b8fba529dd5b8be6f12b07a36f9b1dbbc20a94dc88579f6526cc521a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/rmnet_wlan.ko",
+    "size": 85120,
+    "sha256": "e7dad57dd60a086efa1d95564633b0333ed97cb22882e1a4ad947a2af47af8c1",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/rproc_qcom_common.ko",
+    "size": 62320,
+    "sha256": "3d733453802d58395904d3a354d6dac0f92b82bb818464b86b4b9a6c807306ef",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/rq_stats.ko",
+    "size": 15584,
+    "sha256": "1664af544660daac090d13b83823dff7a9cca334849afd28801d795ddf1c524d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/sdpm_clk.ko",
+    "size": 19888,
+    "sha256": "e3d5d9af46713f1dccea41eeb1045050b762d5e00768ec2c83753f3e2b0d0f67",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/sensors_class.ko",
+    "size": 32768,
+    "sha256": "88af9c509eea5e835ede328215354f6c69a61997aa326da01205b30c6191bad1",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/sg.ko",
+    "size": 85952,
+    "sha256": "7bc5799ed7c7d1977bf1dc3e0d3f360036dc1553c5ce083dc13c0f44206e6eed",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/si_core_module.ko",
+    "size": 52384,
+    "sha256": "b65db1b15649eabbf6ede35839d0f6a5c39ca97dd7f6f65fceb1b76191cfc766",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/slim-qcom-ngd-ctrl.ko",
+    "size": 119784,
+    "sha256": "ab12f430bcd3340340034da414de04ddcf0a12bf352e1c9314019ff4071cb6cf",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/slimbus.ko",
+    "size": 54504,
+    "sha256": "babe155d35d659ea5f88a7e85d1d24e28e6031de0935d76d72fda7d6617c84e9",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/smcinvoke_dlkm.ko",
+    "size": 237064,
+    "sha256": "e93c3a1f0dadb735120029e2f5ca8526cf778bfc2858a6a1aa3a95bd1cd356d8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/smmu_proxy_dlkm.ko",
+    "size": 31600,
+    "sha256": "f9cdd7d1637dc3ec56222cc3c7004ad681dcf0a8f63bd3db8f3c96425aaae117",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/smp2p.ko",
+    "size": 33320,
+    "sha256": "e5299085abaacde9ed2d076136a8f5eae702ef21ac2988c01774231f751fc999",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/smp2p_sleepstate.ko",
+    "size": 15544,
+    "sha256": "0e71962c92801ed1e9810bbca9918f380ab7b964133e258e1542c6d906ec8bd7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/snd-usb-audio-qmi.ko",
+    "size": 78640,
+    "sha256": "aa58d0aa668849b219c2a5fbd3205026a1300de87f889bcb6aff9779c8a5558d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/snd_event_dlkm.ko",
+    "size": 21520,
+    "sha256": "01640acd727f0fb2f460ebdc3199f4cb19e92b66d9ee572da81e3619615994bf",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/spf_core_dlkm.ko",
+    "size": 32032,
+    "sha256": "1d948b3e6038e2de8ce87809ad8616300af67e9f5376139784aa3a2400ca59e2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/spi-msm-geni.ko",
+    "size": 118640,
+    "sha256": "4aa87bf043d21da80fa5bbea371dfa2022aa4fa9e6e11034d02cf8cc6c2fc613",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/spmi-pmic-arb-debug.ko",
+    "size": 24568,
+    "sha256": "2777e021a133ad5d660745d4d644e58f40aab1df80e1e1fe3044157e2c3fd6f1",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/sps_drv.ko",
+    "size": 485792,
+    "sha256": "293c93298028b76c7ac1c2062aaa4c3f49aa21fb069107c0839f4b1e66d6344e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/stk501xx_sar.ko",
+    "size": 117744,
+    "sha256": "5b82ecf0d2a60275022734678706a181c908b907343cc554e4f6cad630130076",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/stm_console.ko",
+    "size": 12720,
+    "sha256": "424669f1417c39aa3b2c50c7e38404cd109f32641afdcd021ff554345c893ce0",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/stm_core.ko",
+    "size": 62144,
+    "sha256": "5f7b26892b3ff51dd33d9a520d4e92ba4b25d295e4e7d782d861156b92359f48",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/stm_ftrace.ko",
+    "size": 13896,
+    "sha256": "b7abd2c06411831ff2293af1974a3a0de75c90f2a7ad6191cd5d8c6de48425ae",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/stm_nfc_i2c.ko",
+    "size": 43512,
+    "sha256": "623d03b7ad7de9a8309ef78b3f515dd1dbd9970ac5c50ff7bb601d39c1fec868",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/stm_p_basic.ko",
+    "size": 13376,
+    "sha256": "90e7bedcded4d0a82fb65a4701dff22352916d8f457eed7c33b385c6f8d435bc",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/stm_p_ost.ko",
+    "size": 17544,
+    "sha256": "44425ea0bfa5614d2a4b095824b6a872a1b03e72101534f1e2d5df96d2357595",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/stub_dlkm.ko",
+    "size": 13848,
+    "sha256": "3ac755d9d8a8937b3641e4e4e5dad4cbddd42309a0da1ae77d0cf9a91f92ce8b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/swr_ctrl_dlkm.ko",
+    "size": 105936,
+    "sha256": "bc4da839700f42f2c173256a00013c6649b7414913b736edf3d8aa4b02c5bf95",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/swr_dlkm.ko",
+    "size": 49560,
+    "sha256": "a92670de110e2a90e945ef15074d97adde66f64ee630d67b461baa37cff794fc",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/swr_dmic_dlkm.ko",
+    "size": 40632,
+    "sha256": "e8f9275a0507afc11ee37c745106bc5c4ebdff50a13611294bf190ca7d7f18e7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/swr_haptics_dlkm.ko",
+    "size": 32344,
+    "sha256": "f63a46b3d8390cd042f4adad1e8445c2b4c782ee4dd47d68a3c6b2ed7fe9900a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/sx937x_sar.ko",
+    "size": 77896,
+    "sha256": "bb58d2669a82549a8a348c604eebb18d0e28e3f02c5779e3444fdf0b638bb724",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/sync_fence.ko",
+    "size": 35856,
+    "sha256": "869c8504e1eb7e0fbc2c9dd3969d78cf7fad1bdd5e4db068db098cb4e9e5e7ea",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/sys_pm_vx.ko",
+    "size": 42400,
+    "sha256": "fcadcc327b707f831337f1d80259720f9b082582689540ef195171afdf599fb3",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/sysmon_subsystem_stats.ko",
+    "size": 53184,
+    "sha256": "bc0ae03d620e11d4b0f35c3a4ad05c51abdab5e59f0a7249bd9d68b0b30a193b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/thermal_config.ko",
+    "size": 22640,
+    "sha256": "d4a79fcf41f49e3d1b720e9d61cfc97d28edb73714b186669d38f98bfae65e83",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/tmecom-intf.ko",
+    "size": 22392,
+    "sha256": "f5a334bb5f64b2630527d778872425bc796dfd07da74e51cced0d21219bb17bb",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/touchscreen_mmi.ko",
+    "size": 136016,
+    "sha256": "4552c351d0d2ad91d5616dff7889a4b71a005216482c38cf307e3172c992d303",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/tz_log_dlkm.ko",
+    "size": 51240,
+    "sha256": "2e748e645b7fad4bbed6133a01ee7510003ded46bff3db0bbc3446dea0cbd8b6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/ucsi_qti_glink.ko",
+    "size": 36256,
+    "sha256": "5c4bba8da091f7309ece2e25ccfcc92dbc079bda1cff1a4e99d67aca2d12d742",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/usb_f_ccid.ko",
+    "size": 46136,
+    "sha256": "e712d4bbed35353dd1b5e0037e35d50f881f4364be253079ba777fe80c0e8e2d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/usb_f_cdev.ko",
+    "size": 61752,
+    "sha256": "1dc50a2439f2afa270d7405824b1c88be3bfe1c66d1fd4d716dbba7b8658bc24",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/usb_f_gsi.ko",
+    "size": 170488,
+    "sha256": "d16e0e06c24d113a87c4de9aadafc54b4bc538e4bf60838ae49cae620b37a39a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/usb_f_qdss.ko",
+    "size": 53240,
+    "sha256": "d15ece6ec85773597997ba95a091a40d39958ea670adfc22531802a6209e12b8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/utags.ko",
+    "size": 64720,
+    "sha256": "b86e76a66a194b353d7a3e3d407b354c80f9d7b926c93a9205475bbfbd7bc42c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/videocc-parrot.ko",
+    "size": 29432,
+    "sha256": "acf0ba194ea1cf8d6d6d15d3f1a5f0b7a2cdf346c06ea57ff17e82c0ff7c3551",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/watchdogtest.ko",
+    "size": 16496,
+    "sha256": "fed749119a5110bdd33584d9cae2181f6059e2495c4d64cecef62b8d2d636ea0",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/wcd937x_dlkm.ko",
+    "size": 175672,
+    "sha256": "2e2bda3c6a64739e91a905e93a1932fc09357ae1e37a06045a0f3dd851648dc2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/wcd937x_slave_dlkm.ko",
+    "size": 15088,
+    "sha256": "44fdef6952785e7c746e80740ce9a4778d784b27ca726e26314373341db7c913",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/wcd938x_dlkm.ko",
+    "size": 223176,
+    "sha256": "1738594b9d0b08eacb9ba38b508e9b893fa81f6c610a623542a81ba95861f843",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/wcd938x_slave_dlkm.ko",
+    "size": 24088,
+    "sha256": "f431bae31c697a9534b14c4938e86ed198ae3ffb4207348156b7fe937c1ed6f4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/wcd9xxx_dlkm.ko",
+    "size": 49944,
+    "sha256": "0c652b3f7cd958d6f8e396f7f8d58c2dcf3e9548e7f9842e5ec9cdab859a7033",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/wcd_core_dlkm.ko",
+    "size": 60032,
+    "sha256": "03274dbf454be9fdf4bcb46b001a2603792517f881a531f8026f7997076bf9a6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/wlan_firmware_service.ko",
+    "size": 94568,
+    "sha256": "699a849bdacd54a43003b34f3dbb371fb5a37c888925b3f6cd0b7c07da69b05d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/wsa881x_dlkm.ko",
+    "size": 84728,
+    "sha256": "b5ba4e4a3a7001e9db29b225901224b5c5ee32bf5e9d8c7ae4f25ed10963ef44",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/wsa883x_dlkm.ko",
+    "size": 89608,
+    "sha256": "8bbe3e7cd6fdd1a2ff51847785bcc3e766f03cbf0d3e35ad170f5f87020bf67d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "modules/vendor_dlkm/lib/modules/xhci-sideband.ko",
+    "size": 21984,
+    "sha256": "d386d3da5a3c3f10372ff6272eed38ce80c8ae1671fa347cc222527f60793faf",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/altmode-glink.ko",
+    "size": 34208,
+    "sha256": "ed78c364fd3ba9d57032bb125e9afea725209cf4bfa67c079e3ba7d9feb46b4b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/arm_smmu.ko",
+    "size": 254904,
+    "sha256": "f3d4238e15265141b2133f76c3148d7a6c92d53ff48bf7eaf1da62b251f7784d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/bam_dma.ko",
+    "size": 59448,
+    "sha256": "a4fe725f724ec8234a58f1156557c021425b7c41235b52f947c08961cf643940",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/bcl_pmic5.ko",
+    "size": 42120,
+    "sha256": "3cb32e4142e9d9c5d6ef81b8a7eaa7fea9d8d8a24b0d3eedf4e45a216d683290",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/bcl_soc.ko",
+    "size": 20320,
+    "sha256": "ce40a7c1da092f3503a4efd304443cac2852eab8654de529f644b7d966680a34",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/boot_stats.ko",
+    "size": 15400,
+    "sha256": "094c51b383c83f21f1d2900a0892e70ed6e0af627bf4465120bf2981ce1dfcdc",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/bwmon.ko",
+    "size": 85040,
+    "sha256": "0dee5377dcdd83c17f3d9f3dc44507b2e057e7caf15d4966083b64758f34daee",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/camcc-parrot.ko",
+    "size": 79784,
+    "sha256": "271fdc41d0841c03adc37deec994d9d85e5e1306f5c6f05617f772092c1a2749",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/camcc-sm4450.ko",
+    "size": 73648,
+    "sha256": "aabcb820c6a01fa2ff1b3ded077d81f50d87bf50aa7e9e2dd72d70c2cf8da745",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/cdsprm.ko",
+    "size": 95408,
+    "sha256": "ca4b72ad581e6d9ccf239900eb4757d6ac3652a11ea13eaa5b75d9be1fecd6b9",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/cfg80211.ko",
+    "size": 2074008,
+    "sha256": "b780a9cfd9c6561386819a29cfacb4fa7bde887ee9d52425cc4b21ed1507857f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/charger-ulog-glink.ko",
+    "size": 30136,
+    "sha256": "d3499dc575ba58181e5a6df23c640f0f14c21995fff8d6ed06b2a61c067971c8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/clk-dummy.ko",
+    "size": 17720,
+    "sha256": "9a9759e24111b7ba415ebfc15085c55213364ed28cf6ba5a5882dd69339e6165",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/clk-qcom.ko",
+    "size": 402688,
+    "sha256": "825d187c089bd40ee7ab11ca6691c31cc4da6f53ae78510fea4cba21225baed1",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/clk-rpmh.ko",
+    "size": 80296,
+    "sha256": "0318631a4980e8de63b17b1344a167d63ac5fe52960d28baeca2841405972b8b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/cmd-db.ko",
+    "size": 22400,
+    "sha256": "d88dee0a1849d028d68b0e02f7ef834c76bd84e18d8382224a5bcbe7fa64933b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight-csr.ko",
+    "size": 46664,
+    "sha256": "6825df20697d559622675f5fd43fba020befc66cdacbf84afb2338c9cf1793df",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight-cti.ko",
+    "size": 97024,
+    "sha256": "8e001f53767bafdb1d0d906677cbc755c1598c52188786305fc827618242bef2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight-dummy.ko",
+    "size": 24128,
+    "sha256": "9c2f073efee4791988548e3a054bee4563c8147843f831f7a2d919254f189d5c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight-funnel.ko",
+    "size": 39592,
+    "sha256": "f2a2206326ef5f5a3ecf23309d0e31b2379985992171a33a7f6e749a1eb5d38a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight-qmi.ko",
+    "size": 32232,
+    "sha256": "3eb25a54fdb818d5545c458a4fbc30d8181236bb69dea9a91200809efc1e9a51",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight-remote-etm.ko",
+    "size": 26112,
+    "sha256": "80cbf3f0454c4f32ded740c954547629b271e08694cf3aa7f5c84635e98642be",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight-replicator.ko",
+    "size": 41376,
+    "sha256": "a755ecca72016aa810a1e15130a4499ea526e5a345e1d37a07491c2d607a3d26",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight-stm.ko",
+    "size": 41168,
+    "sha256": "ac640a61fc8b9ea9b5d9f0275fff71489bfba190dff20c1b104ae384869081d7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight-tgu.ko",
+    "size": 27008,
+    "sha256": "d01683f6c5037159c4883c44544faf8e1ec490d1b526058fd7b1e9b26f77b7e2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight-tmc-sec.ko",
+    "size": 37104,
+    "sha256": "d075b2002914c0cf5109edf97d511a2c4719fcbf3e67c80da04c006aa893c052",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight-tmc.ko",
+    "size": 129120,
+    "sha256": "1020d98e22d72132744d292570b09f513349de384db37d276312501bef36b73a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight-tpda.ko",
+    "size": 37072,
+    "sha256": "86d299f11376713abae09f547a4aee16dc28ad2977864d7ecd5cfa20bd94156a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight-tpdm.ko",
+    "size": 137824,
+    "sha256": "63defae7689b831f48932f7706bfe2257c505be5ce79ca44352999b6d641a7a8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/coresight.ko",
+    "size": 171688,
+    "sha256": "96e58378d24bc915e7af9729b0a3bb0642011e39a2080163d47df38fbc3554d7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/cpu_hotplug.ko",
+    "size": 21552,
+    "sha256": "e7c1a8a45caf893cd6443c3b898a647c21709f7f9e04bddc0b81f6b2676f3b0a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/cpu_phys_log_map.ko",
+    "size": 13760,
+    "sha256": "c168b2b609345f9554ba6f3264c4c72aba6cd774ff544fde2888e53db8cb1a42",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/cpucp_log.ko",
+    "size": 42376,
+    "sha256": "efa7c223e0b9693de45664c3e0290dd8d422afd010ac1dbedb35967f3362d2f6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/cqhci.ko",
+    "size": 53648,
+    "sha256": "7d4ad751ef191bda44abf0449cbb3b0f141849fea8bf1529be9e992a709eab8f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/dcc_v2.ko",
+    "size": 61984,
+    "sha256": "59e69e6d3e5aff24378ece7b32dae92b78069d73e640a6f77e43bf3e8fac647f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/dcvs_fp.ko",
+    "size": 19736,
+    "sha256": "b84637bad48742393ca53a8fc4754751d2c8c2ab640c2e7ae79c29728e41f75b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/ddr_cdev.ko",
+    "size": 16448,
+    "sha256": "cb87a647ae68293c0175f060b83ee954d20ffffa1712c859a6cbf64ff8b88533",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/debug-regulator.ko",
+    "size": 48096,
+    "sha256": "d1eb5f7661dbda211bab27166a2d9b32cf32537d0bd4620a52026b6af7afc387",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/debug_symbol.ko",
+    "size": 18424,
+    "sha256": "4bbc9d2003604dbce9f14e3d7adf7217eeb5e712eb41ec40c4fa85c2eb1ef0eb",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/debugcc-parrot.ko",
+    "size": 69816,
+    "sha256": "bc0091efef47a6e0201eb3526e312ad4e6306186ea6fefeb0928c91a0522b586",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/debugcc-sm4450.ko",
+    "size": 62288,
+    "sha256": "ee72ec50756a382ec0b3fedf450327e5120d2c32bbdcc150a5659c1c4c401925",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/dispcc-parrot.ko",
+    "size": 72896,
+    "sha256": "398bfc83e35e7ad33a4a5506ba258907b86858073742ccff7d79a97207bb37c8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/dispcc-sm4450.ko",
+    "size": 45976,
+    "sha256": "2149e915350c8a81ccdcfe3240be362cc4d8cb200488a0de2b980ed2341fcd62",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/dmesg_dumper.ko",
+    "size": 33488,
+    "sha256": "ec35fee77b6ff4dc88ef1337b323eb01db9e8b0fbe766ddee9a0dd834ea21c5c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/drm_display_helper.ko",
+    "size": 274648,
+    "sha256": "6fa3a3a0865ed1a783ae9a76d29646a9a855e7a0d89b578ba19474201aaf7e22",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/drm_dp_aux_bus.ko",
+    "size": 24088,
+    "sha256": "db8308cbcd9f27f7fbc7ce0c92716b24da4249c4ff1cdbf80509b238624ca22a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/dwc3-msm.ko",
+    "size": 217752,
+    "sha256": "62dd4b66478d9f35660c82359f48e08ecea77c512a71f5ded6eff2fa0327bc23",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/ehset.ko",
+    "size": 16400,
+    "sha256": "0fadd1f45f9c31bcf94f471c8effd635d9bf3e1359ffb7fb766623f8f586af4e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/eud.ko",
+    "size": 37328,
+    "sha256": "7b159bc53f4c41d0c25983624af007772d55f941575faf49530768e2b11f84cc",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/f_fs_ipc_log.ko",
+    "size": 77144,
+    "sha256": "7228b5d18b12b75dca560ea1365ef91d2d54bc6e0316cb793ff032d599bad8f2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/fsa4480-i2c.ko",
+    "size": 25488,
+    "sha256": "ff8b151bf7b2eb64958299c6ca6e844728c469cc2ab77bcd9243d6a59536971e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gcc-parrot.ko",
+    "size": 104264,
+    "sha256": "7ad64f372ecd7bddcecac0358ee0784709e27fe7eb90f501757c9bc1dcb9e09f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gcc-sm4450.ko",
+    "size": 116376,
+    "sha256": "6c40b554441a71475190ced232ade5adba1aad89c5ee8ab8b50c222308664a54",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gdsc-regulator.ko",
+    "size": 50640,
+    "sha256": "784286718af1f688778d8130c0b90d1af99691fc1818a71515521e3d79b475c0",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gh_arm_drv.ko",
+    "size": 17056,
+    "sha256": "5abb7b19f8cd0400aa32958bb6e14f512a808dd4caa0311b23209a2136c8f3be",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gh_ctrl.ko",
+    "size": 25072,
+    "sha256": "de7afb5d8919a596f2f0d5ee8429d3883ea3a92d3e733e4a5992ea6f94a7ecb2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gh_dbl.ko",
+    "size": 30296,
+    "sha256": "cdb45fa3b6cc9fcc88a47cfc6558945e86eab0cb68dd691dd6708fdb0148b961",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gh_irq_lend.ko",
+    "size": 28888,
+    "sha256": "940fd828550ace3b58956f9231890bcc00eb46d567cf590ca8ce1fc2b39b399b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gh_mem_notifier.ko",
+    "size": 15920,
+    "sha256": "65a5a4f385e7378f4123d45e664dc08bda58774e887f7b54458066a123e46ff7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gh_msgq.ko",
+    "size": 30856,
+    "sha256": "d1653324b66863850fb4099f261d07e1ae0f2dc1ee94a5aca86817f9219483ac",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gh_panic_notifier.ko",
+    "size": 36128,
+    "sha256": "fd605d9988c47dcfcf5ace6cb6f9f24dae9161baaec5ca376b9a669a730e4689",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gh_rm_booster.ko",
+    "size": 24512,
+    "sha256": "1ca163cee3a94d88c846d1d45be6586406790d5e74a9e36db3595964e3fb718a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gh_rm_drv.ko",
+    "size": 178032,
+    "sha256": "698ce876b0131fbc218b17b4ba06b2833abc6923d9af24764af4e0389a00f92f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gh_tlmm_vm_mem_access.ko",
+    "size": 25128,
+    "sha256": "101fbbd39ba0c4efa5abac998c17e6cab1466869e96ea6d11b330b5b064e66aa",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gh_virt_wdt.ko",
+    "size": 21344,
+    "sha256": "ab3f8beaf3794b74346a66fed39d0b77919cb3af5295ef66a005eae45e0f2d32",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gic_intr_routing.ko",
+    "size": 35536,
+    "sha256": "bc2315648fa737555565d0ec6a22daede01db11c73135c40d61a67b930c89990",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/glink_pkt.ko",
+    "size": 73640,
+    "sha256": "6e1f096e04471c1e81260e3d6f2957f037b83b224b56509e09c20be34f4edb12",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/governor_gpubw_mon.ko",
+    "size": 17120,
+    "sha256": "94b8d71f3133c9583e91d1061c9d9ac0ce4b5b63626f8ee84df32495fd4509a3",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/governor_msm_adreno_tz.ko",
+    "size": 25592,
+    "sha256": "7c302370ad905764fba2604ccfdfbcec28e229e9350c4ae57b6c1fc3fa3acbf3",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gpucc-parrot.ko",
+    "size": 38264,
+    "sha256": "2119f734562869aadd1bd2e7cd5810bfa557390bde5697e0b9eef33a7aa7c816",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gpucc-sm4450.ko",
+    "size": 46728,
+    "sha256": "9fe6f5b98d23914389c0ba1484fd397da5b531aeb1942a8e905de01cef883d99",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/gunyah_loader.ko",
+    "size": 194200,
+    "sha256": "96a13794e7b2b649ff8fe6ce2c06c9e56a1b01a7dd8407e037978ad99c0f2e24",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/hdcp_qseecom_dlkm.ko",
+    "size": 87960,
+    "sha256": "16d7de82a7c4f859815a0e4d7ab8c13912e2d47c12946bff9995005002904eeb",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/heap_mem_ext_v01.ko",
+    "size": 14808,
+    "sha256": "f736d17910e9a62be6b0bc89c205b0ccbc7ae88ad6da45c1c15a05dca3c9b612",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/hung_task_enh.ko",
+    "size": 20608,
+    "sha256": "7c2dc8ce74c34f48d88778a7f294de7ee589f000ecb9e1d9cf12e17d9d4b10b4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/hvc_gunyah.ko",
+    "size": 23560,
+    "sha256": "57f39a76b5998cdea97fb1fa38e87ae8f3c1f0e26690ff0c5c1b53aec83720e8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/i2c-msm-geni.ko",
+    "size": 129896,
+    "sha256": "47f6f847d9041967e4f0fd28aa82cd278b2107eb4eeadc1f8f0dd841fb52c2f6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/icc-bcm-voter.ko",
+    "size": 34608,
+    "sha256": "87d0e0dcfefe8b4ddbf74ea73104855cf2069b7dccf83a3fd8d2a9ee135c80ac",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/icc-debug.ko",
+    "size": 20368,
+    "sha256": "7b57644876f811ce76f93b8332d603fe7f0bdd523cb01d520c0221d46768da12",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/icc-rpmh.ko",
+    "size": 29136,
+    "sha256": "2b709a821dbaf2705f3d7fd8af6f6edd1f6074fa7d6150c9c8b8d52aabb8caec",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/iommu-logger.ko",
+    "size": 14720,
+    "sha256": "e7c82530cefb0af1765176bb462adccf316c67b8658e279a7571ea43d9d7f000",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/leds-aw2016.ko",
+    "size": 34424,
+    "sha256": "74397778f492f378964d17df8cb4d7253bd35ef23b5a03ebf47fc39c220d03f8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/leds-qpnp-flash-v2.ko",
+    "size": 83888,
+    "sha256": "c9738b6294ea43b7d2fb7dfb79f89399489b9e3ec5455eff694f78da151f2d5f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/leds-qpnp-vibrator-ldo.ko",
+    "size": 26120,
+    "sha256": "4a328006ebfccadfddaab564a93414937624b1e3fa6c3c65687ce96dec1a2097",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/leds-qti-tri-led.ko",
+    "size": 25832,
+    "sha256": "30736a50214b38a76c7ba8f95cd6e629e494e1a6cc6c7ba7557f275219490cf5",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/lvstest.ko",
+    "size": 25488,
+    "sha256": "78853a5d2f6ebc59c9a46b0f39276d5e4b2bc30dd148be88e69201656c8d0ddf",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/mdt_loader.ko",
+    "size": 18400,
+    "sha256": "6a0ae4095cdf362e3e71087cbc8c769b73e90a804fd6b0a1eea865018814a48c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/mem_buf.ko",
+    "size": 71936,
+    "sha256": "43242d5bdf8994c5e1ecb9510618bb95e4f4bbe4a76143696e914edd7d4c22c4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/mem_buf_dev.ko",
+    "size": 165416,
+    "sha256": "fce34ef5e2b597da6ba01820145a48756231b3200722d7b5f6757e4d7e4bd31e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/mem_buf_msgq.ko",
+    "size": 32896,
+    "sha256": "286c40dce7f918b0439ccdc4e8430aae14473e6f77069fe606c0b94bca57ff51",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/mem_object.ko",
+    "size": 27672,
+    "sha256": "7995d48d6e6a3c98581293c5e3e1655874466a9bdea2f83aa84b15fae3aec9f3",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/memlat.ko",
+    "size": 71504,
+    "sha256": "84d964d9f31908cf6e527d195942b36718f8da6f43da42a458c0d89dc23d6e32",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/memory_dump_v2.ko",
+    "size": 44336,
+    "sha256": "164f8c871d1459e21660b2f4e401dc614c8506a6f4c67eb26fe2fd69ee7d2fac",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/mhi.ko",
+    "size": 263584,
+    "sha256": "436a235eb3f32d70f8cc4d734136d2492fb634b5b8446ba0d255361f76f6b36f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/mhi_dev_dtr.ko",
+    "size": 25808,
+    "sha256": "38e493d1694e9fbb64c38f0b46781b1b0d6ecea84ec86c1a1e3f55f0f2131b65",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/mhi_dev_uci.ko",
+    "size": 47968,
+    "sha256": "cacd37ad262fa34cf14118f524a5a1314f1194df4fac8abde9d54a851c4147de",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/minidump.ko",
+    "size": 142048,
+    "sha256": "30670433869b60d9c59b627878434fa3847691ffe9a01b000f9bc3268d7fee43",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/mm_tune.ko",
+    "size": 19264,
+    "sha256": "0375bb5432613644f4aa672f234b055b564ef4516f6cea1c633f0f93b55987ac",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/msm-mmrm.ko",
+    "size": 98304,
+    "sha256": "efced6b121c407c26f086e5a78f1bfe68f1623cfbf698690015d8ff0409d97a6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/msm_dma_iommu_mapping.ko",
+    "size": 25056,
+    "sha256": "623d49bfdb38531f6867be1b09fb3d4328f82cfe2efe631f26d533af5b0c6e9a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/msm_drm.ko",
+    "size": 6725784,
+    "sha256": "338bb6642d411712852fc6a7795ec06ddb93080814fdcde39bb0ab315b8e0a6b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/msm_ext_display.ko",
+    "size": 27368,
+    "sha256": "7584f4769b4990e329b6e0757622f53d6298cbbac1757bda80736f29e85c0679",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/msm_geni_serial.ko",
+    "size": 195408,
+    "sha256": "2a671e75524ba497087ec36f2305562004d714e8d7d3f142586a5963f3b5387f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/msm_gpi.ko",
+    "size": 149120,
+    "sha256": "e186f4a3425d5cc1e2bec557b9bf6ebbe033e4b241c6c58b7eb628311d2c9dc2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/msm_memshare.ko",
+    "size": 49376,
+    "sha256": "24deeb0ebc9ae3b9a46cb8886617fae3aa827abee8409a985586d60839e87dcc",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/msm_performance.ko",
+    "size": 46048,
+    "sha256": "aed4cce8ed4d9374bdff08aba4eea4ce712cd55a27575be179d9fbb4dfbfbc89",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/msm_qmp.ko",
+    "size": 44712,
+    "sha256": "e7716eea877c4e3cca7001bf6735ddc78192a715dfc757a6192de6af6c4a63fa",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/msm_sharedmem.ko",
+    "size": 19344,
+    "sha256": "999827070b17be0db746d4d10daabb0b0ef53c078bddc122c904be8211477279",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/msm_show_resume_irq.ko",
+    "size": 19848,
+    "sha256": "464c1646ccdf0ae758b7333fa3b6718d974c9a17344e7198cb54be7a6151efe0",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/msm_sysstats.ko",
+    "size": 34608,
+    "sha256": "3e189ca1f702b18e9e929f5f3e349f65a333f55cfabb3f6fef35076b62775125",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/nvmem_qcom-spmi-sdam.ko",
+    "size": 16104,
+    "sha256": "3594f7604b061df6631e5a5c8dc78ffa57de8d159f42b02080aba4e4a60956ff",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/nvmem_qfprom.ko",
+    "size": 31200,
+    "sha256": "db188159c59c32d56bbc63bf20882f1db4fbf66a38151527e847f224ad2d3085",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/panel_event_notifier.ko",
+    "size": 16304,
+    "sha256": "a1a02dbe18425393b7bf062cd96f3d4f3c7501a09956d506b1d209220d2554df",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/pci-msm-drv.ko",
+    "size": 456472,
+    "sha256": "8f2caa1cdac15bb4e82a2c8608c4d71f15ac9f22e3eeb26bdac080797afdd4e1",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/pdr_interface.ko",
+    "size": 36376,
+    "sha256": "93c3b2452db973902bce7e15545354dde5592ff111080caaeff2a5afab4e1396",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/phy-generic.ko",
+    "size": 24864,
+    "sha256": "3ae50fe18bb40042407930204908d0fbd5be168c1d215c2dad65c76d93ac984d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/phy-msm-snps-hs.ko",
+    "size": 42968,
+    "sha256": "2c8d7e9e9f36f608e72a4aa662f819f670b186ba8bac5cf3c18dc19cc5f3755f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/phy-msm-ssusb-qmp.ko",
+    "size": 44096,
+    "sha256": "41d6b23b142ad48575a9ab70208415dfc0ec89ba2abf5df42e3f38142e0fc6cb",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/phy-qcom-emu.ko",
+    "size": 19120,
+    "sha256": "3ef50d928ae10f7caddb83eef48613aacebb0e2a942c07001c5309e151ad2e24",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/phy-qcom-ufs-qmp-v4-waipio.ko",
+    "size": 28472,
+    "sha256": "806563710d3eeec1c995d6e89c50756c7c7612faf107c28a1178a4ac909a9751",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/phy-qcom-ufs-qrbtc-sdm845.ko",
+    "size": 24352,
+    "sha256": "e56cb845d288a418465cc8975661e7bd78aab24f6d67961c6cd4c1ef844f4ca7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/phy-qcom-ufs.ko",
+    "size": 48208,
+    "sha256": "9c0762fb75436ca71458a8deb463308466cd26293a39f4efb059f068083646d9",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/pinctrl-msm.ko",
+    "size": 66432,
+    "sha256": "f3206f64b0a01997d33a6b00546a1db5e72301e9e2d83b94ace4a5e07861d04c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/pinctrl-parrot.ko",
+    "size": 111344,
+    "sha256": "6089cd7e256d5fc53751a02af55c045264a27cee0c51a3e2e55ad6bfd52a544e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/pinctrl-ravelin.ko",
+    "size": 104976,
+    "sha256": "4edeef3a84a1975e4d5f5630855d9d251ce25254941745bce324bd805ec02ecd",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/pinctrl-spmi-gpio.ko",
+    "size": 62192,
+    "sha256": "639297c1adac910b56d51f4a43fef099de4e0ec925884ab5728449d7f48194f4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/pinctrl-spmi-mpp.ko",
+    "size": 39920,
+    "sha256": "94456b6ca99225c478c4ef5c6b14144628a98c70ea841f1cea9404696fba355b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/pm8941-pwrkey.ko",
+    "size": 24408,
+    "sha256": "ce3c1742f16d4f084c2718c055f8be7c5cdfa8f69e4dd0fdcbbd3d35876faeee",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/pmic-glink-debug.ko",
+    "size": 25728,
+    "sha256": "33783dae6beb3f1d9140261c8995dadbe0c4a3c26c6460b654985369136e1528",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/pmic-pon-log.ko",
+    "size": 31624,
+    "sha256": "6a05c19b86b141aa970e855a4865a8c7805112f7338bcade374de4dff739760e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/policy_engine.ko",
+    "size": 20160,
+    "sha256": "be860c687c1767625edf750189cdc8586c1cba5745b2a6f379813418dc163122",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/proxy-consumer.ko",
+    "size": 23232,
+    "sha256": "24bb9c2d5ce2405660b8c24eb97c766932fa1a80dd14a52105e785a736d642e8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/pwm-qti-lpg.ko",
+    "size": 57416,
+    "sha256": "078aa94a7777a25c45ae27439dba9c0608d378615f8889f81e1ade3cc0bfa028",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-amoled-regulator.ko",
+    "size": 33216,
+    "sha256": "39a80b4a33d54eaa9bd2defe733519a3d1328c7a88de6de0cc376ed105e0cafa",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-cpufreq-hw.ko",
+    "size": 55992,
+    "sha256": "b36c9ad9ced6db6c0ed4abe62112d5c1254d71026a8bdc7efa9f4692fb8afeb7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-dcvs.ko",
+    "size": 111432,
+    "sha256": "b84b33cb881215c047f9a6da95718003dfd7d9ead030f4277d0e4c95701dc692",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-dload-mode.ko",
+    "size": 29096,
+    "sha256": "f3045eb08ccbb71a7abf00c3e35212a0c53954747b185c5ee250e3294586bc10",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-hv-haptics.ko",
+    "size": 188056,
+    "sha256": "95ac586191fe922c7b95cbecff9ef3fce3dfd377338b357763b7d8d93eeff574",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-i2c-pmic.ko",
+    "size": 33776,
+    "sha256": "b80110620d84fc87600131b6d84580deeaa1861f8c33b78f5eed8b231ed831c1",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-ipcc.ko",
+    "size": 23288,
+    "sha256": "72f3f20c1d07fb04e1bbf018c8dcb0623b8451a2ee113b8420da30fc40bf5eee",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-pdc.ko",
+    "size": 30232,
+    "sha256": "d372cd9b30395f90023d87c3b4986662eb1b1c4455313fc1bbe7cbf3da975fb4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-pmu-lib.ko",
+    "size": 52664,
+    "sha256": "6595a1c04d95da175d068e2f8077cf51a4829ea58dfcfa9d54db47306d24d41a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-pon.ko",
+    "size": 16232,
+    "sha256": "6c1ff2ae22267e95e4999c643277abf9c30acb52a7e4ac0a5e05d195d02810c4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-reboot-reason.ko",
+    "size": 14720,
+    "sha256": "d2e1e60eeae344c1b34682f9f0e84b17ee5a654e3efe0d22c27a6c38043cb8d8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-scm.ko",
+    "size": 173960,
+    "sha256": "b7dc443b3ffdac359e24f9360c65501e12fe24186dac927365e56c474e2bed63",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-spmi-adc-tm5.ko",
+    "size": 35632,
+    "sha256": "12f9e16f159a1725cdda9d0277fcb503c4e3bc0afeec5d818e0484a169843d76",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-spmi-adc5.ko",
+    "size": 60616,
+    "sha256": "8a6d2ff395d0cfae5728bfedf1cf4199357aea719d5c122a3b08b0b560e75be9",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-spmi-pmic.ko",
+    "size": 28792,
+    "sha256": "195dd7c0bb423730543e76e75e1a07e8953038cb214c5ef63c00cf87573fc8c4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-spmi-temp-alarm.ko",
+    "size": 27400,
+    "sha256": "df88eeff0f0224b3dd0a5c2c7bccbd28eddd9ac70abb2d19f1353d1d0c41bdc5",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-spmi-wled.ko",
+    "size": 62400,
+    "sha256": "d3e109066d5d234711cd9d4cb55d99224088f2577b054d0326685d2d7255fef1",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom-vadc-common.ko",
+    "size": 36640,
+    "sha256": "43d5cecfb01629141bab50d5d4e13c7c47fbc73210fc645f4abc972ae1a053f8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_aoss.ko",
+    "size": 37840,
+    "sha256": "e1b74748a45d5cbd57c38eacb85fd6505ce74ad1a9b813783c060e4af276872e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_cpu_vendor_hooks.ko",
+    "size": 17560,
+    "sha256": "d239dfe2d375e271c8a5892cbdd1bdae51762bab8e9eb0affb29b0c2310e2333",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_cpucp.ko",
+    "size": 23768,
+    "sha256": "ca2e2a8c49906edb0f04bbbd8dfb181e0e6830c7e4f1cef77dd312ea6f440344",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_cpuss_sleep_stats.ko",
+    "size": 30384,
+    "sha256": "02be04fe6057a37e626431c2f497544e5b3c15ed8e24ca79363d98ec631ab51d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_dma_heaps.ko",
+    "size": 110344,
+    "sha256": "97cd7cd408f7a8bcc9305bc25d2763a08b09da8eae6c3d69e0666642a43f4d65",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_glink.ko",
+    "size": 92472,
+    "sha256": "7f51073062d2b7ec0de108ec7a50e8f85566e2aca035168a14873878425b4446",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_glink_smem.ko",
+    "size": 24536,
+    "sha256": "accb86f39c9927f39c01bf691f4ed186e7aad29133cc475a3b35e562d35ae4bc",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_hwspinlock.ko",
+    "size": 20616,
+    "sha256": "9ce4fea4a3f26d66edd96d12330d0239f932118934d24b4bb693d78efbecd759",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_ice.ko",
+    "size": 32400,
+    "sha256": "949d989949ec095f00faa73345c106bd9787afe1a2a92c5717666628b56aa7e0",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_iommu_debug.ko",
+    "size": 95424,
+    "sha256": "6f384e46287c09dec8a117bbfade20631306affdbc405819b7e04d8d026def54",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_iommu_util.ko",
+    "size": 140336,
+    "sha256": "231642cdf66c124630847c5e64fc1b3c5fcbcbe0834710734bda6f5663926144",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_ipc_logging.ko",
+    "size": 51904,
+    "sha256": "a96b089757a9be559d5c1455feff38f48a6c03746c95c5abb274a8f8b3976e65",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_logbuf_boot_log.ko",
+    "size": 14760,
+    "sha256": "a92a9c344193710dc7c30a970b1d6d95500164bc3b533ded6ce3f981ea5605b7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_logbuf_vendor_hooks.ko",
+    "size": 12840,
+    "sha256": "ea7e556e14161972b10a41d86f8e96a4c792786c6ecda2b63a7a7f25bbed78f3",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_lpm.ko",
+    "size": 95280,
+    "sha256": "4589957b7e45b226abf03b690c68514c680f4137df4cf02798407c37f41e4af6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_pil_info.ko",
+    "size": 17792,
+    "sha256": "809d68b49562ac8a623ed021afb86998ab740da76fe31d111c5f32ffa58c9e14",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_pm8008-regulator.ko",
+    "size": 46552,
+    "sha256": "a5ccb8c15040856460c47fc4b749e8eb4053654f9c504e937d121f59dc0b165f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_q6v5.ko",
+    "size": 30808,
+    "sha256": "45f49584074cbe1f1dce91c15caa8ee177277b1a9279fb0652a04804f3a175ea",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_q6v5_pas.ko",
+    "size": 114632,
+    "sha256": "73ba79f7e36795b5cb98c73b154e5141955d1b909391594a94cba0d7879a5e7e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_ramdump.ko",
+    "size": 25192,
+    "sha256": "9d4b8fb3e3f90f77de5a7140c173c94b4f6bc577c6fce6fb21a69af4031a90b6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_rpmh.ko",
+    "size": 107760,
+    "sha256": "aac75c98c6b51ef3fc84ab397389378226700d554164df59d6f5bae1d5ef842a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_smd.ko",
+    "size": 42544,
+    "sha256": "4945a91b41c5f5190ae8104932bcc92e4a52a76d92da44f91c5e0c5bfd191b44",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_soc_wdt.ko",
+    "size": 17864,
+    "sha256": "6043b38e1608bd8fbecb755ba42403008152327dc6ab062e013d7e5cb525895c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_stats.ko",
+    "size": 61192,
+    "sha256": "67e41c90208ab0c3ed0a1bb6009251ff62414780953f2addaa5aa9d8fc3c53fb",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_sysmon.ko",
+    "size": 43744,
+    "sha256": "dd78d7463b0a91988e13a68e872547d677d41c27592b53f012be928380acf872",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_tsens.ko",
+    "size": 102504,
+    "sha256": "13db4f94934c368aa6a99742ec4d41c0a938b75cced0faf807238f0f5708a4ff",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_va_minidump.ko",
+    "size": 37992,
+    "sha256": "df098ac131de116f12640669df1423ab49afba560bc0a16c228954cfe82a1e79",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qcom_wdt_core.ko",
+    "size": 40392,
+    "sha256": "21e9869af38d36b5d875bdf3b7c3d5abb28759cd1d523c9c4680353c5282c22f",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qfprom-sys.ko",
+    "size": 15832,
+    "sha256": "f9853d0c656c0b57a5b5c9ee489360e03fc574c1e17ce6e72d1982c83a84e340",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qmi_helpers.ko",
+    "size": 40360,
+    "sha256": "ea23cee3fb0ac2330d9b33978dc7287eed9e923cc38105a968013183cfcdf1a4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qnoc-parrot.ko",
+    "size": 200144,
+    "sha256": "a5a8a36b218dd671732cbd88149f942fbe652747278b64aa8711dde9ddacda0a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qnoc-qos.ko",
+    "size": 12528,
+    "sha256": "c54deea123dd65d3f2b0c74d338f28a2824d45f23b7e7c1cedc25c0fa359e17c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qnoc-ravelin.ko",
+    "size": 199056,
+    "sha256": "74d52d3ef5c68098d7f855bc5010615f401f88dc96f4b2d45ec68319fd4d7789",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qpnp-lcdb-regulator.ko",
+    "size": 81880,
+    "sha256": "118aa80cbcefbf937d77ad94e7915a720c9096a13b6a480d1d45c30ac360951b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qpnp-power-on.ko",
+    "size": 76080,
+    "sha256": "e4afa8bc4c3c5a7468c8ccc7e6b0ca85c887eaef25bc58f5faf8cf3c5f2ee7ea",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qrtr-gunyah.ko",
+    "size": 34816,
+    "sha256": "364a72d0f666521aa99692d5ad33330380fb71e0b0102eba195b8eb8103a6940",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qrtr-mhi.ko",
+    "size": 22920,
+    "sha256": "5cf26f4a9b02a1a4e2e76800b9bc2f9b70318ee4781b7518f5a759d1d6efeb6b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qrtr-smd.ko",
+    "size": 17040,
+    "sha256": "96495e29ab5c89b35fd510e8cc75554de08a51201112b2b0a74dfdddfb42c1a6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qrtr.ko",
+    "size": 122192,
+    "sha256": "efd4dfaa614e25489c8b242536825fb73fe6510e78649ccf1ac684eaee78580a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qsee_ipc_irq_bridge.ko",
+    "size": 32680,
+    "sha256": "a0c949e0e81602871df9df9b030b71f09aac689a749ef64d068cfce938d6fc7a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qseecom_dlkm.ko",
+    "size": 311392,
+    "sha256": "656060593674432dba7a51fcec832c3d19e462134cf23ae7efc9c418ba7708ae",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qseecom_proxy.ko",
+    "size": 16432,
+    "sha256": "19847d2abc07ed236335b4cd4e3b3e20e926af90fea11295669529d829156566",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qti-fixed-regulator.ko",
+    "size": 21720,
+    "sha256": "abefb22000294a8c2c27f1dd7ec9dc236eba0a50c4460b83cfd102de9dcebacf",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qti-glink-adc.ko",
+    "size": 21680,
+    "sha256": "54b61ff89a5a57d91360cfaeae1c24b09d640b67c3988a9210cf8eff09cb02ec",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qti-ocp-notifier.ko",
+    "size": 21512,
+    "sha256": "c055db1bcb678558c5785b25e439b1513a63f2f60ebe4e649cc0cd3c91b24275",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qti-regmap-debugfs.ko",
+    "size": 27368,
+    "sha256": "0df24565d86d12e899545bbdcc5ac56c7274e9d9a8e34b2358d3ad698b621cf1",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qti_battery_charger.ko",
+    "size": 92240,
+    "sha256": "f5cc78d751fa4488b83f638d48e82110b7fc057611c48c5075ef1223f1dd4263",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qti_battery_debug.ko",
+    "size": 37744,
+    "sha256": "e2e73bf01533cdc9b9646c5f4e3751781c384764bb2cf258b0c8f59010ec2a7c",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qti_cpufreq_cdev.ko",
+    "size": 21424,
+    "sha256": "b481eda52fd46237a834dcc511ca5a559cb09141b187b856c0d7a70d1263a509",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qti_devfreq_cdev.ko",
+    "size": 18472,
+    "sha256": "0371075a116444deb9d87f291d8d16d0ef9d55edf5bafa3e0029e645543a3248",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qti_pmic_glink.ko",
+    "size": 40536,
+    "sha256": "9365c7c03a0730f61313131e64ed7c060feede2aa55c8a1be2947865ce90f1d0",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qti_qmi_cdev.ko",
+    "size": 34240,
+    "sha256": "123f0ff4b75f6237c9197dfc13601e50738172b1456d15b190905eb14f5cd025",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qti_qmi_sensor_v2.ko",
+    "size": 41752,
+    "sha256": "fb12e3e21b97819c1c3c59c2b30b4fd7666c2d5eb98ff0837e07f3a925d23056",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qti_thermal_vendor_hooks.ko",
+    "size": 12448,
+    "sha256": "e2bd9d5be99f73269509df996a9a01b996ed744f5ab22cbe9ddf509e213e1a0e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/qti_userspace_cdev.ko",
+    "size": 15808,
+    "sha256": "713126c5bc9688e47d5c59a66cb1c0d2936133e1cb8e0b41c7f5b8402461b3ae",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/rdbg.ko",
+    "size": 35176,
+    "sha256": "431a7849746161505e134542fa91514b572ddf2f5b2148a00193bd8ce0b4feca",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/reboot-mode.ko",
+    "size": 16816,
+    "sha256": "e3e6f733eefc22322f55559bb3871120bb803c94d5693207e656091dcb83b52d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/rpmh-regulator.ko",
+    "size": 52944,
+    "sha256": "a179dd5ee8c99b757ef8b2718cb80ad0c9a881e2f958272ae4bf29d0d3aa11b4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/rproc_qcom_common.ko",
+    "size": 62320,
+    "sha256": "3d733453802d58395904d3a354d6dac0f92b82bb818464b86b4b9a6c807306ef",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/rq_stats.ko",
+    "size": 15584,
+    "sha256": "1664af544660daac090d13b83823dff7a9cca334849afd28801d795ddf1c524d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/rtc-pm8xxx.ko",
+    "size": 24744,
+    "sha256": "c6fb867201b318a6d6b4de9320dfd3f1149f14db9f6c0d60171bce7cd69d09b8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/sched-walt.ko",
+    "size": 965032,
+    "sha256": "8b66da70ceed5c5d6763e8a3e65dcf63d8d80d7ad80b25f7899303280d84ada6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/sdhci-msm.ko",
+    "size": 126320,
+    "sha256": "74bddb3ad65896ed9ad0d76828c68672de5c0f812a28e575823669f0f26fc01b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/sdpm_clk.ko",
+    "size": 19888,
+    "sha256": "e3d5d9af46713f1dccea41eeb1045050b762d5e00768ec2c83753f3e2b0d0f67",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/secure_buffer.ko",
+    "size": 53152,
+    "sha256": "df81eff0389ad84d57c022b5d19aaace7938380b0333118344218e9f96f47a92",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/sg.ko",
+    "size": 85952,
+    "sha256": "7bc5799ed7c7d1977bf1dc3e0d3f360036dc1553c5ce083dc13c0f44206e6eed",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/si_core_module.ko",
+    "size": 52384,
+    "sha256": "b65db1b15649eabbf6ede35839d0f6a5c39ca97dd7f6f65fceb1b76191cfc766",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/slim-qcom-ngd-ctrl.ko",
+    "size": 119784,
+    "sha256": "ab12f430bcd3340340034da414de04ddcf0a12bf352e1c9314019ff4071cb6cf",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/slimbus.ko",
+    "size": 54504,
+    "sha256": "babe155d35d659ea5f88a7e85d1d24e28e6031de0935d76d72fda7d6617c84e9",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/smcinvoke_dlkm.ko",
+    "size": 237064,
+    "sha256": "e93c3a1f0dadb735120029e2f5ca8526cf778bfc2858a6a1aa3a95bd1cd356d8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/smem.ko",
+    "size": 34360,
+    "sha256": "8bf506426155e4f1e9d3361fe6f58f441e009f7e04320ecf4c3c8a322cc9c0d7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/smmu_proxy_dlkm.ko",
+    "size": 31600,
+    "sha256": "f9cdd7d1637dc3ec56222cc3c7004ad681dcf0a8f63bd3db8f3c96425aaae117",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/smp2p.ko",
+    "size": 33320,
+    "sha256": "e5299085abaacde9ed2d076136a8f5eae702ef21ac2988c01774231f751fc999",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/smp2p_sleepstate.ko",
+    "size": 15544,
+    "sha256": "0e71962c92801ed1e9810bbca9918f380ab7b964133e258e1542c6d906ec8bd7",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/snd-usb-audio-qmi.ko",
+    "size": 78640,
+    "sha256": "aa58d0aa668849b219c2a5fbd3205026a1300de87f889bcb6aff9779c8a5558d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/socinfo.ko",
+    "size": 92752,
+    "sha256": "dafcd9797d0d20496fa0698e61a9b17d2dc3253351449d365f0ebb558abc536d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/spi-msm-geni.ko",
+    "size": 118640,
+    "sha256": "4aa87bf043d21da80fa5bbea371dfa2022aa4fa9e6e11034d02cf8cc6c2fc613",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/spmi-pmic-arb-debug.ko",
+    "size": 24568,
+    "sha256": "2777e021a133ad5d660745d4d644e58f40aab1df80e1e1fe3044157e2c3fd6f1",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/spmi-pmic-arb.ko",
+    "size": 63656,
+    "sha256": "0453c89bc7a37a8eb7a566cba5f12f44fc131b0d9d6a01d248eab4f37bf18521",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/sps_drv.ko",
+    "size": 485792,
+    "sha256": "293c93298028b76c7ac1c2062aaa4c3f49aa21fb069107c0839f4b1e66d6344e",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/stm_console.ko",
+    "size": 12720,
+    "sha256": "424669f1417c39aa3b2c50c7e38404cd109f32641afdcd021ff554345c893ce0",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/stm_core.ko",
+    "size": 62144,
+    "sha256": "5f7b26892b3ff51dd33d9a520d4e92ba4b25d295e4e7d782d861156b92359f48",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/stm_ftrace.ko",
+    "size": 13896,
+    "sha256": "b7abd2c06411831ff2293af1974a3a0de75c90f2a7ad6191cd5d8c6de48425ae",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/stm_p_basic.ko",
+    "size": 13376,
+    "sha256": "90e7bedcded4d0a82fb65a4701dff22352916d8f457eed7c33b385c6f8d435bc",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/stm_p_ost.ko",
+    "size": 17544,
+    "sha256": "44425ea0bfa5614d2a4b095824b6a872a1b03e72101534f1e2d5df96d2357595",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/stub-regulator.ko",
+    "size": 18368,
+    "sha256": "91a1e636c2acc116d2b9b18644c6d0dbe82a0cfae6a2a461fa829639c2c981d2",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/sync_fence.ko",
+    "size": 35856,
+    "sha256": "869c8504e1eb7e0fbc2c9dd3969d78cf7fad1bdd5e4db068db098cb4e9e5e7ea",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/sys_pm_vx.ko",
+    "size": 42400,
+    "sha256": "fcadcc327b707f831337f1d80259720f9b082582689540ef195171afdf599fb3",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/sysmon_subsystem_stats.ko",
+    "size": 53184,
+    "sha256": "bc0ae03d620e11d4b0f35c3a4ad05c51abdab5e59f0a7249bd9d68b0b30a193b",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/thermal_config.ko",
+    "size": 22640,
+    "sha256": "d4a79fcf41f49e3d1b720e9d61cfc97d28edb73714b186669d38f98bfae65e83",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/thermal_pause.ko",
+    "size": 26808,
+    "sha256": "9d123f44b07996b5f2d788d3e9594792fde6fd8b2952a3c1758a9fe2d2380af9",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/tmecom-intf.ko",
+    "size": 22392,
+    "sha256": "f5a334bb5f64b2630527d778872425bc796dfd07da74e51cced0d21219bb17bb",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/tz_log_dlkm.ko",
+    "size": 51240,
+    "sha256": "2e748e645b7fad4bbed6133a01ee7510003ded46bff3db0bbc3446dea0cbd8b6",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/ucsi_qti_glink.ko",
+    "size": 36256,
+    "sha256": "5c4bba8da091f7309ece2e25ccfcc92dbc079bda1cff1a4e99d67aca2d12d742",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/ufs-qcom.ko",
+    "size": 316640,
+    "sha256": "7a9a8e3f15d1b10c27a50d582f325ddd85e075af004c659015e4e21ede1c44f4",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/ufshcd-crypto-qti.ko",
+    "size": 23560,
+    "sha256": "0c21201e09a701bab4058d4a7456e3d302176ee848f067910aab910265197163",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/usb_f_ccid.ko",
+    "size": 46136,
+    "sha256": "e712d4bbed35353dd1b5e0037e35d50f881f4364be253079ba777fe80c0e8e2d",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/usb_f_cdev.ko",
+    "size": 61752,
+    "sha256": "1dc50a2439f2afa270d7405824b1c88be3bfe1c66d1fd4d716dbba7b8658bc24",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/usb_f_gsi.ko",
+    "size": 170488,
+    "sha256": "d16e0e06c24d113a87c4de9aadafc54b4bc538e4bf60838ae49cae620b37a39a",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/usb_f_qdss.ko",
+    "size": 53240,
+    "sha256": "d15ece6ec85773597997ba95a091a40d39958ea670adfc22531802a6209e12b8",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/videocc-parrot.ko",
+    "size": 29432,
+    "sha256": "acf0ba194ea1cf8d6d6d15d3f1a5f0b7a2cdf346c06ea57ff17e82c0ff7c3551",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  },
+  {
+    "path": "vendor-ramdisk-modules/vendor-fragment-0/lib/modules/xhci-sideband.ko",
+    "size": 21984,
+    "sha256": "d386d3da5a3c3f10372ff6272eed38ce80c8ae1671fa347cc222527f60793faf",
+    "signature": {
+      "present": false,
+      "verified_with_original_certificate": false
+    }
+  }
+]

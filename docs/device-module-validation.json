@@ -1,0 +1,532 @@
+{
+  "module_files": 618,
+  "unique_module_hashes": 448,
+  "groups": {
+    "system_dlkm": 96,
+    "vendor_dlkm": 269,
+    "vendor_boot": 253
+  },
+  "signature_present": 96,
+  "signature_verified_original": 96,
+  "signature_failures": [],
+  "vermagic": {
+    "['6.6.87-android15-8-g88d70c0b44bf-ab14541233-4k SMP preempt mod_unload modversions aarch64']": 96,
+    "['6.6.87-android15-8-maybe-dirty-4k SMP preempt mod_unload modversions aarch64']": 479,
+    "['6.6.87-4k-g3901ca18c265 SMP preempt mod_unload modversions aarch64']": 43
+  },
+  "checked_core_import_records": 29987,
+  "checked_module_import_records": 3454,
+  "missing_count": 0,
+  "crc_mismatch_count": 0,
+  "policy_issue_count": 0,
+  "no_versions": [],
+  "unversioned_undefined": [],
+  "namespace_errors": [],
+  "license_errors": [],
+  "core_export_collisions": [],
+  "missing": [],
+  "crc_mismatches": [],
+  "policy_issues": [],
+  "comparison_build_run": 40796422378,
+  "provider_loading_order_checked": false,
+  "namespace_and_license_enforcement_checked": true,
+  "hardware_tested": false,
+  "installable": false,
+  "core_requirements": {
+    "failures": [],
+    "hardware_tested": false,
+    "installable": false,
+    "module_file_records": 618,
+    "required_core_exports_checked": 3407,
+    "run_id": "40796422378",
+    "scope": "Required core CRCs, GPL export use, declared namespaces and vermagic; hardware behavior and full ABI equivalence are not established",
+    "static_core_module_checks_passed": true,
+    "unique_module_hashes": 448,
+    "variant": "kernelsu-next",
+    "workflow_commit": "476ab8948c9e664fd9d11cdea6e762ccd039e0a5"
+  },
+  "dependency_lists": {
+    "dependency_path_references": 3425,
+    "missing_dependency_paths": [],
+    "missing_modinfo_dependencies": [],
+    "runtime_loading_order_verified": false,
+    "dependency_name_normalization": "hyphen and underscore treated equivalently",
+    "module_symbol_providers_missing_from_dependency_closure": [
+      {
+        "module": "audpkt_ion_dlkm",
+        "symbol": "qcom_scm_assign_mem",
+        "providers": [
+          "qcom_scm"
+        ]
+      },
+      {
+        "module": "btpower",
+        "symbol": "msm_gpio_mpm_wake_set",
+        "providers": [
+          "pinctrl_msm"
+        ]
+      },
+      {
+        "module": "btpower",
+        "symbol": "qmp_get",
+        "providers": [
+          "qcom_aoss"
+        ]
+      },
+      {
+        "module": "btpower",
+        "symbol": "qmp_put",
+        "providers": [
+          "qcom_aoss"
+        ]
+      },
+      {
+        "module": "btpower",
+        "symbol": "qmp_send",
+        "providers": [
+          "qcom_aoss"
+        ]
+      },
+      {
+        "module": "camera",
+        "symbol": "qcom_clk_dump",
+        "providers": [
+          "clk_qcom"
+        ]
+      },
+      {
+        "module": "camera",
+        "symbol": "qcom_iommu_get_fault_ids",
+        "providers": [
+          "qcom_iommu_util"
+        ]
+      },
+      {
+        "module": "camera",
+        "symbol": "qcom_mdt_get_size",
+        "providers": [
+          "mdt_loader"
+        ]
+      },
+      {
+        "module": "camera",
+        "symbol": "qcom_mdt_load",
+        "providers": [
+          "mdt_loader"
+        ]
+      },
+      {
+        "module": "camera",
+        "symbol": "socinfo_get_part_count",
+        "providers": [
+          "socinfo"
+        ]
+      },
+      {
+        "module": "camera",
+        "symbol": "socinfo_get_subpart_info",
+        "providers": [
+          "socinfo"
+        ]
+      },
+      {
+        "module": "gsim",
+        "symbol": "ipc_log_context_create",
+        "providers": [
+          "qcom_ipc_logging"
+        ]
+      },
+      {
+        "module": "gsim",
+        "symbol": "ipc_log_string",
+        "providers": [
+          "qcom_ipc_logging"
+        ]
+      },
+      {
+        "module": "icnss2",
+        "symbol": "qmp_get",
+        "providers": [
+          "qcom_aoss"
+        ]
+      },
+      {
+        "module": "icnss2",
+        "symbol": "qmp_put",
+        "providers": [
+          "qcom_aoss"
+        ]
+      },
+      {
+        "module": "icnss2",
+        "symbol": "qmp_send",
+        "providers": [
+          "qcom_aoss"
+        ]
+      },
+      {
+        "module": "icnss2",
+        "symbol": "socinfo_get_serial_number",
+        "providers": [
+          "socinfo"
+        ]
+      },
+      {
+        "module": "ipam",
+        "symbol": "qcom_iommu_get_mappings_configuration",
+        "providers": [
+          "qcom_iommu_util"
+        ]
+      },
+      {
+        "module": "ipam",
+        "symbol": "qcom_mdt_load",
+        "providers": [
+          "mdt_loader"
+        ]
+      },
+      {
+        "module": "lpass_cdc_dlkm",
+        "symbol": "devm_regmap_qti_debugfs_register",
+        "providers": [
+          "qti_regmap_debugfs"
+        ]
+      },
+      {
+        "module": "mmi_annotate",
+        "symbol": "msm_minidump_add_region",
+        "providers": [
+          "minidump"
+        ]
+      },
+      {
+        "module": "mmi_charger",
+        "symbol": "ipc_log_context_create",
+        "providers": [
+          "qcom_ipc_logging"
+        ]
+      },
+      {
+        "module": "mmi_charger",
+        "symbol": "ipc_log_context_destroy",
+        "providers": [
+          "qcom_ipc_logging"
+        ]
+      },
+      {
+        "module": "mmi_charger",
+        "symbol": "ipc_log_string",
+        "providers": [
+          "qcom_ipc_logging"
+        ]
+      },
+      {
+        "module": "mmi_info",
+        "symbol": "qcom_smem_alloc",
+        "providers": [
+          "smem"
+        ]
+      },
+      {
+        "module": "mmi_info",
+        "symbol": "qcom_smem_get",
+        "providers": [
+          "smem"
+        ]
+      },
+      {
+        "module": "mmrm_test_module",
+        "symbol": "socinfo_get_id",
+        "providers": [
+          "socinfo"
+        ]
+      },
+      {
+        "module": "mmrm_test_module",
+        "symbol": "socinfo_get_id_string",
+        "providers": [
+          "socinfo"
+        ]
+      },
+      {
+        "module": "moto_sched",
+        "symbol": "set_moto_sched_enabled",
+        "providers": [
+          "sched_walt"
+        ]
+      },
+      {
+        "module": "moto_sched",
+        "symbol": "set_moto_sched_ops",
+        "providers": [
+          "sched_walt"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "cmd_db_read_addr",
+        "providers": [
+          "cmd_db"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "cmd_db_read_aux_data",
+        "providers": [
+          "cmd_db"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_alloc_io_pgtable_ops",
+        "providers": [
+          "qcom_iommu_util"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_arm_lpae_map_sg",
+        "providers": [
+          "qcom_iommu_util"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_arm_lpae_unmap_pages",
+        "providers": [
+          "qcom_iommu_util"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_clk_dump",
+        "providers": [
+          "clk_qcom"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_dcvs_hw_minmax_get",
+        "providers": [
+          "qcom_dcvs"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_dcvs_register_voter",
+        "providers": [
+          "qcom_dcvs"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_dcvs_unregister_voter",
+        "providers": [
+          "qcom_dcvs"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_dcvs_update_votes",
+        "providers": [
+          "qcom_dcvs"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_free_io_pgtable_ops",
+        "providers": [
+          "qcom_iommu_util"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_iommu_get_asid_nr",
+        "providers": [
+          "qcom_iommu_util"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_iommu_get_context_bank_nr",
+        "providers": [
+          "qcom_iommu_util"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_iommu_set_fault_model",
+        "providers": [
+          "qcom_iommu_util"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_iommu_set_secure_vmid",
+        "providers": [
+          "qcom_iommu_util"
+        ]
+      },
+      {
+        "module": "msm_kgsl",
+        "symbol": "qcom_skip_tlb_management",
+        "providers": [
+          "qcom_iommu_util"
+        ]
+      },
+      {
+        "module": "msm_video",
+        "symbol": "mem_buf_dma_buf_exclusive_owner",
+        "providers": [
+          "mem_buf_dev"
+        ]
+      },
+      {
+        "module": "msm_video",
+        "symbol": "mem_buf_lend",
+        "providers": [
+          "mem_buf_dev"
+        ]
+      },
+      {
+        "module": "msm_video",
+        "symbol": "qcom_mdt_get_size",
+        "providers": [
+          "mdt_loader"
+        ]
+      },
+      {
+        "module": "msm_video",
+        "symbol": "qcom_mdt_load",
+        "providers": [
+          "mdt_loader"
+        ]
+      },
+      {
+        "module": "msm_video",
+        "symbol": "qcom_scm_mem_protect_video_var",
+        "providers": [
+          "qcom_scm"
+        ]
+      },
+      {
+        "module": "msm_video",
+        "symbol": "qcom_scm_pas_auth_and_reset",
+        "providers": [
+          "qcom_scm"
+        ]
+      },
+      {
+        "module": "msm_video",
+        "symbol": "qcom_scm_pas_shutdown",
+        "providers": [
+          "qcom_scm"
+        ]
+      },
+      {
+        "module": "msm_video",
+        "symbol": "qcom_scm_set_remote_state",
+        "providers": [
+          "qcom_scm"
+        ]
+      },
+      {
+        "module": "nxp_nci",
+        "symbol": "ipc_log_context_create",
+        "providers": [
+          "qcom_ipc_logging"
+        ]
+      },
+      {
+        "module": "nxp_nci",
+        "symbol": "ipc_log_context_destroy",
+        "providers": [
+          "qcom_ipc_logging"
+        ]
+      },
+      {
+        "module": "nxp_nci",
+        "symbol": "ipc_log_string",
+        "providers": [
+          "qcom_ipc_logging"
+        ]
+      },
+      {
+        "module": "rmnet_shs",
+        "symbol": "walt_get_cpus_in_state1",
+        "providers": [
+          "sched_walt"
+        ]
+      },
+      {
+        "module": "rmnet_shs",
+        "symbol": "walt_get_cpus_taken",
+        "providers": [
+          "sched_walt"
+        ]
+      },
+      {
+        "module": "rmnet_shs",
+        "symbol": "walt_get_halted_cpus",
+        "providers": [
+          "sched_walt"
+        ]
+      },
+      {
+        "module": "watchdogtest",
+        "symbol": "qcom_wdt_trigger_bite",
+        "providers": [
+          "qcom_wdt_core"
+        ]
+      },
+      {
+        "module": "wcd_core_dlkm",
+        "symbol": "msm_gpio_mpm_wake_set",
+        "providers": [
+          "pinctrl_msm"
+        ]
+      },
+      {
+        "module": "wsa881x_dlkm",
+        "symbol": "devm_regmap_qti_debugfs_register",
+        "providers": [
+          "qti_regmap_debugfs"
+        ]
+      },
+      {
+        "module": "wsa883x_dlkm",
+        "symbol": "devm_regmap_qti_debugfs_register",
+        "providers": [
+          "qti_regmap_debugfs"
+        ]
+      }
+    ],
+    "vendor_ramdisk_load_lists": {
+      "modules.load.recovery": {
+        "listed": 248,
+        "with_dependencies": 249,
+        "missing_from_vendor_ramdisk": []
+      },
+      "modules.load": {
+        "listed": 84,
+        "with_dependencies": 84,
+        "missing_from_vendor_ramdisk": []
+      }
+    },
+    "cross_stage_dependencies_satisfied_by_early_modules_load": 64,
+    "cross_stage_dependencies_not_explained_by_early_modules_load": []
+  },
+  "signature_negative_controls": {
+    "valid": 0,
+    "altered_content": 4,
+    "wrong_signer": 4
+  },
+  "source_sha256": {
+    "init-boot-atual-a.img": "eaaa88a4d55572e34510fba22066f7f9c4eb3837fb463b63e9221680fad8514c",
+    "modulos-g75.tar.gz": "f1fd354fb704939e378d28562ceaf05ea312bd984307d92647a31333a08dc130",
+    "vendor-boot-atual-a.img": "952ceac26a1b97d7a72d295531da0c22a95efcfb1fa7bc08f594c5ec41db9bbb"
+  },
+  "original_module_certificate_sha256": "5601bbb5a627b517e1f8855e4ce8aec595a9764d2c013b85d8cfcde0808ca954",
+  "initial_build_certificate_missing": true,
+  "corrected_build_validation_pending": true
+}

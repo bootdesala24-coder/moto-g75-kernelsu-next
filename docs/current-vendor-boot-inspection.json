@@ -1,0 +1,49 @@
+{
+  "sha256": "952ceac26a1b97d7a72d295531da0c22a95efcfb1fa7bc08f594c5ec41db9bbb",
+  "size": 100663296,
+  "version": 4,
+  "page": 4096,
+  "header_size": 2128,
+  "ramdisk_size": 7401098,
+  "dtb_size": 783770,
+  "table_size": 108,
+  "entries": 1,
+  "entry_size": 108,
+  "bootconfig_size": 153,
+  "cmdline": "video=vfb:640x400,bpp=32,memsize=3072000 nosoftlockup console=ttynull qcom_geni_serial.con_enabled=0 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image disable_dma32=on bootconfig",
+  "bootconfig": "androidboot.hardware=qcom\nandroidboot.memcg=1\nandroidboot.usbcontroller=a600000.dwc3\nandroidboot.load_modules_parallel=true\nandroidboot.vendor.qspa=true\n",
+  "fragments": [
+    {
+      "name": "",
+      "size": 7401098,
+      "offset": 0,
+      "type": 1,
+      "board_id": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "file_name": "vendor-boot-atual-a.img",
+  "ramdisk_module_files": 253,
+  "ramdisk_entries": 263,
+  "outer_avb_algorithm": "NONE",
+  "outer_avb_hash_consistency_verified": true,
+  "oem_firmware_authenticity_verified": false,
+  "phone_hash_independently_observed": false,
+  "installable": false
+}

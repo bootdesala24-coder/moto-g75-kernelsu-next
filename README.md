@@ -16,7 +16,7 @@ O [relatório preservado](docs/ci-comparison-40796422378.json) reproduz os dados
 
 Esse resultado compara duas compilações do projeto. A análise posterior confirmou
 que o kernel extraído do `boot_a` instalado é idêntico à referência oficial Google.
-Os módulos do aparelho ainda não foram comparados. A primeira compilação não
+A análise dos módulos reais, recebidos posteriormente, está descrita abaixo. A primeira compilação não
 continha o certificado público original de assinatura dos módulos; a correção
 descrita abaixo precisa de uma nova execução. Não há pacote liberado para instalação.
 
@@ -38,6 +38,51 @@ fixados em `sources.lock.json`; a análise inicial está em
 Essas verificações preservam a confiança e as listas de proteção. Elas ainda não
 confirmam CRCs, assinaturas e dependências dos módulos reais do aparelho, nem sua
 operação com o kernel recompilado.
+
+### Verificação dos módulos reais do aparelho
+
+O proprietário enviou `modulos-g75.tar.gz`, `vendor-boot-atual-a.img` e
+`init-boot-atual-a.img`. A análise encontrou **618 arquivos de módulos, correspondentes
+a 448 binários únicos**: 96 em system_dlkm, 269 em vendor_dlkm e 253 no ramdisk
+de vendor_boot. Os nomes repetidos contêm os mesmos bytes.
+
+Na comparação estática com o artefato KernelSU da primeira execução (40796422378):
+
+- Todos os **96 módulos assinados** tiveram a assinatura criptográfica verificada
+  usando exclusivamente o certificado público do kernel original. Controles com
+  conteúdo alterado e certificado incorreto foram rejeitados.
+- Os **3.407 símbolos do núcleo exigidos pelos módulos** têm CRC correspondente;
+  foram conferidos 29.987 registros de importação do núcleo e 3.454 entre módulos.
+- Não foram encontrados símbolos exigidos sem provedor, CRCs divergentes,
+  violações das listas de proteção, namespaces não declarados ou uso incompatível
+  de exports GPL nos arquivos analisados. Todos possuem tabela `__versions` e
+  `module_layout=0x4e276f37`.
+- As três variantes de vermagic possuem o mesmo sufixo de configuração. A fonte
+  fixada compara esse sufixo quando o módulo possui CRCs; a diferença do nome da
+  versão não foi contornada por carregamento forçado.
+- Todas as 3.425 referências de caminhos em `modules.dep` têm arquivo correspondente.
+  As 64 dependências entre estágios ausentes dos respectivos grafos locais são
+  fornecidas por módulos da lista de carregamento inicial. As listas normal e de
+  recuperação, com suas dependências, estão cobertas pelos arquivos do vendor_boot.
+
+Isso ainda **não valida o carregamento real nem o comportamento dos drivers**.
+A primeira compilação não contém o certificado original no keyring, por isso esse
+resultado de CRC não a torna adequada para instalação. A execução
+[40807792629](https://github.com/bootdesala24-coder/moto-g75-kernelsu-next/actions/runs/40807792629)
+está compilando a correção; seus artefatos ainda precisam passar pela mesma comparação.
+
+O [relatório](docs/device-module-validation.json), o
+[manifesto de arquivos](docs/device-module-manifest.json) e os
+[requisitos extraídos](docs/device-module-requirements.json) permitem revisar a análise
+sem publicar os binários do telefone. Para repetir a comparação do núcleo:
+
+```sh
+python3 analysis/verify_device_modules.py --build-dir CAMINHO_DO_ARTEFATO
+python3 -m unittest discover -s analysis -p 'test_*.py' -v
+```
+
+`analysis/inspect_modules.py` permite repetir a inspeção ELF, assinaturas e
+comparação completa com as cópias locais dos módulos; consulte `--help`.
 
 ### Imagem de boot recebida
 
@@ -96,6 +141,19 @@ com os metadados do boot candidato. A cópia atual de `boot_a` já foi conferida
 O próximo passo para `init_boot_a` é comparar seu SHA-256 com os arquivos recebidos;
 uma nova cópia só é necessária se nenhum corresponder ao conteúdo instalado.
 Os detalhes estão no [relatório do init_boot](docs/init-boot-image-inspection.json).
+
+A cópia atual foi recebida e seu SHA-256 `eaaa88a4...` confere com a foto do
+telefone. Ela contém Magisk e difere do patch antigo nos executáveis e na ausência
+de `stub.xz`. O registro original SHA-1 continua apontando para o mesmo init_boot
+sem patch; restaurar o `init` do backup e excluir as entradas Magisk reproduz os
+nomes, modos e conteúdos das 17 entradas originais. A versão do Magisk não foi
+inferida pelo nome do arquivo. Veja o
+[relatório atual](docs/current-init-boot-inspection.json).
+
+O [vendor_boot recebido](docs/current-vendor-boot-inspection.json) possui cabeçalho
+v4, páginas de 4096 bytes, um fragmento de ramdisk, DTB e bootconfig. Seu hash AVB
+interno confere, mas o algoritmo `NONE` não autentica a origem OEM. Ele foi apenas
+inspecionado; nenhum de seus módulos, DTB ou parâmetros foi modificado.
 
 O arquivo `magisk_patched-30700_flRoZ[1].img` também foi analisado. O campo `SHA1`
 em `.backup/.magisk` coincide com o hash do init_boot original fornecido. O conteúdo

@@ -1,0 +1,205 @@
+{
+  "file_name": "init-boot-atual-a.img",
+  "file_size": 8388608,
+  "sha256": "eaaa88a4d55572e34510fba22066f7f9c4eb3837fb463b63e9221680fad8514c",
+  "hash_matches_phone_photo": true,
+  "header_version": 4,
+  "kernel_size": 0,
+  "ramdisk_size": 2074031,
+  "magisk_patch_present": true,
+  "ramdisk": {
+    "compressed_size": 2074031,
+    "uncompressed_size": 2725016,
+    "sha256": "c92339ab0a24ac4ee8f34dfb557686ced7acf424221f7b55d0ba25292a02d9da",
+    "entries": [
+      {
+        "name": ".backup",
+        "mode": "0o40000",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".backup/.magisk",
+        "mode": "0o100000",
+        "size": 139,
+        "sha256": "0320b939f4fec0ce4bd6248761229901eccba43d7e3abc6b15f9f0608722268a"
+      },
+      {
+        "name": ".backup/.rmlist",
+        "mode": "0o100000",
+        "size": 76,
+        "sha256": "1b08879a98e01fcb1bcc97ada3658ed29df0353932415b54fbcbb45287a66d8c"
+      },
+      {
+        "name": ".backup/init.xz",
+        "mode": "0o100750",
+        "size": 1050036,
+        "sha256": "c87be5664f1ad8c90ddc05e6e42e68be84f197c6f5cebb727ef3138d789de4eb"
+      },
+      {
+        "name": "debug_ramdisk",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "dev",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "init",
+        "mode": "0o100750",
+        "size": 184376,
+        "sha256": "c0c7cc1c8e1afb92bff602164f6aa1bb4103f5028d076216d8bef48496e2f4dc"
+      },
+      {
+        "name": "metadata",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "mnt",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "overlay.d",
+        "mode": "0o40750",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "overlay.d/sbin",
+        "mode": "0o40750",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "overlay.d/sbin/init-ld.xz",
+        "mode": "0o100644",
+        "size": 1536,
+        "sha256": "a598bafbc4e4a8976be1f0be99733ac4926901e5815894b4ab539653300bbd2b"
+      },
+      {
+        "name": "overlay.d/sbin/magisk.xz",
+        "mode": "0o100644",
+        "size": 146424,
+        "sha256": "2199d318d039cd574a066c9e053faccd3bb44aa240b88e9ae2c9e9e222cf493a"
+      },
+      {
+        "name": "proc",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "second_stage_resources",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "sys",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "system",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "system/bin",
+        "mode": "0o40751",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "system/bin/snapuserd",
+        "mode": "0o120755",
+        "size": 17,
+        "sha256": "1807bcb1c9080b455472f1cb9933b8176cb776e2141262c071009b5e7f2f779f"
+      },
+      {
+        "name": "system/bin/snapuserd_ramdisk",
+        "mode": "0o100755",
+        "size": 1337768,
+        "sha256": "9aa6c9bf21bcda67a902bb3e9ad4a734d343600048822fdd5f969630d5af0875"
+      },
+      {
+        "name": "system/etc",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "system/etc/init",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "system/etc/init/snapuserd.rc",
+        "mode": "0o100644",
+        "size": 537,
+        "sha256": "3a6966f87823b2726a231e7244adf78ad91d581bf4e8b1580630ebb82cc6c498"
+      },
+      {
+        "name": "system/etc/ramdisk",
+        "mode": "0o40755",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "system/etc/ramdisk/build.prop",
+        "mode": "0o100644",
+        "size": 810,
+        "sha256": "a25303dffd0802ceeeb7b6c195916847e51fc49a5cb4e908cf9aa9dab6e76abd"
+      }
+    ],
+    ".backup/.magisk": "KEEPVERITY=true\nKEEPFORCEENCRYPT=true\nRECOVERYMODE=false\nVENDORBOOT=false\nPREINITDEVICE=sde9\nSHA1=9fb10960a427468bdbbbce171d6f163b2ef83f2c\n",
+    "system/etc/ramdisk/build.prop": "####################################\n# from generate-common-build-props\n# These properties identify this partition image.\n####################################\nro.product.bootimage.brand=motorola\nro.product.bootimage.device=paros\nro.product.bootimage.manufacturer=motorola\nro.product.bootimage.model=paros\nro.product.bootimage.name=paros\nro.bootimage.build.date=Tue Apr 28 17:15:35 CDT 2026\nro.bootimage.build.date.utc=1777414535\nro.bootimage.build.fingerprint=motorola/paros/paros:15/VUQ35HV-W1-ST28/ac0a9:user/release-keys\nro.bootimage.build.id=VUQ35HV-W1-ST28\nro.bootimage.build.tags=release-keys\nro.bootimage.build.type=user\nro.bootimage.build.version.incremental=ac0a9\nro.bootimage.build.version.release=15\nro.bootimage.build.version.release_or_codename=15\nro.bootimage.build.version.sdk=35\n# end of file\n\n"
+  },
+  "original_ramdisk_relationship": {
+    "current_sha256": "eaaa88a4d55572e34510fba22066f7f9c4eb3837fb463b63e9221680fad8514c",
+    "recorded_original_sha1": "9fb10960a427468bdbbbce171d6f163b2ef83f2c",
+    "restored_ramdisk_names_match_original": true,
+    "restored_ramdisk_names_modes_contents_match_original": true,
+    "differences_from_previous_magisk_patch": {
+      "added": [],
+      "removed": [
+        "overlay.d/sbin/stub.xz"
+      ],
+      "changed": [
+        "overlay.d/sbin/init-ld.xz",
+        "overlay.d/sbin/magisk.xz",
+        "init",
+        ".backup/.rmlist",
+        ".backup/init.xz"
+      ]
+    },
+    "init": {
+      "sha256": "c0c7cc1c8e1afb92bff602164f6aa1bb4103f5028d076216d8bef48496e2f4dc",
+      "size": 184376
+    },
+    "overlay.d/sbin/magisk.xz": {
+      "sha256": "2199d318d039cd574a066c9e053faccd3bb44aa240b88e9ae2c9e9e222cf493a",
+      "size": 146424
+    },
+    "overlay.d/sbin/init-ld.xz": {
+      "sha256": "a598bafbc4e4a8976be1f0be99733ac4926901e5815894b4ab539653300bbd2b",
+      "size": 1536
+    }
+  },
+  "outer_avb_algorithm": "NONE",
+  "outer_avb_digest_matches_modified_image": false,
+  "outer_avb_note": "Retained original hash descriptor does not authenticate the patched image. Complete-file hash matches the owner phone reading.",
+  "oem_firmware_authenticity_verified": false,
+  "installable": false
+}
