@@ -38,6 +38,13 @@ O script [`windows/conferir-boot.cmd`](windows/conferir-boot.cmd) coleta os hash
 por leitura usando o Magisk já instalado. O `init_boot` candidato ainda não foi
 inspecionado, pois seu anexo anterior não estava acessível no ambiente restaurado.
 
+A coleta posterior, fotografada pelo proprietário após autorizar Shell no Magisk,
+mostra o mesmo SHA-256 para `boot_a` e `boot_b`, começando por `55c2ccec`. Esse hash
+difere do arquivo enviado, que começa por `6ae39d54`. O slot exibido continua sendo
+`_a`. Essa comparação de hashes completos ainda não distingue diferenças nos
+componentes da imagem de diferenças no tamanho ou preenchimento da partição.
+O próximo passo é extrair por leitura o `boot_a` instalado e comparar os arquivos.
+
 ## Aparelho identificado
 
 | Campo | Valor observado |
