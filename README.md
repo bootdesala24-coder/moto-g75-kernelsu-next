@@ -1,4 +1,25 @@
-# Moto G75 — laboratório de compilação KernelSU Next
+# Moto G75 — KernelSU Next compilado e retomada futura
+
+**Estado em 29/10/2026 (America/Fortaleza): o proprietário informou que a
+instalação funcionou no aparelho.** O relato corresponde à entrega com KernelSU
+Next v3.4.2, kernel `6.6.87-android15-8-lab-4k`, destinada ao XT2437-1 com firmware
+W1UQ36H.73-38. Não foram recebidos logs posteriores nem uma lista de testes de
+cada componente. Isso não certifica estabilidade prolongada ou versões futuras.
+
+Para continuar em outra conversa, leia primeiro
+[retomada futura](docs/retomada-futura.md) e
+[registro do resultado informado](docs/user-confirmed-success.json).
+O kernel que funcionou deve ser preservado como referência de recuperação.
+Atualizações do aplicativo Manager e do código integrado ao kernel são coisas
+diferentes; confira a compatibilidade antes de decidir recompilar.
+
+Os relatórios, `device.json` e o restante do texto abaixo são registros da
+preparação **anteriores ao relato de sucesso**, mantidos para rastreabilidade.
+Campos antigos como `device_boot_test_passed: false` não anulam o relato posterior,
+nem devem ser convertidos em testes automatizados fictícios. A leitura atual é:
+checks estáticos passaram e funcionamento foi confirmado pelo proprietário.
+
+## Registro histórico da preparação
 
 Este projeto compila uma referência GKI e um kernel com KernelSU Next v3.4.2
 integrado. A compilação e as verificações estáticas passaram. Foi preparado um
