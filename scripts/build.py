@@ -204,7 +204,7 @@ def main(variant):
     report["module_trust_checks"] = check_module_trust(
         image, output / "System.map", module_material, table_sizes)
     for name in ("unprotected", "protected_exports"):
-        shutil.copy2(output / "kernel/module" / f"gki_module_{name}.h", artifacts)
+        shutil.copy2(output / "include/generated" / f"gki_module_{name}.h", artifacts)
     release = (output / "include/config/kernel.release").read_text().strip()
     if release != "6.6.87-android15-8-lab-4k":
         raise ValueError(f"Unexpected kernel release: {release}")
