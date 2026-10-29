@@ -5,6 +5,21 @@ outra com KernelSU Next v3.4.2 integrado. Não é um pacote de instalação e ai
 há validação no aparelho. Um workflow verde não significa que o kernel seja seguro
 para instalar, que inicialize no Moto G75 ou que seja idêntico ao kernel original.
 
+## Resultado da compilação experimental
+
+A execução [40796422378](https://github.com/bootdesala24-coder/moto-g75-kernelsu-next/actions/runs/40796422378),
+no commit `476ab8948c9e664fd9d11cdea6e762ccd039e0a5`, concluiu com sucesso os jobs de
+verificação, referência, KernelSU Next e comparação. Foram comparados **9.110 símbolos**
+exportados em cada variante, sem adições, remoções ou mudanças de CRC, classe ou
+namespace. A única diferença de configuração entre as duas variantes foi `CONFIG_KSU`.
+O [relatório preservado](docs/ci-comparison-40796422378.json) reproduz os dados do job.
+
+Esse resultado compara duas compilações do projeto. Os módulos e as imagens de boot
+do telefone continuam pendentes de validação. O proprietário informou instalação do
+Magisk em `init_boot` e enviou uma imagem candidata a original; seu conteúdo e sua
+correspondência com W1UQ36H.73-38 ainda não foram examinados. Não há pacote liberado
+para instalação.
+
 ## Aparelho identificado
 
 | Campo | Valor observado |

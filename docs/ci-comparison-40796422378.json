@@ -1,0 +1,22 @@
+{
+  "workflow_run": 40796422378,
+  "workflow_commit": "476ab8948c9e664fd9d11cdea6e762ccd039e0a5",
+  "source": "GitHub Actions compare job 123203108699 log",
+  "added": [],
+  "changed": [],
+  "config_changes": {
+    "CONFIG_KSU": [
+      "n",
+      "y"
+    ]
+  },
+  "device_tested": false,
+  "installable": false,
+  "modified_symbols": 9110,
+  "passed": true,
+  "reference_symbols": 9110,
+  "removed": [],
+  "scope": "Comparison against a locally compiled GKI reference, not the installed Motorola kernel",
+  "unexpected_config_changes": {},
+  "vendor_abi_verified": false
+}

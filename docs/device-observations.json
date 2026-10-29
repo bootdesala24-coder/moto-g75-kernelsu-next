@@ -23,12 +23,24 @@
   "kernel_config_decompressed_sha256": "4bc095f8fb1b94d9841393ae949492f38328d9919f7e99d0853fdf2c989b4719",
   "kernel_config_matches_upstream_reference_byte_for_byte": true,
   "partition_names_observed": [
-    "boot_a", "boot_b", "init_boot_a", "init_boot_b",
-    "vendor_boot_a", "vendor_boot_b", "vbmeta_a", "vbmeta_b",
-    "vbmeta_system_a", "vbmeta_system_b"
+    "boot_a",
+    "boot_b",
+    "init_boot_a",
+    "init_boot_b",
+    "vendor_boot_a",
+    "vendor_boot_b",
+    "vbmeta_a",
+    "vbmeta_b",
+    "vbmeta_system_a",
+    "vbmeta_system_b"
   ],
   "device_kernel_binary_verified": false,
   "vendor_abi_verified": false,
   "device_boot_test_passed": false,
-  "installable": false
+  "installable": false,
+  "existing_root_install_partition_user_report": "init_boot",
+  "original_init_boot_candidate_received": true,
+  "original_init_boot_candidate_inspected": false,
+  "original_init_boot_firmware_match_verified": false,
+  "original_init_boot_sha256": null
 }
